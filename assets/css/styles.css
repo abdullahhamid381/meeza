@@ -525,6 +525,7 @@ img {
 }
 .landing-parent .organized {
   background: #064789;
+  padding: 20px 0;
 }
 .landing-parent .organized .width {
   max-width: 1300px;
@@ -553,6 +554,60 @@ img {
   font-weight: 400;
   line-height: 28px; /* 155.556% */
 }
+.landing-parent .organized .width .title .order {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.landing-parent .organized .width .title .order li {
+  padding: 0px 0 0 0;
+  color: white;
+  width: 65%;
+  line-height: 40px;
+}
 .landing-parent .organized .width .img img {
+  width: 100%;
+}
+.landing-parent .booking {
+  background: #ffffff;
+  padding: 20px 0;
+}
+.landing-parent .booking .width {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  place-content: center;
+  place-items: center;
+}
+.landing-parent .booking .width .title h1 {
+  color: #064789;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 50px;
+}
+.landing-parent .booking .width .title p {
+  color: #000000;
+  font-family: "ABeeZee", sans-serif;
+  padding: 10px 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+.landing-parent .booking .width .title .order {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.landing-parent .booking .width .title .order li {
+  padding: 0px 0 0 0;
+  color: rgb(0, 0, 0);
+  width: 65%;
+  line-height: 40px;
+}
+.landing-parent .booking .width .img img {
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */
