@@ -8,7 +8,7 @@
   --first-color: hsl(230, 75%, 56%);
   --title-color: hsl(230, 75%, 15%);
   --text-color: hsl(230, 12%, 40%);
-  --body-color: style="width: 15%;" ;
+  --body-color: style="width: 15%;";
   --container-color: hsl(230, 100%, 97%);
   --border-color: hsl(230, 25%, 80%);
   /*========== Font and typography ==========*/
@@ -552,7 +552,8 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
+  /* 155.556% */
 }
 .landing-parent .organized .width .title .order {
   padding-left: 15px;
@@ -596,7 +597,8 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
+  /* 155.556% */
 }
 .landing-parent .booking .width .title .order {
   padding-left: 15px;
@@ -609,5 +611,50 @@ img {
   line-height: 40px;
 }
 .landing-parent .booking .width .img img {
+  width: 100%;
+}
+.landing-parent .team {
+  background: #427AA1;
+  padding: 20px 0;
+}
+.landing-parent .team .width {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  place-content: center;
+  place-items: center;
+}
+.landing-parent .team .width .title h1 {
+  color: #ffffff;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 50px;
+}
+.landing-parent .team .width .title p {
+  color: #ffffff;
+  font-family: "ABeeZee", sans-serif;
+  padding: 10px 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 155.556% */
+}
+.landing-parent .team .width .title .order {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.landing-parent .team .width .title .order li {
+  padding: 0px 0 0 0;
+  color: rgb(255, 255, 255);
+  width: 65%;
+  line-height: 40px;
+}
+.landing-parent .team .width .img img {
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */
