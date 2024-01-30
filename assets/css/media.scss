@@ -52,6 +52,11 @@
     }
   }
   
+  @mixin sssmobile {
+    @media only screen and (max-width: "410px") {
+      @content;
+    }
+  }
   @mixin smobile {
     @media only screen and (max-width: "350px") {
       @content;
