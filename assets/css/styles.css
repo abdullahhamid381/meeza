@@ -689,7 +689,8 @@ img {
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
-  line-height: 50px; /* 125% */
+  line-height: 50px;
+  /* 125% */
 }
 .landing-parent .about .card-grid {
   display: grid;
@@ -733,7 +734,8 @@ img {
   margin: 0%;
   padding: 0;
   font-weight: 400;
-  line-height: 50px; /* 250% */
+  line-height: 50px;
+  /* 250% */
 }
 .landing-parent .about .card-grid .cards p {
   color: #000;
@@ -741,5 +743,26 @@ img {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
+  /* 155.556% */
+}
+.landing-parent .reservation {
+  background: #064789;
+  padding: 80px 0;
+}
+.landing-parent .reservation .width {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+.landing-parent .reservation .width .text span {
+  color: #FFF;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px; /* 87.5% */
 }/*# sourceMappingURL=styles.css.map */
