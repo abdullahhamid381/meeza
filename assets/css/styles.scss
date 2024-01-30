@@ -735,6 +735,7 @@ img {
 
   }
   .about{
+    padding: 20px 0 60px 0;
     .title{
       h1{
         text-align: center;
@@ -747,12 +748,61 @@ font-weight: 400;
 line-height: 50px; /* 125% */
       }
     }
+   .card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    gap: 40px;
+    @include lg{
+      grid-template-columns: 1fr ;
+      width: 80%;
+      margin: auto;
+    }
     .cards{
-      .cards-img{
+      display: grid;
+      grid-template-columns: 1.5fr 4fr;
+      background: #EBF2FA;
+      margin-top: 30px;
+     
+      .card-img{
         img{
           width: 100%;
+        
         }
+       
       }
+      .cards-title{
+        padding: 40px 30px 20px 30px;
+        h1{
+         color: #000;
+         font-family: "ABeeZee", sans-serif;
+font-size: 28px;
+font-style: italic;
+font-weight: 400;
+
+        }
+       }
+       h3{
+        color: #000;
+        font-family: "ABeeZee", sans-serif;
+font-size: 20px;
+font-style: italic;
+margin: 0%;
+padding: 0;
+font-weight: 400;
+line-height: 50px; /* 250% */
+       }
+       p{
+        color: #000;
+        font-family: "ABeeZee", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+       }
     }
+   }
   }
 }
