@@ -559,6 +559,11 @@ img {
       gap: 40px;
       place-content: center;
       place-items: center;
+      @include lg{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+      }
 
       .title {
         h1 {
@@ -618,7 +623,11 @@ img {
       gap: 40px;
       place-content: center;
       place-items: center;
-
+      @include lg{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+      }
       .title {
         h1 {
           color: #064789;
@@ -676,7 +685,11 @@ img {
       gap: 40px;
       place-content: center;
       place-items: center;
-
+      @include lg{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+      }
       .title {
         h1 {
           color: #ffffff;
@@ -720,5 +733,26 @@ img {
       }
     }
 
+  }
+  .about{
+    .title{
+      h1{
+        text-align: center;
+        color: #064789;
+
+        font-family: "ABeeZee", sans-serif;
+font-size: 40px;
+font-style: italic;
+font-weight: 400;
+line-height: 50px; /* 125% */
+      }
+    }
+    .cards{
+      .cards-img{
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }

@@ -537,6 +537,13 @@ img {
   place-content: center;
   place-items: center;
 }
+@media only screen and (max-width: 992px) {
+  .landing-parent .organized .width {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+}
 .landing-parent .organized .width .title h1 {
   color: #FFF;
   font-family: "ABeeZee", sans-serif;
@@ -581,6 +588,13 @@ img {
   gap: 40px;
   place-content: center;
   place-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .landing-parent .booking .width {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
 }
 .landing-parent .booking .width .title h1 {
   color: #064789;
@@ -627,6 +641,13 @@ img {
   place-content: center;
   place-items: center;
 }
+@media only screen and (max-width: 992px) {
+  .landing-parent .team .width {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+}
 .landing-parent .team .width .title h1 {
   color: #ffffff;
   font-family: "ABeeZee", sans-serif;
@@ -656,5 +677,17 @@ img {
   line-height: 40px;
 }
 .landing-parent .team .width .img img {
+  width: 100%;
+}
+.landing-parent .about .title h1 {
+  text-align: center;
+  color: #064789;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+}
+.landing-parent .about .cards .cards-img img {
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */
