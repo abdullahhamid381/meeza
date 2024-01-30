@@ -796,6 +796,12 @@ img {
   width: 100%;
   margin: auto;
 }
+@media only screen and (max-width: 992px) {
+  .landing-parent .accordion {
+    width: 80%;
+    margin: auto;
+  }
+}
 .landing-parent .accordion .title h1 {
   color: #064789;
   font-family: "ABeeZee", sans-serif;
@@ -806,20 +812,20 @@ img {
   text-align: center;
   padding-bottom: 30px;
 }
-.landing-parent .accordion-list__item + .accordion-list__item {
+.landing-parent .accordion .accordion-list__item + .accordion-list__item {
   border-radius: 8px;
   margin: 10px 0;
 }
-.landing-parent .accordion-item--opened .accordion-item__icon {
+.landing-parent .accordion .accordion-item--opened .accordion-item__icon {
   transform: rotate(180deg);
 }
-.landing-parent .accordion-item--opened .accordion-item__inner {
+.landing-parent .accordion .accordion-item--opened .accordion-item__inner {
   max-height: 100rem;
   transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition-duration: 0.5s;
   transition-property: max-height;
 }
-.landing-parent .accordion-item--opened .accordion-item__content {
+.landing-parent .accordion .accordion-item--opened .accordion-item__content {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -828,7 +834,7 @@ img {
   padding: 25px 30px;
   transition-property: opacity, transform;
 }
-.landing-parent .accordion-item__line {
+.landing-parent .accordion .accordion-item__line {
   display: block;
   padding: 1rem 2.2rem;
   display: flex;
@@ -839,7 +845,7 @@ img {
   z-index: 2;
   position: relative;
 }
-.landing-parent .accordion-item__title {
+.landing-parent .accordion .accordion-item__title {
   color: #000;
   font-family: "ABeeZee", sans-serif;
   font-size: 24px;
@@ -847,7 +853,7 @@ img {
   font-weight: 400;
   line-height: 28px; /* 116.667% */
 }
-.landing-parent .accordion-item__icon {
+.landing-parent .accordion .accordion-item__icon {
   width: 1.2rem;
   height: 1.2rem;
   transition: transform 0.3s ease-in-out;
@@ -856,7 +862,13 @@ img {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAABGklEQVR4Ae3RAcZCQRiF4buDfwshBGi+2UQgcIGAVtpSIuS/KyilG+UTcbk6zIH3GQBm3mM6AAAAAAAAAACA+eqf/yZBXcV/2XeCVPYx1FXj/FjGUMd45AQp/1HHGGLZNL+e61jHnKDmv8652YT1IvPfE2LX/Sh27/ycsF60yT/lk58JYn6eU4MJccjnlAmZ/33i0OAH4jg9Qcw/5g9YJpS+m6n0xvzpCfVe+nn59S7kGyYo+YYJWz3fO+E2PaFs9XzPhMy/6fmWCXq+YUJs9HzrhLh+JsQmrnq+bYKeb52g53snXPR88wQ93z9Bz/dP0PP9E/R89wQ93zpBz7dO0POtE/R86wQ93zpBzzdP+MoHAAAAAAAAAADAExTnTW20AtjhAAAAAElFTkSuQmCC);
   opacity: 0.6;
 }
-.landing-parent .accordion-item__inner {
+@media only screen and (max-width: 992px) {
+  .landing-parent .accordion .accordion-item__icon {
+    width: 4.2rem;
+    height: 3.2rem;
+  }
+}
+.landing-parent .accordion .accordion-item__inner {
   max-height: 0;
   overflow: hidden;
   text-transform: cubic-bezier(0.95, 0.05, 0.795, 0.035);
@@ -865,7 +877,7 @@ img {
   z-index: 1;
   position: relative;
 }
-.landing-parent .accordion-item__content {
+.landing-parent .accordion .accordion-item__content {
   opacity: 0;
   transform: translateY(-1rem);
   transition-timing-function: linear, ease;
@@ -874,10 +886,43 @@ img {
   transition-delay: 0.5s;
   padding: 0 1.2rem 1.2rem;
 }
-.landing-parent .accordion-item__paragraph {
+.landing-parent .accordion .accordion-item__paragraph {
   margin: 0;
   font-size: 1rem;
   color: #333;
   font-weight: 300;
   line-height: 1.3;
+}
+.landing-parent .footer {
+  background: black;
+}
+.landing-parent .footer .width {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .landing-parent .footer .width {
+    width: 80%;
+    margin: auto;
+  }
+}
+.landing-parent .footer .title {
+  display: flex;
+  justify-content: center;
+}
+.landing-parent .footer .title h1 {
+  color: #FFF;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0 40px;
+  line-height: 50px; /* 208.333% */
+  border-left: 1px solid white;
+}
+.landing-parent .footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 0 80px;
 }/*# sourceMappingURL=styles.css.map */
