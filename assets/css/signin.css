@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.signin-parent .width {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 992px) {
+  .signin-parent .width {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .signin-parent .width .img {
+    display: none;
+  }
+}
+.signin-parent .width .img img {
+  width: 100%;
+  height: 100vh;
+}
+.signin-parent .width .fields {
+  display: grid;
+  /* place-content: center; */
+  width: 60%;
+  margin: auto;
+}
+.signin-parent .width .fields .title h1 {
+  color: #427AA1;
+  font-family: "ABeeZee", sans-serif;
+  text-align: start;
+  font-style: italic;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.signin-parent .width .fields .inputs .email {
+  padding: 10px 0;
+}
+.signin-parent .width .fields .inputs .email h1 {
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: normal;
+}
+.signin-parent .width .fields .inputs .email input {
+  width: 90%;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 992px) {
+  .signin-parent .width .fields .inputs .email input {
+    width: 83%;
+    padding: 15px 20px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .signin-parent .width .fields .inputs .email input {
+    width: 75%;
+    padding: 13px 20px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+  }
+}
+.signin-parent .width .fields .inputs .button {
+  padding: 30px 0;
+}
+.signin-parent .width .fields .inputs .button a {
+  text-decoration: none;
+}
+.signin-parent .width .fields .inputs .button a button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #064789;
+  color: white;
+  font-style: italic;
+}
+.signin-parent .width .fields .inputs .forgot {
+  text-align: center;
+}
+.signin-parent .width .fields .inputs .forgot a {
+  text-decoration: none;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  color: #427AA1;
+}
+.signin-parent .width .fields .inputs .forgot span {
+  text-align: center;
+}/*# sourceMappingURL=signin.css.map */

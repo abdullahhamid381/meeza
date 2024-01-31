@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/signin.css">
+</head>
+
+<body>
+    <div class="signin-parent">
+        <div class="width">
+            <div class="img">
+                <img src="/assets/img/signin.png" alt="">
+            </div>
+            <div class="fields">
+                <div class="title">
+                    <h1>Sign In</h1>
+
+                </div>
+                <form action="" class="login__form" onsubmit="return validateForm()">
+                <div class="inputs">
+                    <div class="email">
+                        <h1>Email</h1>
+                        <input type="email" placeholder="" id="email" class="login__input">
+
+
+                    </div>
+                    <div class="email">
+                        <h1>Password</h1>
+                        <input type="password" placeholder="" id="password" class="login__input">
+                    </div>
+                    <div class="button">
+                        <a href=""> <button>Sign In</button></a>
+                    </div>
+                    <div class="forgot">
+                        <a href=""><span>Forgot Password</span></a>
+                    </div>
+
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            // Get values from form fields
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+    
+            // Validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.match(emailRegex)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+    
+            // Validate password
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return false;
+            }
+    
+            // If validation passes, the form will be submitted
+            return true;
+        }
+    </script>
+    
+</body>
+
+</html>
