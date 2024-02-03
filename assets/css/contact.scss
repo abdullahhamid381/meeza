@@ -1,28 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .contact-parent {
-    .width-contact {
-        max-width: 1300px;
-        width: 100%;
-        margin: auto;
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            .contact-text {
-                h1 {
-                    font-family: "ABeeZee", sans-serif;
-                    font-size: 36px;
-                    font-style: italic;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 18px;
-                    font-family: "ABeeZee", sans-serif;
-                    text-align: center;
+    .back{
+        background: #EBF2FA;
+        .width-contact {
+            max-width: 1300px;
+            width: 100%;
+            margin: auto;
+    
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+    
+                .contact-text {
+                    h1 {
+                        font-family: "ABeeZee", sans-serif;
+                        font-size: 36px;
+                        font-style: italic;
+                        text-align: center;
+                        color: #064789;
+                    }
+    
+                    p {
+                        font-size: 18px;
+                        font-family: "ABeeZee", sans-serif;
+                        text-align: center;
+                        line-height: 35px;
+                    }
                 }
             }
+    .form-contact{
+        max-width: 500px;
+        margin: auto;
+        width: 100%;
+        .name{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 10px;
+          .field{
+            display:flex;
+            flex-direction: column;
+            span{
+                font-family: "ABeeZee", sans-serif;
+                font-size: 18px;
+                
+            }
+            input{
+                border: 1px solid #C1C1C1;
+                outline: none;
+                padding: 15px;
+            }
+          }
         }
-
+        button{
+            background: #064789;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
     }
+        }
+    }
+ 
 }
