@@ -1,0 +1,20 @@
+.contact-parent .width-contact {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+.contact-parent .width-contact .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-parent .width-contact .grid .contact-text h1 {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
+}
+.contact-parent .width-contact .grid .contact-text p {
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=contact.css.map */
