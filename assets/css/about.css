@@ -470,6 +470,55 @@ img {
   top: 210px;
   left: 510px;
 }
+@media (min-width: 1024px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 110px;
+    left: 230px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 85px;
+    left: 130px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 82px;
+    left: 120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 55px;
+    left: 110px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 41px;
+    left: 105px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 41px;
+    left: 95px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .hero-about-parent .hero-back .text {
+    position: absolute;
+    top: 24px;
+    left: 45px;
+  }
+}
 .hero-about-parent .hero-back .text h1 {
   color: #fff;
   text-align: center;
@@ -477,12 +526,44 @@ img {
   font-style: italic;
   font-size: 60px;
 }
+@media only screen and (max-width: 600px) {
+  .hero-about-parent .hero-back .text h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-about-parent .hero-back .text h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+  }
+}
 .hero-about-parent .hero-back .text p {
   text-align: center;
   color: #fff;
   font-family: "ABeeZee", sans-serif;
   font-size: 40px;
   padding-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .hero-about-parent .hero-back .text p {
+    text-align: center;
+    color: #fff;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-about-parent .hero-back .text p {
+    font-size: 15px;
+  }
 }
 .hero-about-parent .about-width {
   max-width: 1300px;
@@ -497,6 +578,11 @@ img {
   place-items: center;
   place-content: center;
   padding: 80px 0;
+}
+@media only screen and (max-width: 992px) {
+  .hero-about-parent .about-width .grid-about {
+    grid-template-columns: 1fr;
+  }
 }
 .hero-about-parent .about-width .grid-about .img {
   box-shadow: 20px 26px 35px -15px;
@@ -523,6 +609,11 @@ img {
   place-items: center;
   place-content: center;
   padding: 80px 0;
+}
+@media only screen and (max-width: 992px) {
+  .hero-about-parent .about-width .grid-about-two {
+    grid-template-columns: 1fr;
+  }
 }
 .hero-about-parent .about-width .grid-about-two .img {
   box-shadow: -26px 26px 35px -15px;

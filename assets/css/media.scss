@@ -89,7 +89,7 @@
   }
   
   @mixin xl {
-    @media (min-width: "1100px") {
+    @media (min-width: "1024px") {
       @content;
     }
   }
