@@ -133,6 +133,7 @@ z-index: 8888;
         // .HERO RESTIRANT=========================
 
         .hero-parent {
+            position: relative;
             .img {
                 img {
                     width: 100%;
@@ -148,7 +149,7 @@ z-index: 8888;
                 place-content: center;
                 position: absolute;
                 /* right: 0; */
-                left: 33px;
+                left: 31px;
                 /* bottom: 10px; */
                 top: 460px;
             

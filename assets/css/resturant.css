@@ -101,6 +101,9 @@ body {
   color: white;
   border-radius: 8px;
 }
+.resturant-parent .width-resturant .hero-parent {
+  position: relative;
+}
 .resturant-parent .width-resturant .hero-parent .img img {
   width: 100%;
 }
@@ -113,7 +116,7 @@ body {
   place-content: center;
   position: absolute;
   /* right: 0; */
-  left: 33px;
+  left: 31px;
   /* bottom: 10px; */
   top: 460px;
 }
