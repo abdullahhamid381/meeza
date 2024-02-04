@@ -55,6 +55,7 @@ body {
   border-top: none;
   display: none;
   background: white;
+  z-index: 8888;
 }
 .resturant-parent .width-resturant .select .custom-select .options .option {
   padding: 10px;
@@ -110,6 +111,11 @@ body {
   gap: 40px;
   margin: auto;
   place-content: center;
+  position: absolute;
+  /* right: 0; */
+  left: 33px;
+  /* bottom: 10px; */
+  top: 460px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst {
   padding: 20px 0;

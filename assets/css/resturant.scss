@@ -66,7 +66,7 @@ body {
                     border-top: none;
                     display: none;
                     background: white;
-
+z-index: 8888;
                     .option {
                         padding: 10px;
                         cursor: pointer;
@@ -146,6 +146,12 @@ body {
                 gap: 40px;
                 margin: auto;
                 place-content: center;
+                position: absolute;
+                /* right: 0; */
+                left: 33px;
+                /* bottom: 10px; */
+                top: 460px;
+            
 
 
                 .cardsfirst {
