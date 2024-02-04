@@ -151,7 +151,7 @@ body {
                 .cardsfirst {
                     padding: 20px 0;
                     background: white;
-
+                    border-radius: 12px;   
                     .nav {
                         display: flex;
                         gap: 20px;
@@ -316,6 +316,8 @@ body {
                 .cardstwo {
                     background: white;
                     padding: 40px;
+                    height: 880px;
+border-radius: 12px;                
 
                     .title {
                         h1 {
@@ -373,6 +375,7 @@ body {
                                 display: none;
                                 background: white;
                                 z-index: 8888888888;
+
                                 .option {
                                     padding: 10px;
                                     cursor: pointer;
@@ -394,21 +397,23 @@ body {
 
                     .date-time {
                         padding-top: 20px;
-                        .grid-date{
+
+                        .grid-date {
                             display: grid;
                             gap: 20px;
                             grid-template-columns: 1fr 1fr;
+
                             .date {
                                 h1 {
                                     font-size: 16px;
                                     font-family: 'ABeeZee', sans-serif;
                                 }
-    
+
                                 .custom-select {
                                     position: relative;
                                     width: 100%;
                                     margin-top: 10px;
-    
+
                                     .select-box {
                                         display: flex;
                                         align-items: center;
@@ -417,24 +422,24 @@ body {
                                         background: white;
                                         cursor: pointer;
                                         border: 0.4px solid #D9D9D9;
-    
+
                                         .icon {
                                             img {
                                                 width: 100%;
                                             }
                                         }
-    
+
                                         span {
                                             font-family: 'ABeeZee', sans-serif;
                                             font-size: 16px;
                                         }
-    
+
                                         i {
                                             font-size: 14px;
-    
+
                                         }
                                     }
-    
+
                                     .options {
                                         position: absolute;
                                         top: 100%;
@@ -444,18 +449,18 @@ body {
                                         border-top: none;
                                         display: none;
                                         background: white;
-    
+
                                         .option {
                                             padding: 10px;
                                             cursor: pointer;
                                             display: flex;
                                             align-items: center;
-    
+
                                             span {
                                                 font-family: 'ABeeZee', sans-serif;
                                                 font-size: 16px;
                                             }
-    
+
                                             &:hover {
                                                 background-color: #f0f0f0;
                                             }
@@ -464,26 +469,47 @@ body {
                                 }
                             }
                         }
-                    
+
                     }
 
                     .reserve {
-padding: 30px 0;
+                        padding: 30px 0;
+
                         button {
                             width: 100%;
-border: none;
-background:#064789;
-color: white;
-padding: 10px;
-font-family: 'ABeeZee', sans-serif;
-font-size: 18px;
+                            border: none;
+                            background: #064789;
+                            color: white;
+                            padding: 10px;
+                            font-family: 'ABeeZee', sans-serif;
+                            font-size: 18px;
                         }
-                        .icon{
+
+                        .icon {
                             display: flex;
                             align-items: center;
-                            img{
+                            padding: 20px 0;
+gap: 10px;
+                            img {
                                 width: 100%;
                             }
+                            span{
+                                font-size: 18px;
+                                font-family: 'ABeeZee', sans-serif;
+                            }
+                        }
+                    }
+                    .map-div{
+                        .title-map{
+                            h1{
+                                font-size: 20px;
+                                font-family: 'ABeeZee', sans-serif;  
+                                font-style: italic;
+                                text-align: center;
+                            }
+                        }
+                        .map{
+                            padding-top: 20px;
                         }
                     }
                 }

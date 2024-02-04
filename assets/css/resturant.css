@@ -114,6 +114,7 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst {
   padding: 20px 0;
   background: white;
+  border-radius: 12px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .nav {
   display: flex;
@@ -244,6 +245,8 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo {
   background: white;
   padding: 40px;
+  height: 880px;
+  border-radius: 12px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .title h1 {
   color: #000000;
@@ -377,7 +380,22 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve .icon {
   display: flex;
   align-items: center;
+  padding: 20px 0;
+  gap: 10px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve .icon img {
   width: 100%;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve .icon span {
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .map-div .title-map h1 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .map-div .map {
+  padding-top: 20px;
 }/*# sourceMappingURL=resturant.css.map */
