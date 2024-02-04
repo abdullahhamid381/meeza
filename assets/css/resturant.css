@@ -16,6 +16,12 @@ body {
   width: 100%;
   margin: auto;
 }
+@media only screen and (max-width: 992px) {
+  .resturant-parent .width-resturant {
+    width: 80%;
+    margin: auto;
+  }
+}
 .resturant-parent .width-resturant .select {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -23,6 +29,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* place-content: center; */
   place-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-parent .width-resturant .select {
+    grid-template-columns: 1fr;
+  }
 }
 .resturant-parent .width-resturant .select .custom-select {
   position: relative;
@@ -104,6 +115,11 @@ body {
 .resturant-parent .width-resturant .hero-parent {
   position: relative;
 }
+@media only screen and (max-width: 992px) {
+  .resturant-parent .width-resturant .hero-parent {
+    position: unset;
+  }
+}
 .resturant-parent .width-resturant .hero-parent .img img {
   width: 100%;
 }
@@ -119,6 +135,14 @@ body {
   left: 31px;
   /* bottom: 10px; */
   top: 460px;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-parent .width-resturant .hero-parent .grid {
+    grid-template-columns: 1fr;
+    position: unset;
+    width: 80%;
+    margin: auto;
+  }
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst {
   padding: 20px 0;
