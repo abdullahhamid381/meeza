@@ -245,17 +245,29 @@ body {
   background: white;
   padding: 40px;
 }
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .title h1 {
+  color: #000000;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select {
   position: relative;
-  width: 208px;
+  width: 100%;
+  margin-top: 10px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 20px;
   background: white;
   cursor: pointer;
+  border: 0.4px solid #D9D9D9;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box .icon img {
   width: 100%;
@@ -276,6 +288,7 @@ body {
   border-top: none;
   display: none;
   background: white;
+  z-index: 8888888888;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options .option {
   padding: 10px;
@@ -290,29 +303,43 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options .option:hover {
   background-color: #f0f0f0;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select {
-  position: relative;
-  width: 208px;
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time {
+  padding-top: 20px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 20px;
   background: white;
   cursor: pointer;
+  border: 0.4px solid #D9D9D9;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box .icon img {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .select-box .icon img {
   width: 100%;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box span {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box i {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .select-box i {
   font-size: 14px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -322,19 +349,35 @@ body {
   display: none;
   background: white;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option span {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option:hover {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .grid-date .date .custom-select .options .option:hover {
   background-color: #f0f0f0;
 }
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve {
+  padding: 30px 0;
+}
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve button {
+  width: 100%;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve .icon {
+  display: flex;
+  align-items: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve .icon img {
   width: 100%;
 }/*# sourceMappingURL=resturant.css.map */
