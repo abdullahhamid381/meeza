@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.resturant-parent{
+    background: #FAFBFF;
+    height: 100vh;
+    .width-resturant{
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+       
+        .select{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            /* place-content: center; */
+            place-items: center;
+            .custom-select {
+                position: relative;
+                width: 200px;
+            
+                .select-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+            
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            
+                .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    border-top: none;
+                    display: none;
+            
+                    .option {
+                        padding: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+            
+                        i {
+                            margin-right: 10px;
+                        }
+            
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.resturant-parent {
+  background: #FAFBFF;
+  height: 100vh;
+}
+.resturant-parent .width-resturant {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+.resturant-parent .width-resturant .select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* place-content: center; */
+  place-items: center;
+}
+.resturant-parent .width-resturant .select .custom-select {
+  position: relative;
+  width: 200px;
+}
+.resturant-parent .width-resturant .select .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.resturant-parent .width-resturant .select .custom-select .select-box i {
+  font-size: 14px;
+}
+.resturant-parent .width-resturant .select .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+.resturant-parent .width-resturant .select .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.resturant-parent .width-resturant .select .custom-select .options .option i {
+  margin-right: 10px;
+}
+.resturant-parent .width-resturant .select .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}/*# sourceMappingURL=resturant.css.map */
