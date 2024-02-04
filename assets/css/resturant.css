@@ -118,7 +118,7 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .nav {
   display: flex;
   gap: 20px;
-  padding: 0 60px 20px 60px;
+  padding: 0 40px 20px 40px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .nav span {
   font-family: "ABeeZee", sans-serif;
@@ -133,14 +133,14 @@ body {
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .title h3 {
   font-size: 20px;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .title h3 {
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review {
-  padding: 0 60px;
+  padding: 0 40px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review .img {
   display: flex;
@@ -164,11 +164,11 @@ body {
   font-size: 18px;
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
-  padding: 20px 60px;
+  padding: 20px 40px;
   line-height: 24px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book {
-  padding: 30px 60px;
+  padding: 30px 40px;
   background: #064789;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book .text {
@@ -224,6 +224,22 @@ body {
   font-size: 14px;
   font-family: "ABeeZee", sans-serif;
   line-height: 24px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .menu {
+  padding: 0 40px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .menu .title-menu h1 {
+  font-size: 24px;
+  font-style: italic;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .menu .img {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .menu .img img {
+  width: 100%;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo {
   background: white;

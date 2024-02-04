@@ -155,7 +155,7 @@ body {
                     .nav {
                         display: flex;
                         gap: 20px;
-                        padding: 0 60px 20px 60px;
+                        padding: 0 40px 20px 40px;
 
                         span {
                             font-family: 'ABeeZee', sans-serif;
@@ -173,7 +173,7 @@ body {
 
                         h3 {
                             font-size: 20px;
-                            padding: 0 60px;
+                            padding: 0 40px;
                         }
 
                         h3 {
@@ -183,7 +183,7 @@ body {
                     }
 
                     .review {
-                        padding: 0 60px;
+                        padding: 0 40px;
 
                         .img {
                             display: flex;
@@ -212,13 +212,13 @@ body {
                             font-size: 18px;
                             font-family: 'ABeeZee', sans-serif;
                             font-size: 16px;
-                            padding: 20px 60px;
+                            padding: 20px 40px;
 line-height: 24px;
                         }
                     }
 
                     .book {
-                        padding: 30px 60px;
+                        padding: 30px 40px;
                         background: #064789;
                         .text {
                             display: flex;
@@ -280,6 +280,24 @@ line-height: 24px;
                             }
                         }
                       }
+                    }
+                    .menu{
+                        padding: 0 40px;
+                        .title-menu{
+                            h1{
+                                font-size: 24px;
+                                font-style: italic;
+                                font-family: 'ABeeZee', sans-serif;
+                            }
+                        }
+                        .img{
+                            width: 80%;
+                            margin: auto;
+                            padding: 60px 0;
+                            img{
+                                width: 100%;
+                            }
+                        }
                     }
                 }
 
