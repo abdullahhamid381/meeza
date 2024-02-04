@@ -134,67 +134,135 @@
                 }
             }
 
-            .cards {
-                .nav {
-                    display: flex;
-                    gap: 20px;
-                }
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 90%;
+                gap: 60px;
+                margin: auto;
+                place-content: center;
 
-                .title {
-                    border-top: 2px solid #D9D9D9;
-
-                    h3 {
-                        font-size: 20px;
-                        font-family: 'ABeeZee', sans-serif;
-                    }
-                }
-
-                .review {
-                    border-top: 2px solid #D9D9D9;
-
-                    .img {
+                .cardsfirst {
+                    .nav {
                         display: flex;
-                        align-items: center;
+                        gap: 20px;
+                    }
 
-                        gap: 0 10px;
+                    .title {
+                        border-top: 2px solid #D9D9D9;
 
-                        .star {
-                            width: 5%;
+                        h3 {
+                            font-size: 20px;
+                            font-family: 'ABeeZee', sans-serif;
                         }
+                    }
 
-                        img {
-                            width: 100%;
+                    .review {
+                        border-top: 2px solid #D9D9D9;
+
+                        .img {
+                            display: flex;
+                            align-items: center;
+
+                            gap: 0 10px;
+
+                            .star {
+                                width: 5%;
+                            }
+
+                            img {
+                                width: 100%;
+                            }
+
+                            span {
+                                font-size: 18px;
+                            }
                         }
+                    }
 
-                        span {
+                    .para {
+                        p {
                             font-size: 18px;
+                            font-family: 'ABeeZee', sans-serif;
                         }
                     }
-                }
 
-                .para {
-                    p {
-                        font-size: 18px;
-                        font-family: 'ABeeZee', sans-serif;
-                    }
-                }
-
-                .book {
-                    .text {
-                        h1 {}
-
-                        button {}
-                    }
-                }
-
-                .popular-dishes {
-                    .card {
-                        .title {
+                    .book {
+                        .text {
                             h1 {}
+
+                            button {}
+                        }
+                    }
+
+                    .popular-dishes {
+                        .card {
+                            .title {
+                                h1 {}
+                            }
+
+                            .para {
+                                p {}
+                            }
+                        }
+                    }
+                }
+
+                .cardstwo {
+                    .custom-select {
+                        position: relative;
+                        width: 208px;
+
+                        .select-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 10px;
+                            background: white;
+                            cursor: pointer;
+
+                            .icon {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            span {
+                                font-family: 'ABeeZee', sans-serif;
+                                font-size: 16px;
+                            }
+
+                            i {
+                                font-size: 14px;
+
+                            }
                         }
 
-                        .para {
-                            p {}
+                        .options {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            border-top: 1px solid #ccc;
+                            border-top: none;
+                            display: none;
+                            background: white;
+
+                            .option {
+                                padding: 10px;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+
+                                span {
+                                    font-family: 'ABeeZee', sans-serif;
+                                    font-size: 16px;
+                                }
+
+                                &:hover {
+                                    background-color: #f0f0f0;
+                                }
+                            }
                         }
                     }
                 }
