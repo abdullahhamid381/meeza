@@ -4,10 +4,15 @@
 * {
     padding: 0;
     margin: 0;
+
+}
+
+body {
+    background: #FAFBFF;
 }
 
 .resturant-parent {
-    background: #FAFBFF;
+
     height: 100vh;
 
     .width-resturant {
@@ -137,19 +142,39 @@
             .grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                width: 90%;
-                gap: 60px;
+                width: 95%;
+                gap: 40px;
                 margin: auto;
                 place-content: center;
 
+
                 .cardsfirst {
+                    padding: 20px 0;
+                    background: white;
+
                     .nav {
                         display: flex;
                         gap: 20px;
+                        padding: 0 60px 20px 60px;
+
+                        span {
+                            font-family: 'ABeeZee', sans-serif;
+                            font-size: 18px;
+                            color: #838383;
+
+                        }
                     }
 
                     .title {
-                        border-top: 2px solid #D9D9D9;
+                        border-top: 1px solid #D9D9D9;
+                        border-bottom: 1px solid #D9D9D9;
+                        font-family: 'ABeeZee', sans-serif;
+                        padding: 20px 0;
+
+                        h3 {
+                            font-size: 20px;
+                            padding: 0 60px;
+                        }
 
                         h3 {
                             font-size: 20px;
@@ -158,16 +183,16 @@
                     }
 
                     .review {
-                        border-top: 2px solid #D9D9D9;
+                        padding: 0 60px;
 
                         .img {
                             display: flex;
                             align-items: center;
-
+                            padding: 10px 0;
                             gap: 0 10px;
 
                             .star {
-                                width: 5%;
+                                width: 100%;
                             }
 
                             img {
@@ -181,17 +206,40 @@
                     }
 
                     .para {
+                        border-top: 2px solid #D9D9D9;
+
                         p {
                             font-size: 18px;
                             font-family: 'ABeeZee', sans-serif;
+                            font-size: 16px;
+                            padding: 20px 60px;
+
                         }
                     }
 
                     .book {
+                        padding: 30px 60px;
+                        background: #064789;
                         .text {
-                            h1 {}
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            
+                            gap: 40px;
+                            h1 {
+                                font-size: 20px;
+                                font-family: 'ABeeZee', sans-serif;
+                                color: white;
+                            }
 
-                            button {}
+                            button {
+                                font-size: 16px;
+                                padding: 10px 15px;
+                                border: 1px solid #FFFFFF;
+                                color: #FFFFFF;
+                                background: none;
+                                font-family: 'ABeeZee', sans-serif;
+                            }
                         }
                     }
 
@@ -209,60 +257,137 @@
                 }
 
                 .cardstwo {
-                    .custom-select {
-                        position: relative;
-                        width: 208px;
+                    background: white;
+                    padding: 40px;
 
-                        .select-box {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            padding: 10px;
-                            background: white;
-                            cursor: pointer;
+                    .field-amount {
+                        h1 {}
 
-                            .icon {
-                                img {
-                                    width: 100%;
-                                }
-                            }
+                        .custom-select {
+                            position: relative;
+                            width: 208px;
 
-                            span {
-                                font-family: 'ABeeZee', sans-serif;
-                                font-size: 16px;
-                            }
-
-                            i {
-                                font-size: 14px;
-
-                            }
-                        }
-
-                        .options {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            width: 100%;
-                            border-top: 1px solid #ccc;
-                            border-top: none;
-                            display: none;
-                            background: white;
-
-                            .option {
-                                padding: 10px;
-                                cursor: pointer;
+                            .select-box {
                                 display: flex;
                                 align-items: center;
+                                justify-content: space-between;
+                                padding: 10px;
+                                background: white;
+                                cursor: pointer;
+
+                                .icon {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
 
                                 span {
                                     font-family: 'ABeeZee', sans-serif;
                                     font-size: 16px;
                                 }
 
-                                &:hover {
-                                    background-color: #f0f0f0;
+                                i {
+                                    font-size: 14px;
+
                                 }
                             }
+
+                            .options {
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                width: 100%;
+                                border-top: 1px solid #ccc;
+                                border-top: none;
+                                display: none;
+                                background: white;
+
+                                .option {
+                                    padding: 10px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+
+                                    span {
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-size: 16px;
+                                    }
+
+                                    &:hover {
+                                        background-color: #f0f0f0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .date-time {
+                        .date {
+                            h1 {}
+
+                            .custom-select {
+                                position: relative;
+                                width: 208px;
+
+                                .select-box {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 10px;
+                                    background: white;
+                                    cursor: pointer;
+
+                                    .icon {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-size: 16px;
+                                    }
+
+                                    i {
+                                        font-size: 14px;
+
+                                    }
+                                }
+
+                                .options {
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    width: 100%;
+                                    border-top: 1px solid #ccc;
+                                    border-top: none;
+                                    display: none;
+                                    background: white;
+
+                                    .option {
+                                        padding: 10px;
+                                        cursor: pointer;
+                                        display: flex;
+                                        align-items: center;
+
+                                        span {
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-size: 16px;
+                                        }
+
+                                        &:hover {
+                                            background-color: #f0f0f0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .reserve {
+                        button {
+                            width: 100%;
+                          
                         }
                     }
                 }

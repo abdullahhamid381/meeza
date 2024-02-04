@@ -136,10 +136,14 @@
             <!-- RESTURANT HERO -->
 
             <div class="hero-parent">
+                <!-- MAIN IMAGE================================ -->
+
                 <div class="img">
                     <img src="/assets/img/Rectangle 76.png" alt="">
                 </div>
                 <div class="grid">
+                    <!-- FIRST GRID========================================= -->
+
                     <div class="cardsfirst">
                         <div class="nav">
                             <span>Overview</span>
@@ -150,12 +154,16 @@
                         <div class="title">
                             <h3>Cravings Tapas - 8 Wilsey Square</h3>
                         </div>
-                        <di v class="review">
+                        <div class="review">
                             <div class="img">
-                                <img src="/assets/img/rating_992001 1.png" alt="" class="star">
+                                <div>
+                                    <img src="/assets/img/rating_992001 1.png" alt="" class="star">
+                                </div>
                                 <span>5.0</span>
                                 <div class="img">
-                                    <img src="/assets/img/icons8-review-100 1.png" alt="">
+                                    <div>
+                                        <img src="/assets/img/icons8-review-100 1.png" alt="">
+                                    </div>
                                     <span>5.0</span>
                                 </div>
                                 <div class="img">
@@ -163,13 +171,16 @@
                                     <span>5.0</span>
                                 </div>
                             </div>
-                        </di>
+                        </div>
 
                         <div class="para">
                             <p>
                                 Consectetuer iaculis magnis lacus orci curabitur purus leo sit rutrum elit lacus arcu
                                 dictum
-                                eleifend elit risus sociis ad curabitur suspendisse tempor hendrerit. Justo per gravida
+                                eleifend elit risus sociis ad curabitur suspendisse tempor hendrerit. 
+                                <br>
+                                <br>
+                                Justo per gravida
                                 montes. Nam fusce per suscipit posuere penatibus platea. Pretium tempor vehicula. Nunc
                                 pulvinar auctor maecenas blandit est integer orci nullam lorem. Auctor. Cum accumsan
                                 ridiculus enim neque lorem nam imperdiet
@@ -220,16 +231,47 @@
                             </div>
                         </div>
                     </div>
+                    <!-- SECOND GRID ================================= -->
+
                     <div class="cardstwo">
                         <div class="title">
                             <h1>
                                 Make a Reservation
                             </h1>
                         </div>
+                        <!-- AMOUT FIELD=========================== -->
+
                         <div class="field-amount">
                             <h1>
                                 Amount of People
-                                <div class="custom-select" id="customSelect6">
+
+                            </h1>
+                            <div class="custom-select" id="customSelect6">
+                                <div class="select-box">
+
+                                    <span class="placeholder">A People</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="options">
+                                    <div class="option" data-value="option1">
+                                        <span>United States</span>
+                                    </div>
+                                    <div class="option" data-value="option2">
+                                        <span>United Arab</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DATE AND TIME SECTION=================== -->
+
+
+                        <div class="data-time">
+                            <div class="date">
+                                <h1>
+                                    Date
+                                </h1>
+                                <div class="custom-select" id="customSelect7">
                                     <div class="select-box">
 
                                         <span class="placeholder">A People</span>
@@ -245,7 +287,50 @@
 
                                     </div>
                                 </div>
-                            </h1>
+                            </div>
+                            <div class="date">
+                                <h1>
+                                    Time
+                                </h1>
+                                <div class="custom-select" id="customSelect8">
+                                    <div class="select-box">
+
+                                        <span class="placeholder">A People</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="options">
+                                        <div class="option" data-value="option1">
+                                            <span>United States</span>
+                                        </div>
+                                        <div class="option" data-value="option2">
+                                            <span>United Arab</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOOKIN BUTTON================= -->
+
+
+                        <div class="reserve">
+                            <button>Reserve</button>
+                            <div class="icon">
+                                <img src="/assets/img/icons8-eat-100 1.png" alt="">
+                                <span>Booked 4 times today</span>
+                            </div>
+                        </div>
+
+                        <!-- MAP SECTION================ -->
+
+                        <div class="map-div">
+                            <div class="title">
+                                <h1>Location on Map</h1>
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707064996938!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,6 +347,8 @@
                 initializeCustomSelect('customSelect4');
                 initializeCustomSelect('customSelect5');
                 initializeCustomSelect('customSelect6');
+                initializeCustomSelect('customSelect7');
+                initializeCustomSelect('customSelect8');
             });
 
             function initializeCustomSelect(customSelectId) {

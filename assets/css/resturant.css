@@ -4,8 +4,11 @@
   margin: 0;
 }
 
-.resturant-parent {
+body {
   background: #FAFBFF;
+}
+
+.resturant-parent {
   height: 100vh;
 }
 .resturant-parent .width-resturant {
@@ -103,32 +106,50 @@
 .resturant-parent .width-resturant .hero-parent .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
-  gap: 60px;
+  width: 95%;
+  gap: 40px;
   margin: auto;
   place-content: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst {
+  padding: 20px 0;
+  background: white;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .nav {
   display: flex;
   gap: 20px;
+  padding: 0 60px 20px 60px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .nav span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  color: #838383;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .title {
-  border-top: 2px solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  font-family: "ABeeZee", sans-serif;
+  padding: 20px 0;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .title h3 {
+  font-size: 20px;
+  padding: 0 60px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .title h3 {
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review {
-  border-top: 2px solid #D9D9D9;
+  padding: 0 60px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review .img {
   display: flex;
   align-items: center;
+  padding: 10px 0;
   gap: 0 10px;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review .img .star {
-  width: 5%;
+  width: 100%;
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review .img img {
   width: 100%;
@@ -136,15 +157,47 @@
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .review .img span {
   font-size: 18px;
 }
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .para {
+  border-top: 2px solid #D9D9D9;
+}
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .para p {
   font-size: 18px;
   font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+  padding: 20px 60px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select {
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book {
+  padding: 30px 60px;
+  background: #064789;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book .text h1 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  color: white;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .book .text button {
+  font-size: 16px;
+  padding: 10px 15px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: none;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo {
+  background: white;
+  padding: 40px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select {
   position: relative;
   width: 208px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .select-box {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -152,17 +205,17 @@
   background: white;
   cursor: pointer;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .select-box .icon img {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box .icon img {
   width: 100%;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .select-box span {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .select-box i {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .select-box i {
   font-size: 14px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .options {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -172,16 +225,64 @@
   display: none;
   background: white;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .options .option {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .options .option span {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.resturant-parent .width-resturant .hero-parent .grid .cardstwo .custom-select .options .option:hover {
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .field-amount .custom-select .options .option:hover {
   background-color: #f0f0f0;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select {
+  position: relative;
+  width: 208px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box .icon img {
+  width: 100%;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .select-box i {
+  font-size: 14px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .date-time .date .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .reserve button {
+  width: 100%;
 }/*# sourceMappingURL=resturant.css.map */
