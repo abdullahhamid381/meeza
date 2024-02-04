@@ -318,6 +318,49 @@ z-index: 8888;
                             }
                         }
                     }
+                    .people-review{
+                        padding: 0 40px;
+                        .people-review-title{
+                            h1{
+                                font-size: 24px;
+                                font-family: 'ABeeZee', sans-serif;
+                                font-style: italic;
+                            }
+                        }
+                        .people-review-card{
+                            display: flex;
+                            gap: 20px;
+                            background: #EBF2FA;
+                            padding: 20px;
+                            border-radius: 8px;
+                            margin-top: 20px;
+                            align-items: center;
+                            .img{
+                                img{
+                                    width: 100%;
+                                }
+                                h3{
+                                    font-size: 14px;
+                                    font-family: 'ABeeZee', sans-serif;
+                                    text-align: center;
+                                    padding-top: 5px;
+                                }
+                            }
+                            .para-people-review{
+                                span{
+                                    text-align: center;
+                                    font-size: 14px;
+                                    font-family: 'ABeeZee', sans-serif;
+                                }
+                                p{
+                                    padding-top: 10px;
+                                    line-height: 24px;
+                                    font-size: 16px;
+                                    font-family: 'ABeeZee', sans-serif;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .cardstwo {

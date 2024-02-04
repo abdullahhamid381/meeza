@@ -251,6 +251,43 @@ body {
 .resturant-parent .width-resturant .hero-parent .grid .cardsfirst .menu .img img {
   width: 100%;
 }
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review {
+  padding: 0 40px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-title h1 {
+  font-size: 24px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-card {
+  display: flex;
+  gap: 20px;
+  background: #EBF2FA;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  align-items: center;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-card .img img {
+  width: 100%;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-card .img h3 {
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+  padding-top: 5px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-card .para-people-review span {
+  text-align: center;
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardsfirst .people-review .people-review-card .para-people-review p {
+  padding-top: 10px;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo {
   background: white;
   padding: 40px;
