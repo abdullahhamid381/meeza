@@ -75,7 +75,7 @@
   margin: auto;
 }
 .resturant-parent .width-resturant .search .text input {
-  width: 100%;
+  width: 97%;
   outline: none;
   padding: 20px 20px 20px 20px;
   background: white;
@@ -86,7 +86,7 @@
 .resturant-parent .width-resturant .search .button {
   position: absolute;
   top: 0;
-  right: -18px;
+  right: 0;
 }
 .resturant-parent .width-resturant .search .button button {
   padding: 20px 61px;
@@ -96,4 +96,39 @@
   background: #064789;
   color: white;
   border-radius: 8px;
+}
+.resturant-parent .width-resturant .hero-parent .img img {
+  width: 100%;
+}
+.resturant-parent .width-resturant .hero-parent .cards .nav {
+  display: flex;
+  gap: 20px;
+}
+.resturant-parent .width-resturant .hero-parent .cards .title {
+  border-top: 2px solid #D9D9D9;
+}
+.resturant-parent .width-resturant .hero-parent .cards .title h3 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+}
+.resturant-parent .width-resturant .hero-parent .cards .review {
+  border-top: 2px solid #D9D9D9;
+}
+.resturant-parent .width-resturant .hero-parent .cards .review .img {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.resturant-parent .width-resturant .hero-parent .cards .review .img .star {
+  width: 5%;
+}
+.resturant-parent .width-resturant .hero-parent .cards .review .img img {
+  width: 100%;
+}
+.resturant-parent .width-resturant .hero-parent .cards .review .img span {
+  font-size: 18px;
+}
+.resturant-parent .width-resturant .hero-parent .cards .para p {
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
 }/*# sourceMappingURL=resturant.css.map */
