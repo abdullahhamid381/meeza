@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Dashboard</title>
   <link rel="stylesheet" href="/assets/css/dashboard.css">
-  <style>
-  
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
   </style>
 </head>
+
 <body>
 
-<div class="dashboard-parent">
- <div class="grid">
-  <div id="sidebar">
-    <button onclick="changeContent('content1')">Content 1</button>
-    <button onclick="changeContent('content2')">Content 2</button>
-    <button onclick="changeContent('content3')">Content 3</button>
-  </div>
+  <div class="dashboard-parent">
+    <div id="sidebar">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="buttons">
+        <div class="floor">
+          <div class="floor-img">
+            <img src="" alt="">
+          </div>
+          <button onclick="changeContent('content4')">Floor</button>
+        </div>
+        <button onclick="changeContent('content2')">Content 2</button>
+        <button onclick="changeContent('content3')">Content 3</button>
+      </div>
+    </div>
 
-  <div id="main-section">
-    <button id="toggle-btn" onclick="toggleSidebar()" style="display: none;">Toggle Sidebar</button>
-    <h2>Main Section</h2>
-    <div id="content">
-      <!-- Content will be dynamically updated here -->
+    <div id="main-section">
+      <button id="toggle-btn" onclick="toggleSidebar()">Toggle Sidebar</button>
+      <div class="deafult">
+       <div class="intro-title">
+        <div class="flex">
+          <div class="title">
+            <h2>Good Morning, Deiaalskka</h2>
+            <p>Welcome Back, nice to see you again</p>
+          </div>
+          <div class="user">
+            <div class="img">
+              <img src="/assets/img/search.png" alt="">
+            </div>
+            <div class="img">
+              <img src="/assets/img/bell.png" alt="">
+            </div>
+            <div class="img">
+              <img src="/assets/img/Ellipse 15.png" alt="">
+            </div>
+          </div>
+        </div>
+       </div>
+
+      </div>
+      <div id="content" class="main-content">
+        <!-- Content will be dynamically updated here -->
+        <h3>Your Main Content</h3>
+        <p>Welcome Back, nice to see you again</p>
+      </div>
     </div>
   </div>
- </div>
-</div>
 
   <script>
     function changeContent(contentType) {
       var contentDiv = document.getElementById('content');
       switch (contentType) {
         case 'content1':
-          contentDiv.innerHTML = '<p>This is Content 1</p>';
+          contentDiv.innerHTML = '<h3>Floor</h3><p>This is Floor content. It can be a long paragraph to test the design.</p>';
           break;
         case 'content2':
-          contentDiv.innerHTML = '<p>This is Content 2</p>';
+          contentDiv.innerHTML = '<h3>Content 2</h3><p>This is Content 2. It can be a long paragraph to test the design.</p>';
           break;
         case 'content3':
-          contentDiv.innerHTML = '<p>This is Content 3</p>';
+          contentDiv.innerHTML = '<h3>Content 3</h3><p>This is Content 3. It can be a long paragraph to test the design.</p>';
+          break;
+        case 'content4':
+          contentDiv.innerHTML = '<h3>Your Main Content</h3><p>This is Content 3. It can be a long paragraph to test the design.</p>';
           break;
         default:
-          contentDiv.innerHTML = '<p>No content available</p>';
+          contentDiv.innerHTML = '<h3>No content available</h3><p>Choose a button from the sidebar to load content.</p>';
       }
     }
 
@@ -55,4 +95,5 @@
   </script>
 
 </body>
+
 </html>

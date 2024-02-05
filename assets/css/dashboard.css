@@ -1,23 +1,37 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.dashboard-parent .grid {
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.dashboard-parent {
   display: flex;
-  /* Responsive styles */
+  height: 100vh;
 }
-.dashboard-parent .grid #sidebar {
+.dashboard-parent #sidebar {
   width: 200px;
   background-color: #f4f4f4;
   padding: 20px;
   transition: width 0.3s;
 }
-.dashboard-parent .grid #main-section {
-  flex-grow: 1;
-  padding: 20px;
+.dashboard-parent #sidebar .logo {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.dashboard-parent .grid button {
+.dashboard-parent #sidebar .logo h1 {
+  margin: 0;
+  color: #333;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #sidebar .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-parent #sidebar .buttons .floor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.dashboard-parent #sidebar .buttons .floor .floor-img img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+.dashboard-parent button {
   display: block;
   margin-bottom: 10px;
   padding: 10px;
@@ -26,28 +40,68 @@
   border: none;
   cursor: pointer;
 }
-.dashboard-parent .grid button:hover {
+.dashboard-parent button:hover {
   background-color: #2980b9;
 }
+.dashboard-parent #main-section {
+  flex-grow: 1;
+  padding: 20px;
+}
+.dashboard-parent #main-section .deafult .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard-parent #main-section .deafult .flex .title h2 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+.dashboard-parent #main-section .deafult .flex .title p {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #main-section .deafult .flex .user {
+  display: flex;
+  gap: 20px;
+}
+.dashboard-parent #main-section .deafult .flex .user .img img {
+  width: 100%;
+}
+.dashboard-parent #toggle-btn {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.dashboard-parent .main-content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard-parent .main-content h3 {
+  color: #333;
+}
+.dashboard-parent .main-content p {
+  color: #555;
+}
 @media (max-width: 992px) {
-  .dashboard-parent .grid body {
+  .dashboard-parent .dashboard-parent {
     flex-direction: column;
   }
-  .dashboard-parent .grid #sidebar {
+  .dashboard-parent #sidebar {
     width: 0;
     overflow: hidden;
   }
-  .dashboard-parent .grid #sidebar.toggle {
+  .dashboard-parent #sidebar.toggle {
     width: 200px;
   }
-  .dashboard-parent .grid #toggle-btn {
+  .dashboard-parent #toggle-btn {
     display: block;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: none;
   }
 }/*# sourceMappingURL=dashboard.css.map */
