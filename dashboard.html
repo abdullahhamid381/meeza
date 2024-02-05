@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <link rel="stylesheet" href="/assets/css/dashboard.css">
+  <style>
+  
+
+  </style>
+</head>
+<body>
+
+<div class="dashboard-parent">
+ <div class="grid">
+  <div id="sidebar">
+    <button onclick="changeContent('content1')">Content 1</button>
+    <button onclick="changeContent('content2')">Content 2</button>
+    <button onclick="changeContent('content3')">Content 3</button>
+  </div>
+
+  <div id="main-section">
+    <button id="toggle-btn" onclick="toggleSidebar()" style="display: none;">Toggle Sidebar</button>
+    <h2>Main Section</h2>
+    <div id="content">
+      <!-- Content will be dynamically updated here -->
+    </div>
+  </div>
+ </div>
+</div>
+
+  <script>
+    function changeContent(contentType) {
+      var contentDiv = document.getElementById('content');
+      switch (contentType) {
+        case 'content1':
+          contentDiv.innerHTML = '<p>This is Content 1</p>';
+          break;
+        case 'content2':
+          contentDiv.innerHTML = '<p>This is Content 2</p>';
+          break;
+        case 'content3':
+          contentDiv.innerHTML = '<p>This is Content 3</p>';
+          break;
+        default:
+          contentDiv.innerHTML = '<p>No content available</p>';
+      }
+    }
+
+    function toggleSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('toggle');
+    }
+  </script>
+
+</body>
+</html>
