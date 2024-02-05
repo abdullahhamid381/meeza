@@ -85,6 +85,184 @@
           }
         }
       }
+      .reserve{
+        display: flex;
+        gap: 0 10px;
+        .reserve-button{
+          a{
+            text-decoration: none;
+            button{
+              background: none;
+              border: none;
+              background: #064789;
+              color: white;
+              padding: 10px 60px;
+              font-size: 20px;
+              font-family: 'ABeeZee', sans-serif;
+              font-style: italic;
+            }
+          }
+       
+        }
+      }
+      .calender{
+        display: flex;
+        gap: 0 10px;
+        padding: 10px 0;
+        .date-calender{
+          input{
+            border: none;
+            outline: none;
+            background: #f4f4f4;
+            color: white;
+       
+            color: black;
+            padding:10px 40px;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+          }
+        }
+        .opening{
+          button{
+            background: none;
+            border: none;
+            background: #064789;
+            color: white;
+            padding: 10px 80px;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-style: italic;
+          }
+        }
+      }
+      .table-parent{
+
+
+
+        // HELP========================  
+
+        .help-table{
+          width: 100%;
+          padding: 10px 0;
+          background: #03284E;
+          .help{
+            .main-td{
+              padding: 10px 23px;
+              width: 8%;
+              span{
+                background: #3498db;
+                padding: 5px 9px;
+                border-radius: 80px;
+                height: 10px;
+                width: 10px;
+              }
+            }
+    td{
+      border: none;
+      padding: 10px ;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
+          }
+        }
+// LIMIT TABLE========================
+
+        .limit-table{
+          width: 100%;
+       
+         
+          .help{
+            .main-td{
+              padding: 10px 20px;
+              width: 8%;
+              span{
+                background: #3498db;
+                padding: 5px 9px;
+                border-radius: 80px;
+                height: 10px;
+                width: 10px;
+              }
+            }
+    td{
+      border: none;
+      padding: 20px ;
+      text-align: center;
+      background: #427AA1;
+      color: white;
+      font-size: 12px;
+      
+
+    }
+          }
+        }
+
+
+        // COVER TBALE===================
+        .cover-table{
+          width: 100%;
+       
+         
+          .help{
+            .main-td{
+              padding: 10px 20px;
+              width: 8%;
+              span{
+                background: #3498db;
+                padding: 5px 9px;
+                border-radius: 80px;
+                height: 10px;
+                width: 10px;
+              }
+            }
+    td{
+      border: none;
+      padding: 20px ;
+      text-align: center;
+      background: #2CA062;
+      color: white;
+      font-size: 12px;
+     
+
+    }
+          }
+        }
+
+            // Occupancy TBALE===================
+
+
+            
+            .occupancy-table{
+              width: 100%;
+           
+             
+              .help{
+                .main-td{
+                  padding: 10px 20px;
+                  width: 8%;
+                  span{
+                    background: #3498db;
+                    padding: 5px 9px;
+                    border-radius: 80px;
+                    height: 10px;
+                    width: 10px;
+                  }
+                }
+        td{
+          border: none;
+          padding: 20px ;
+          text-align: center;
+          background: #2CA062;
+          color: white;
+          font-size: 12px;
+         
+    
+        }
+              }
+            }
+      }
+
+
     }
   }
 

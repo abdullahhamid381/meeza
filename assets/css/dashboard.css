@@ -56,6 +56,137 @@
 .dashboard-parent #main-section .deafult .intro-title .flex .user .img img {
   width: 100%;
 }
+.dashboard-parent #main-section .deafult .reserve {
+  display: flex;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button a {
+  text-decoration: none;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button a button {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 60px;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
+.dashboard-parent #main-section .deafult .calender {
+  display: flex;
+  gap: 0 10px;
+  padding: 10px 0;
+}
+.dashboard-parent #main-section .deafult .calender .date-calender input {
+  border: none;
+  outline: none;
+  background: #f4f4f4;
+  color: white;
+  color: black;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #main-section .deafult .calender .opening button {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 80px;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
+.dashboard-parent #main-section .deafult .table-parent .help-table {
+  width: 100%;
+  padding: 10px 0;
+  background: #03284E;
+}
+.dashboard-parent #main-section .deafult .table-parent .help-table .help .main-td {
+  padding: 10px 23px;
+  width: 8%;
+}
+.dashboard-parent #main-section .deafult .table-parent .help-table .help .main-td span {
+  background: #3498db;
+  padding: 5px 9px;
+  border-radius: 80px;
+  height: 10px;
+  width: 10px;
+}
+.dashboard-parent #main-section .deafult .table-parent .help-table .help td {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+.dashboard-parent #main-section .deafult .table-parent .limit-table {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .table-parent .limit-table .help .main-td {
+  padding: 10px 20px;
+  width: 8%;
+}
+.dashboard-parent #main-section .deafult .table-parent .limit-table .help .main-td span {
+  background: #3498db;
+  padding: 5px 9px;
+  border-radius: 80px;
+  height: 10px;
+  width: 10px;
+}
+.dashboard-parent #main-section .deafult .table-parent .limit-table .help td {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  background: #427AA1;
+  color: white;
+  font-size: 12px;
+}
+.dashboard-parent #main-section .deafult .table-parent .cover-table {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .table-parent .cover-table .help .main-td {
+  padding: 10px 20px;
+  width: 8%;
+}
+.dashboard-parent #main-section .deafult .table-parent .cover-table .help .main-td span {
+  background: #3498db;
+  padding: 5px 9px;
+  border-radius: 80px;
+  height: 10px;
+  width: 10px;
+}
+.dashboard-parent #main-section .deafult .table-parent .cover-table .help td {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  background: #2CA062;
+  color: white;
+  font-size: 12px;
+}
+.dashboard-parent #main-section .deafult .table-parent .occupancy-table {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .table-parent .occupancy-table .help .main-td {
+  padding: 10px 20px;
+  width: 8%;
+}
+.dashboard-parent #main-section .deafult .table-parent .occupancy-table .help .main-td span {
+  background: #3498db;
+  padding: 5px 9px;
+  border-radius: 80px;
+  height: 10px;
+  width: 10px;
+}
+.dashboard-parent #main-section .deafult .table-parent .occupancy-table .help td {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  background: #2CA062;
+  color: white;
+  font-size: 12px;
+}
 .dashboard-parent #toggle-btn {
   display: none;
   background-color: #3498db;
