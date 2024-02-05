@@ -31,41 +31,29 @@
   max-width: 20px;
   margin-right: 10px;
 }
-.dashboard-parent button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-.dashboard-parent button:hover {
-  background-color: #2980b9;
-}
 .dashboard-parent #main-section {
   flex-grow: 1;
   padding: 20px;
 }
-.dashboard-parent #main-section .deafult .flex {
+.dashboard-parent #main-section .deafult .intro-title .flex {
   display: flex;
   justify-content: space-between;
 }
-.dashboard-parent #main-section .deafult .flex .title h2 {
+.dashboard-parent #main-section .deafult .intro-title .flex .title h2 {
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
   margin: 0;
 }
-.dashboard-parent #main-section .deafult .flex .title p {
+.dashboard-parent #main-section .deafult .intro-title .flex .title p {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
 }
-.dashboard-parent #main-section .deafult .flex .user {
+.dashboard-parent #main-section .deafult .intro-title .flex .user {
   display: flex;
   gap: 20px;
 }
-.dashboard-parent #main-section .deafult .flex .user .img img {
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img img {
   width: 100%;
 }
 .dashboard-parent #toggle-btn {
