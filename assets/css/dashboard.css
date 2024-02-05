@@ -59,6 +59,10 @@
 .dashboard-parent #main-section .deafult .reserve {
   display: flex;
   gap: 0 10px;
+  padding-top: 5px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button {
+  width: 100%;
 }
 .dashboard-parent #main-section .deafult .reserve .reserve-button a {
   text-decoration: none;
@@ -72,6 +76,7 @@
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
+  width: 100%;
 }
 .dashboard-parent #main-section .deafult .calender {
   display: flex;
@@ -183,7 +188,7 @@
   border: none;
   padding: 20px;
   text-align: center;
-  background: #2CA062;
+  background: #03284E;
   color: white;
   font-size: 12px;
 }

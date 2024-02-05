@@ -88,7 +88,9 @@
       .reserve{
         display: flex;
         gap: 0 10px;
+        padding-top: 5px;
         .reserve-button{
+          width: 100%;
           a{
             text-decoration: none;
             button{
@@ -98,8 +100,10 @@
               color: white;
               padding: 10px 60px;
               font-size: 20px;
-              font-family: 'ABeeZee', sans-serif;
+              font-family: "ABeeZee", sans-serif;
               font-style: italic;
+              width: 100%;
+          
             }
           }
        
@@ -231,7 +235,7 @@
             // Occupancy TBALE===================
 
 
-            
+
             .occupancy-table{
               width: 100%;
            
@@ -252,7 +256,7 @@
           border: none;
           padding: 20px ;
           text-align: center;
-          background: #2CA062;
+          background: #03284E;
           color: white;
           font-size: 12px;
          
