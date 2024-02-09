@@ -249,10 +249,14 @@
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row td {
   border-bottom: 2px solid #E7E8F2;
   padding: 20px 0;
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second td {
   border-bottom: 2px solid #E7E8F2;
   padding: 10px 0;
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first {
   display: flex;
@@ -268,9 +272,55 @@
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch {
   display: flex;
   gap: 0 10px;
+  padding-top: 5px;
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch img {
   width: 100%;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select {
+  position: relative;
+  width: 208px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background: white;
+  cursor: pointer;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box .icon img {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 14px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box i {
+  font-size: 14px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  display: none;
+  background: white;
+  z-index: 8888;
+  border-radius: 12px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 14px;
+  color: white;
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table tr td {
   border-bottom: 2px solid #E7E8F2;

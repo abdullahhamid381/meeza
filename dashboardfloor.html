@@ -288,7 +288,7 @@
           <div class="table-status">
             <table>
 
-<!-- FIRST ROW=============-->
+              <!-- FIRST ROW=============-->
 
               <thead>
                 <tr class="main-row">
@@ -302,7 +302,7 @@
 
 
 
-<!-- SECOND ROW==================== -->
+              <!-- SECOND ROW==================== -->
 
               <tr class="main-row-second">
                 <td class="first">
@@ -320,8 +320,46 @@
                     <div>
                       <img src="/assets/img/icons8-refresh-100 1.png" alt="">
                     </div>
-                    <div>
-                      <img src="/assets/img/icons8-spoon-and-fork-96 1.png" alt="">
+
+
+                    <!-- STAUS CHANGE================= -->
+
+                    <div class="custom-select" id="customSelect1">
+                      <div class="select-box">
+                        <div class="icon">
+                          <img src="/assets/img/icons8-spoon-and-fork-96 1.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder"></span>
+                        <i class="fas fa-chevron-down"></i>
+                      </div>
+                      <div class="options">
+                        <div class="option" data-value="option1"
+                          style="background: #2CA062;border-radius: 8px 8px 0 0;">
+                          <span>Confirmed</span>
+                        </div>
+                        <div class="option" data-value="option2" style="background: #064789;">
+                          <span>Seated</span>
+                        </div>
+
+                        <div class="option" data-value="option2" style="background: #950000;">
+                          <span>Cancelled</span>
+                        </div>
+
+                        <div class="option" data-value="option2" style="background: #B9AC3D;">
+                          <span>Running Late</span>
+                        </div>
+
+                        <div class="option" data-value="option2" style="background: #03284E;">
+                          <span>Walk In</span>
+                        </div>
+                        <div class="option" data-value="option2" style="background: #427AA1;">
+                          <span>Waitlist</span>
+                        </div>
+                        <div class="option" data-value="option2" style="background: #2CA062;">
+                          <span>Finished</span>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </td>
@@ -369,7 +407,7 @@
                 <td></td>
                 <td></td>
               </tr>
-           
+
 
               <tr>
                 <td></td>
@@ -377,7 +415,7 @@
                 <td></td>
                 <td></td>
               </tr>
-           
+
             </table>
           </div>
         </div>
@@ -387,6 +425,52 @@
   </div>
 
   <script>
+
+
+    // MULTIPLE OPTION OF STATUS
+
+    document.addEventListener('DOMContentLoaded', function () {
+      initializeCustomSelect('customSelect1');
+      initializeCustomSelect('customSelect2');
+      initializeCustomSelect('customSelect3');
+      initializeCustomSelect('customSelect4');
+      initializeCustomSelect('customSelect5');
+      initializeCustomSelect('customSelect6');
+      initializeCustomSelect('customSelect7');
+      initializeCustomSelect('customSelect8');
+    });
+
+    function initializeCustomSelect(customSelectId) {
+      const customSelect = document.getElementById(customSelectId);
+      const selectBox = customSelect.querySelector('.select-box');
+      const optionsContainer = customSelect.querySelector('.options');
+
+      selectBox.addEventListener('click', function () {
+        optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+      });
+
+      optionsContainer.addEventListener('click', function (e) {
+        const selectedOption = e.target.closest('.option');
+        if (selectedOption) {
+          const selectedValue = selectedOption.getAttribute('data-value');
+          selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+          optionsContainer.style.display = 'none';
+
+          // Add your logic here to handle the selected value
+          console.log('Selected Value for', customSelectId, ':', selectedValue);
+        }
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!customSelect.contains(e.target)) {
+          optionsContainer.style.display = 'none';
+        }
+      });
+    }
+
+
+
+
 
 
 
