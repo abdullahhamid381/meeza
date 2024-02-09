@@ -6,12 +6,13 @@
 .dashboard-parent #sidebar {
   width: 200px;
   background-color: #064789;
-  padding: 20px;
   transition: width 0.3s;
 }
 .dashboard-parent #sidebar .logo {
-  text-align: center;
-  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7999BE;
+  padding-top: 20px;
 }
 .dashboard-parent #sidebar .logo h1 {
   margin: 0;
@@ -24,15 +25,29 @@
 .dashboard-parent #sidebar .buttons {
   display: flex;
   flex-direction: column;
+  gap: 20px 0;
+  padding-top: 30px;
+  width: 100%;
 }
 .dashboard-parent #sidebar .buttons .floor {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.8s;
+  padding: 10px 0 10px 30px;
+  gap: 0 10px;
 }
 .dashboard-parent #sidebar .buttons .floor .floor-img img {
-  max-width: 20px;
-  margin-right: 10px;
+  width: 100%;
+}
+.dashboard-parent #sidebar .buttons .floor a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #sidebar .buttons .floor:hover {
+  background: #427AA1;
 }
 .dashboard-parent #main-section {
   flex-grow: 1;

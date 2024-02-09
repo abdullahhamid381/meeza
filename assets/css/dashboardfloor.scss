@@ -8,13 +8,14 @@
   #sidebar {
     width: 200px;
     background-color: #064789;
-    padding: 20px;
+   
     transition: width 0.3s;
 
     .logo {
-      text-align: center;
-      margin-bottom: 20px;
-
+  padding-left: 30px;
+padding-bottom: 20px;
+border-bottom: 1px solid #7999BE;
+padding-top: 20px;
       h1 {
         margin: 0;
         color: #ffffff;
@@ -28,19 +29,33 @@
     .buttons {
       display: flex;
       flex-direction: column;
+      gap: 20px 0;
+      padding-top: 30px;
+      width: 100%;
 
       .floor {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+       border-radius: 8px;
+       transition: .8s;
+padding: 10px 0 10px 30px;
+        gap: 0 10px;
 
         .floor-img {
           img {
-            max-width: 20px;
-            margin-right: 10px;
+            width: 100%;
           }
         }
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          font-family: 'ABeeZee', sans-serif;
+
+        }
       }
+      .floor:hover{ background: #427AA1;}
 
     }
 
@@ -88,15 +103,19 @@
           }
         }
       }
-      .reserve{
+
+      .reserve {
         display: flex;
         gap: 0 10px;
         padding-top: 5px;
-        .reserve-button{
+
+        .reserve-button {
           width: 100%;
-          a{
+
+          a {
             text-decoration: none;
-            button{
+
+            button {
               background: none;
               border: none;
               background: #064789;
@@ -106,31 +125,34 @@
               font-family: "ABeeZee", sans-serif;
               font-style: italic;
               width: 100%;
-          
+
             }
           }
-       
+
         }
       }
-      .calender{
+
+      .calender {
         display: flex;
         gap: 0 10px;
         padding: 10px 0;
-        .date-calender{
-          input{
+
+        .date-calender {
+          input {
             border: none;
             outline: none;
             background: #f4f4f4;
             color: white;
-       
+
             color: black;
-            padding:10px 40px;
+            padding: 10px 40px;
             font-size: 20px;
             font-family: 'ABeeZee', sans-serif;
           }
         }
-        .opening{
-          button{
+
+        .opening {
+          button {
             background: none;
             border: none;
             background: #064789;
@@ -142,21 +164,24 @@
           }
         }
       }
-      .table-parent{
+
+      .table-parent {
 
 
 
         // HELP========================  
 
-        .help-table{
+        .help-table {
           width: 100%;
           padding: 10px 0;
           background: #03284E;
-          .help{
-            .main-td{
+
+          .help {
+            .main-td {
               padding: 10px 23px;
               width: 8%;
-              span{
+
+              span {
                 background: #3498db;
                 padding: 5px 9px;
                 border-radius: 80px;
@@ -164,26 +189,29 @@
                 width: 10px;
               }
             }
-    td{
-      border: none;
-      padding: 10px ;
-      text-align: center;
-      color: white;
-      font-size: 12px;
-    }
+
+            td {
+              border: none;
+              padding: 10px;
+              text-align: center;
+              color: white;
+              font-size: 12px;
+            }
           }
         }
-// LIMIT TABLE========================
 
-        .limit-table{
+        // LIMIT TABLE========================
+
+        .limit-table {
           width: 100%;
-       
-         
-          .help{
-            .main-td{
+
+
+          .help {
+            .main-td {
               padding: 10px 20px;
               width: 8%;
-              span{
+
+              span {
                 background: #3498db;
                 padding: 5px 9px;
                 border-radius: 80px;
@@ -191,30 +219,32 @@
                 width: 10px;
               }
             }
-    td{
-      border: none;
-      padding: 20px ;
-      text-align: center;
-      background: #427AA1;
-      color: white;
-      font-size: 12px;
-      
 
-    }
+            td {
+              border: none;
+              padding: 20px;
+              text-align: center;
+              background: #427AA1;
+              color: white;
+              font-size: 12px;
+
+
+            }
           }
         }
 
 
         // COVER TBALE===================
-        .cover-table{
+        .cover-table {
           width: 100%;
-       
-         
-          .help{
-            .main-td{
+
+
+          .help {
+            .main-td {
               padding: 10px 20px;
               width: 8%;
-              span{
+
+              span {
                 background: #3498db;
                 padding: 5px 9px;
                 border-radius: 80px;
@@ -222,51 +252,54 @@
                 width: 10px;
               }
             }
-    td{
-      border: none;
-      padding: 20px ;
-      text-align: center;
-      background: #2CA062;
-      color: white;
-      font-size: 12px;
-     
 
-    }
+            td {
+              border: none;
+              padding: 20px;
+              text-align: center;
+              background: #2CA062;
+              color: white;
+              font-size: 12px;
+
+
+            }
           }
         }
 
-            // Occupancy TBALE===================
+        // Occupancy TBALE===================
 
 
 
-            .occupancy-table{
-              width: 100%;
-           
-             
-              .help{
-                .main-td{
-                  padding: 10px 20px;
-                  width: 8%;
-                  span{
-                    background: #3498db;
-                    padding: 5px 9px;
-                    border-radius: 80px;
-                    height: 10px;
-                    width: 10px;
-                  }
-                }
-        td{
-          border: none;
-          padding: 20px ;
-          text-align: center;
-          background: #03284E;
-          color: white;
-          font-size: 12px;
-         
-    
-        }
+        .occupancy-table {
+          width: 100%;
+
+
+          .help {
+            .main-td {
+              padding: 10px 20px;
+              width: 8%;
+
+              span {
+                background: #3498db;
+                padding: 5px 9px;
+                border-radius: 80px;
+                height: 10px;
+                width: 10px;
               }
             }
+
+            td {
+              border: none;
+              padding: 20px;
+              text-align: center;
+              background: #03284E;
+              color: white;
+              font-size: 12px;
+
+
+            }
+          }
+        }
       }
 
 
