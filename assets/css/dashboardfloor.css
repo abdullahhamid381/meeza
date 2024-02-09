@@ -53,6 +53,7 @@
 .dashboard-parent #main-section {
   width: 95%;
   margin: 0 auto;
+  padding-top: 25px;
 }
 .dashboard-parent #main-section .deafult .intro-title .flex {
   display: flex;
@@ -270,6 +271,10 @@
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch img {
   width: 100%;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table tr td {
+  border-bottom: 2px solid #E7E8F2;
+  padding: 25px 0;
 }
 .dashboard-parent #toggle-btn {
   display: none;

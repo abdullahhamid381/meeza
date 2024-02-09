@@ -76,6 +76,8 @@
 
     width: 95%;
     margin: 0 auto;
+    padding-top: 25px;
+
 
     .deafult {
       .intro-title {
@@ -369,6 +371,12 @@
             width: 100%;
           }
         }
+      }
+    }
+    tr{
+      td{
+        border-bottom: 2px solid #E7E8F2 ;
+        padding: 25px 0;
       }
     }
     }
