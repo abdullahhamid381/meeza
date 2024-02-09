@@ -7,7 +7,6 @@
 .dashboard-parent #sidebar {
   width: 100%;
   background-color: #064789;
-  height: 100vh;
   transition: width 0.3s;
 }
 .dashboard-parent #sidebar .logo {
@@ -232,10 +231,14 @@
   color: white;
   font-size: 12px;
 }
+.dashboard-parent #main-section .deafult .status-size-parent {
+  padding: 40px 0;
+}
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table {
   width: 100%;
   border: 2px solid #E7E8F2;
   padding: 40px;
+  border-radius: 12px;
 }
 .dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row {
   display: table-row;
@@ -246,24 +249,26 @@
   border-bottom: 2px solid #E7E8F2;
   padding: 20px 0;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second td {
+  border-bottom: 2px solid #E7E8F2;
+  padding: 10px 0;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
-  border-bottom: 2px solid #E7E8F2;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .first {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .time {
   display: flex;
   gap: 0 10px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .first img {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .time img {
   width: 100%;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .second {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch {
   display: flex;
   gap: 0 10px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .second img {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch img {
   width: 100%;
 }
 .dashboard-parent #toggle-btn {

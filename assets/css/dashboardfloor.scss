@@ -9,7 +9,7 @@
   #sidebar {
     width: 100%;
     background-color: #064789;
-    height: 100vh;
+
     transition: width 0.3s;
 
     .logo {
@@ -327,11 +327,13 @@
         }
       }
 .status-size-parent{
+  padding: 40px 0;
   .table-status{
     table{
       width: 100%;
       border: 2px solid #E7E8F2;
       padding: 40px;
+      border-radius: 12px;
     .main-row{
       
         display: table-row;
@@ -343,27 +345,30 @@
         padding: 20px 0;
       }
     }
-    .second-row-main{
-      .second-row-data{
+
+    .main-row-second{
+      td{
+        border-bottom: 2px solid #E7E8F2 ;
+        padding: 10px 0;
+      }
+      .first{
         display: flex;
         flex-direction: column;
-        padding: 10px 0;
-        border-bottom: 2px solid #E7E8F2 ;
-     
-        .first{
+      
+        .time{
           display: flex;
-          gap:0 10px;
-          img{
-            width: 100%;
-          }
-        }
-        .second{display: flex;
           gap: 0 10px;
           img{
             width: 100%;
           }
         }
-       
+        .lunch{
+          display: flex;
+          gap: 0 10px;
+          img{
+            width: 100%;
+          }
+        }
       }
     }
     }
