@@ -2,13 +2,13 @@
 @import './media.scss';
 
 .dashboard-parent {
-  display: flex;
-  height: 100vh;
-
+ display: grid;
+ grid-template-columns: 1fr auto;
+height: auto;
   #sidebar {
-    width: 200px;
+    width: 100%;
     background-color: #064789;
-   
+   height: 100vh;
     transition: width 0.3s;
 
     .logo {
@@ -30,10 +30,10 @@ padding-top: 20px;
       display: flex;
       flex-direction: column;
       gap: 20px 0;
-      padding-top: 30px;
+      padding-top: 20px;
       width: 100%;
 
-      .floor {
+      .side-bar-button {
         display: flex;
         align-items: center;
        border-radius: 8px;
@@ -41,7 +41,7 @@ padding-top: 20px;
 padding: 10px 0 10px 30px;
         gap: 0 10px;
 
-        .floor-img {
+        .img {
           img {
             width: 100%;
           }
@@ -55,7 +55,7 @@ padding: 10px 0 10px 30px;
 
         }
       }
-      .floor:hover{ background: #427AA1;}
+      .side-bar-button:hover{ background: #427AA1;}
 
     }
 
