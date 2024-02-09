@@ -213,65 +213,37 @@
             </tr>
           </table>
         </div>
- <!-- RESERVE BUTTONS=================== -->
+        <!-- RESERVE BUTTONS=================== -->
 
 
- <div class="reserve">
-  <div class="reserve-button">
-    <a href=""><button>All</button></a>
+        <div class="reserve">
+          <div class="reserve-button">
+            <a href=""><button>All</button></a>
 
-  </div>
-  <div class="reserve-button">
-    <a href=""><button>Booked</button></a>
+          </div>
+          <div class="reserve-button">
+            <a href=""><button>Booked</button></a>
 
-  </div>
-  <div class="reserve-button">
-    <a href=""><button>Waitlist</button></a>
+          </div>
+          <div class="reserve-button">
+            <a href=""><button>Waitlist</button></a>
 
-  </div>
-  <div class="reserve-button">
-    <a href=""><button>Seated</button></a>
+          </div>
+          <div class="reserve-button">
+            <a href=""><button>Seated</button></a>
 
-  </div>
-  <div class="reserve-button">
-    <a href=""><button>Finished</button></a>
+          </div>
+          <div class="reserve-button">
+            <a href=""><button>Finished</button></a>
 
-  </div>
-</div>
-      </div>
-      <div id="content" class="main-content">
-        <!-- Content will be dynamically updated here -->
-        <h3>Your Main Content</h3>
-        <p>Welcome Back, nice to see you again</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
-    function changeContent(contentType) {
-      var contentDiv = document.getElementById('content');
-      switch (contentType) {
-        case 'content1':
-          contentDiv.innerHTML = '<h3>Floor</h3><p>This is Floor content. It can be a long paragraph to test the design.</p>';
-          break;
-        case 'content2':
-          contentDiv.innerHTML = '<h3>Content 2</h3><p>This is Content 2. It can be a long paragraph to test the design.</p>';
-          break;
-        case 'content3':
-          contentDiv.innerHTML = '<h3>Content 3</h3><p>This is Content 3. It can be a long paragraph to test the design.</p>';
-          break;
-        case 'content4':
-          contentDiv.innerHTML = '<h3>Your Main Content</h3><p>This is Content 3. It can be a long paragraph to test the design.</p>';
-          break;
-        default:
-          contentDiv.innerHTML = '<h3>No content available</h3><p>Choose a button from the sidebar to load content.</p>';
-      }
-    }
 
-    function toggleSidebar() {
-      var sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('toggle');
-    }
   </script>
 
 </body>
