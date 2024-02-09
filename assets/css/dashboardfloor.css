@@ -135,11 +135,11 @@ a {
 @media screen and (max-width: 1023px) {
   .dashboard-parent .nav__menu {
     position: fixed;
-    top: -100%;
+    top: -150%;
     left: 0;
     background-color: var(--body-color);
     box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
-    width: 20%;
+    width: 60%;
     padding-block: 4.5rem 4rem;
     transition: top 0.4s;
     z-index: 111111;
@@ -380,7 +380,7 @@ a {
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .reserve .reserve-button {
-    width: 30%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -417,7 +417,7 @@ a {
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .calender .date-calender {
     margin: auto;
-    width: 30%;
+    width: 100%;
   }
 }
 .dashboard-parent #main-section .deafult .calender .date-calender input {
@@ -440,7 +440,8 @@ a {
     font-family: "ABeeZee", sans-serif;
     font-style: italic;
     outline: none;
-    width: 53%;
+    width: 68%;
+    text-align: center;
   }
 }
 .dashboard-parent #main-section .deafult .calender .date-calender input::-moz-placeholder {
@@ -466,7 +467,7 @@ a {
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .calender .opening {
-    width: 30%;
+    width: 100%;
   }
 }
 .dashboard-parent #main-section .deafult .calender .opening button {
@@ -611,53 +612,62 @@ a {
 .dashboard-parent #main-section .deafult .status-size-parent {
   padding: 40px 0;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table {
-  width: 100%;
-  border: 2px solid #E7E8F2;
+.dashboard-parent #main-section .deafult .status-size-parent .table-status {
+  border: 1px solid #E7E8F2;
   padding: 40px;
   border-radius: 12px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: green;
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  border-bottom: 1px solid whitesmoke;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row td {
-  border-bottom: 2px solid #E7E8F2;
-  padding: 20px 0;
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row h3 {
   font-size: 14px;
   font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second td {
-  border-bottom: 2px solid #E7E8F2;
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+    border-top: 1px solid #064789;
+  }
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first {
+  border-bottom: 1px solid whitesmoke;
   padding: 10px 0;
-  font-size: 14px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .time {
+  display: flex;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch {
+  display: flex;
+  gap: 0 10px;
+  padding: 5px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first h3 {
+  font-size: 16px;
+  font-weight: 400;
   font-family: "ABeeZee", sans-serif;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first {
-  display: flex;
-  flex-direction: column;
-}
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .time {
-  display: flex;
-  gap: 0 10px;
-}
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .time img {
-  width: 100%;
-}
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch {
-  display: flex;
-  gap: 0 10px;
-  padding-top: 5px;
-}
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch img {
-  width: 100%;
-}
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select {
   position: relative;
   width: 208px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .select-box {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
@@ -665,18 +675,18 @@ a {
   cursor: pointer;
   gap: 0 10px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box .icon img {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .select-box .icon img {
   width: 100%;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box span {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-family: "ABeeZee", sans-serif;
   font-size: 14px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .select-box i {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .select-box i {
   font-size: 14px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -687,20 +697,34 @@ a {
   z-index: 8888;
   border-radius: 12px;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options .option {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row-second .first .lunch .custom-select .options .option span {
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .main-row-second .first .lunch .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 14px;
   color: white;
 }
-.dashboard-parent #main-section .deafult .status-size-parent .table-status table tr td {
-  border-bottom: 2px solid #E7E8F2;
-  padding: 25px 0;
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .addational-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  border-bottom: 1px solid whitesmoke;
+  padding: 15px 0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .status-size-parent .table-status .addational-row {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status .addational-row h3 {
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
 }
 .dashboard-parent #toggle-btn {
   display: none;
