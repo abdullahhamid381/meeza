@@ -232,6 +232,40 @@
   color: white;
   font-size: 12px;
 }
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table {
+  width: 100%;
+  border: 2px solid #E7E8F2;
+  padding: 40px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: green;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .main-row td {
+  border-bottom: 2px solid #E7E8F2;
+  padding: 20px 0;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 2px solid #E7E8F2;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .first {
+  display: flex;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .first img {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .second {
+  display: flex;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .status-size-parent .table-status table .second-row-main .second-row-data .second img {
+  width: 100%;
+}
 .dashboard-parent #toggle-btn {
   display: none;
   background-color: #3498db;

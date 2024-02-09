@@ -326,7 +326,49 @@
           }
         }
       }
-
+.status-size-parent{
+  .table-status{
+    table{
+      width: 100%;
+      border: 2px solid #E7E8F2;
+      padding: 40px;
+    .main-row{
+      
+        display: table-row;
+        vertical-align: inherit;
+        border-color: green;
+    
+      td{
+        border-bottom: 2px solid #E7E8F2 ;
+        padding: 20px 0;
+      }
+    }
+    .second-row-main{
+      .second-row-data{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        border-bottom: 2px solid #E7E8F2 ;
+     
+        .first{
+          display: flex;
+          gap:0 10px;
+          img{
+            width: 100%;
+          }
+        }
+        .second{display: flex;
+          gap: 0 10px;
+          img{
+            width: 100%;
+          }
+        }
+       
+      }
+    }
+    }
+  }
+}
 
     }
   }
