@@ -2,20 +2,22 @@
 @import './media.scss';
 
 .dashboard-parent {
- display: grid;
- grid-template-columns: 1fr auto;
-height: auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  height: auto;
+
   #sidebar {
     width: 100%;
     background-color: #064789;
-   height: 100vh;
+    height: 100vh;
     transition: width 0.3s;
 
     .logo {
-  padding-left: 30px;
-padding-bottom: 20px;
-border-bottom: 1px solid #7999BE;
-padding-top: 20px;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #7999BE;
+      padding-top: 20px;
+
       h1 {
         margin: 0;
         color: #ffffff;
@@ -36,9 +38,9 @@ padding-top: 20px;
       .side-bar-button {
         display: flex;
         align-items: center;
-       border-radius: 8px;
-       transition: .8s;
-padding: 10px 0 10px 30px;
+        border-radius: 8px;
+        transition: .8s;
+        padding: 10px 0 10px 30px;
         gap: 0 10px;
 
         .img {
@@ -55,7 +57,10 @@ padding: 10px 0 10px 30px;
 
         }
       }
-      .side-bar-button:hover{ background: #427AA1;}
+
+      .side-bar-button:hover {
+        background: #427AA1;
+      }
 
     }
 
@@ -63,12 +68,14 @@ padding: 10px 0 10px 30px;
 
 
 
-
+  // MAIN SECTION SATRT FROM HERE===================
 
 
   #main-section {
-    flex-grow: 1;
-    padding: 20px;
+
+
+    width: 95%;
+    margin: 0 auto;
 
     .deafult {
       .intro-title {
@@ -138,16 +145,34 @@ padding: 10px 0 10px 30px;
         padding: 10px 0;
 
         .date-calender {
+          display: flex;
+          gap: 0;
+
           input {
             border: none;
-            outline: none;
-            background: #f4f4f4;
+            background: #064789;
             color: white;
-
-            color: black;
-            padding: 10px 40px;
+            padding: 10px 80px;
             font-size: 20px;
-            font-family: 'ABeeZee', sans-serif;
+            font-family: "ABeeZee", sans-serif;
+            font-style: italic;
+            outline: none;
+          }
+
+          input::placeholder {
+            color: #FFFFFF;
+          }
+
+          .img {
+            background: #03284E;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 100%;
+            }
           }
         }
 
