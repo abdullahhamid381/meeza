@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Dashboard</title>
   <link rel="stylesheet" href="/assets/css/dashboardfloor.css">
+ <!--=============== REMIXICONS ===============-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
+ <!--=============== CSS ===============-->
+ <link rel="stylesheet" href="/css/index.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,59 +30,71 @@
     <!-- SIDEBAR SECTION==============================  -->
 
 
-    <div id="sidebar">
-      <div class="logo">
-        <h1>Logo</h1>
-      </div>
-
-      <!-- SIDE BAR BUTONS.============== -->
-
-      <div class="buttons">
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
-          </div>
-          <a href="">Floor</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-event-accepted-100 1.png" alt="">
-          </div>
-          <a href="">Bookings</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-restaurant-100 1.png" alt="">
-          </div>
-          <a href="">Times</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-payment-100 (1) 1.png" alt="">
-          </div>
-          <a href="">Tables</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
-          </div>
-          <a href="">Employees</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
-          </div>
-          <a href="">Shifts</a>
-        </div>
-        <div class="side-bar-button">
-          <div class="img">
-            <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
-          </div>
-          <a href="">Revenue</a>
+    <header class="hero-parent" id="header" style="background: #064789;">
+      <nav class="nav container">
+        <div class="logo-div" >
+          <a href="#" class="nav__logo">Logo</a>
         </div>
 
-      </div>
-    </div>
+          <div class="nav__menu" id="nav-menu" style="padding-left: 30px;">
+              <ul class="nav__list">
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Floor</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-event-accepted-100 1.png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Bookings</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-restaurant-100 1.png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Times</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-payment-100 (1) 1.png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Tables</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Employees</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Shifts</a>
+                  </li>
+                  <li class="nav__item" id="list">
+                <div>
+                  <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                </div>
+                      <a href="#" class="nav__link">Revenue</a>
+                  </li>
+
+                
+
+
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+              </div>
+          </div>
+
+     
+      </nav>
+  </header>
 
 
     <!-- MAIN SECTION  -->
@@ -91,6 +109,15 @@
               <p>Welcome Back, nice to see you again</p>
             </div>
             <div class="user">
+              <div class="nav__actions">
+        
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+           
               <div class="img">
                 <img src="/assets/img/search.png" alt="">
               </div>
@@ -149,110 +176,263 @@
 
           <!-- HELP TABLE=================== -->
 
-          <table class="help-table">
-            <tr class="help">
-              <td class="main-td">Help </td>
-              <td>3:15
-                PM</td>
-              <td>3:30
-                PM</td>
-              <td>3:45 PM</td>
-              <td>4:00 PM</td>
-              <td>4:15 PM</td>
-              <td>4:30 PM</td>
-              <td>4:45 PM</td>
-              <td>5:00 PM</td>
-              <td>5:15 PM</td>
-              <td>5:30 PM</td>
-              <td>5:45 PM</td>
-              <td>6:00 PM</td>
-              <td>6:15 PM</td>
-              <td>6:30 PM</td>
-              <td>6:45 PM</td>
-              <td>7:00 PM</td>
-              <td>7:15 PM</td>
+  
+        <div class="help-table">
+          <div class="help">
+<div class="item" item>
+  <h3>Help</h3>
+</div>
+<div class="item" item>
+  <h3>3:15 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>3:30 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>3:45 <br>
+    PM</h3>
+</div>
 
-            </tr>
-          </table>
+<div class="item" item>
+  <h3>4:15 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>4:30 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>4:45 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>5:00 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>5:15 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>5:30 <br>
+    PM </h3>
+</div>
+<div class="item" item>
+  <h3>5:45 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>6:00 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>6:15 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>6:30 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>6:45 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>7:00 <br>
+    PM</h3>
+</div>
+<div class="item" item>
+  <h3>7:15 <br>
+    PM</h3>
+</div>
+      
 
-          <!-- LIMIT TABLE============= -->
+          </div>
+        </div>
 
-          <table class="limit-table">
-            <tr class="help">
-              <td class="main-td">Limit</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
-              <td>85</td>
+        <!-- LIMIT TABLE============= -->
 
-            </tr>
-          </table>
+        <div class="limit-table">
+          <div class="help">
+<div class="item" item>
+  <h3>Limit</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+<div class="item" item>
+  <h3>85</h3>
+</div>
+      
+
+          </div>
+        </div>
+    
 
           <!-- COVERS TABLE============= -->
 
-          <table class="cover-table">
-            <tr class="help">
-              <td class="main-td">Covers</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-
-            </tr>
-          </table>
+          <div class="cover-table">
+            <div class="help">
+  <div class="item" item>
+    <h3>Covers</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  
+  
+            </div>
+          </div>
 
 
           <!-- OCCUPANCY TABLE============= -->
 
-          <table class="occupancy-table">
-            <tr class="help">
-              <td class="main-td">Occupancy</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-
-            </tr>
-          </table>
+          <div class="occu-table">
+            <div class="help">
+  <div class="item" item>
+    <h3>Occupancy</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  <div class="item" item>
+    <h3>-</h3>
+  </div>
+  
+  
+            </div>
+          </div>
         </div>
         <!-- RESERVE BUTTONS=================== -->
 
@@ -427,9 +607,76 @@
   <script>
 
 
-    // MULTIPLE OPTION OF STATUS
 
-    document.addEventListener('DOMContentLoaded', function () {
+
+
+
+
+
+
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+navToggle.addEventListener('click', () =>{
+   navMenu.classList.add('show-menu')
+})
+
+/* Menu hidden */
+navClose.addEventListener('click', () =>{
+   navMenu.classList.remove('show-menu')
+})
+
+/*=============== SEARCH ===============*/
+const search = document.getElementById('search'),
+      searchBtn = document.getElementById('search-btn'),
+      searchClose = document.getElementById('search-close')
+
+/* Search show */
+searchBtn.addEventListener('click', () =>{
+   search.classList.add('show-search')
+})
+
+/* Search hidden */
+searchClose.addEventListener('click', () =>{
+   search.classList.remove('show-search')
+})
+
+/*=============== LOGIN ===============*/
+const login = document.getElementById('login'),
+      loginBtn = document.getElementById('login-btn'),
+      loginClose = document.getElementById('login-close')
+
+/* Login show */
+loginBtn.addEventListener('click', () =>{
+   login.classList.add('show-login')
+})
+
+/* Login hidden */
+loginClose.addEventListener('click', () =>{
+   login.classList.remove('show-login')
+})
+
+$(".accordion-item__line").click(function () {
+   var container = $(this).parents(".accordion-list__item");
+   var answer = container.find(".accordion-item");
+   answer.toggleClass("accordion-item--opened");
+ });
+
+
+
+ 
+
+   
+
+
+  </script>
+<script>
+   // MULTIPLE OPTION OF STATUS
+
+   document.addEventListener('DOMContentLoaded', function () {
       initializeCustomSelect('customSelect1');
       initializeCustomSelect('customSelect2');
       initializeCustomSelect('customSelect3');
@@ -472,10 +719,7 @@
 
 
 
-
-
-  </script>
-
+</script>
 </body>
 
 </html>
