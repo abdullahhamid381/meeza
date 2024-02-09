@@ -146,7 +146,7 @@
 
         .date-calender {
           display: flex;
-          gap: 0;
+          gap:0 10px;
 
           input {
             border: none;
@@ -204,7 +204,7 @@
           .help {
             .main-td {
               padding: 10px 23px;
-              width: 8%;
+              width: 10%;
 
               span {
                 background: #3498db;
@@ -234,7 +234,7 @@
           .help {
             .main-td {
               padding: 10px 20px;
-              width: 8%;
+              width: 10%;
 
               span {
                 background: #3498db;
@@ -267,7 +267,7 @@
           .help {
             .main-td {
               padding: 10px 20px;
-              width: 8%;
+              width: 10%;
 
               span {
                 background: #3498db;
@@ -302,7 +302,7 @@
           .help {
             .main-td {
               padding: 10px 20px;
-              width: 8%;
+              width: 10%;
 
               span {
                 background: #3498db;
