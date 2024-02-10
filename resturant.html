@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    
+
     <title>Multiple Select with Icons</title>
     <link rel="stylesheet" href="/assets/css/resturant.css">
-    
-   
-   
+
+
+
 </head>
 
 <body>
@@ -19,50 +19,50 @@
         <header class="hero-parent" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Logo</a>
-        
+
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="/" class="nav__link">Home</a>
                         </li>
-        
+
                         <li class="nav__item">
                             <a href="/about.html" class="nav__link">About Us</a>
                         </li>
-        
+
                         <li class="nav__item">
                             <a href="/resturant.html" class="nav__link">Resturant</a>
                         </li>
-        
+
                         <li class="nav__item">
                             <a href="/contact.html" class="nav__link">Contact</a>
                         </li>
-        
-        
+
+
                     </ul>
-        
+
                     <!-- Close button -->
                     <div class="nav__close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
-        
+
                 <div class="nav__actions">
                     <!-- Search button -->
                     <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
-        
+
                     <!-- Login button -->
                     <!-- <i class="ri-user-line nav__login" ></i> -->
-        
+
                     <a href="/signin.html"> <button style="border: 1px solid #064789 ;background: none;cursor: pointer;"
                             id="login-btn">Login</button></a>
                     <a href="/signup.html"><button style="background: #064789;color: white; cursor: pointer;">Sign
                             up</button></a>
-        
-        
-        
-        
-        
+
+
+
+
+
                     <!-- Toggle button -->
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-line"></i>
@@ -324,7 +324,7 @@
                             </div>
                             <div class="people-review-card">
                                 <div class="img">
-                                       <img src="/assets/img/Ellipse 11.png" alt="">
+                                    <img src="/assets/img/Ellipse 11.png" alt="">
                                     <h3>Will Smith</h3>
                                 </div>
                                 <div class="para-people-review">
@@ -504,7 +504,7 @@
                             <div class="map">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707064996938!5m2!1sen!2s"
-                                   height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -513,106 +513,111 @@
             </div>
         </div>
 
-<!-- FOR NAVBAR -->
-<script>
-    /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-  navToggle = document.getElementById('nav-toggle'),
-  navClose = document.getElementById('nav-close')
 
-/* Menu show */
-navToggle.addEventListener('click', () =>{
-navMenu.classList.add('show-menu')
-})
+        
+    </div>
 
-/* Menu hidden */
-navClose.addEventListener('click', () =>{
-navMenu.classList.remove('show-menu')
-})
+    
+    <!-- FOR NAVBAR -->
+    <script>
+        /*=============== SHOW MENU ===============*/
+        const navMenu = document.getElementById('nav-menu'),
+            navToggle = document.getElementById('nav-toggle'),
+            navClose = document.getElementById('nav-close')
 
-/*=============== SEARCH ===============*/
-const search = document.getElementById('search'),
-  searchBtn = document.getElementById('search-btn'),
-  searchClose = document.getElementById('search-close')
+        /* Menu show */
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu')
+        })
 
-/* Search show */
-searchBtn.addEventListener('click', () =>{
-search.classList.add('show-search')
-})
+        /* Menu hidden */
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu')
+        })
 
-/* Search hidden */
-searchClose.addEventListener('click', () =>{
-search.classList.remove('show-search')
-})
+        /*=============== SEARCH ===============*/
+        const search = document.getElementById('search'),
+            searchBtn = document.getElementById('search-btn'),
+            searchClose = document.getElementById('search-close')
 
-/*=============== LOGIN ===============*/
-const login = document.getElementById('login'),
-  loginBtn = document.getElementById('login-btn'),
-  loginClose = document.getElementById('login-close')
+        /* Search show */
+        searchBtn.addEventListener('click', () => {
+            search.classList.add('show-search')
+        })
 
-/* Login show */
-loginBtn.addEventListener('click', () =>{
-login.classList.add('show-login')
-})
+        /* Search hidden */
+        searchClose.addEventListener('click', () => {
+            search.classList.remove('show-search')
+        })
 
-/* Login hidden */
-loginClose.addEventListener('click', () =>{
-login.classList.remove('show-login')
-})
+        /*=============== LOGIN ===============*/
+        const login = document.getElementById('login'),
+            loginBtn = document.getElementById('login-btn'),
+            loginClose = document.getElementById('login-close')
 
-$(".accordion-item__line").click(function () {
-var container = $(this).parents(".accordion-list__item");
-var answer = container.find(".accordion-item");
-answer.toggleClass("accordion-item--opened");
-});
-</script>
+        /* Login show */
+        loginBtn.addEventListener('click', () => {
+            login.classList.add('show-login')
+        })
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                initializeCustomSelect('customSelect1');
-                initializeCustomSelect('customSelect2');
-                initializeCustomSelect('customSelect3');
-                initializeCustomSelect('customSelect4');
-                initializeCustomSelect('customSelect5');
-                initializeCustomSelect('customSelect6');
-                initializeCustomSelect('customSelect7');
-                initializeCustomSelect('customSelect8');
+        /* Login hidden */
+        loginClose.addEventListener('click', () => {
+            login.classList.remove('show-login')
+        })
+
+        $(".accordion-item__line").click(function () {
+            var container = $(this).parents(".accordion-list__item");
+            var answer = container.find(".accordion-item");
+            answer.toggleClass("accordion-item--opened");
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeCustomSelect('customSelect1');
+            initializeCustomSelect('customSelect2');
+            initializeCustomSelect('customSelect3');
+            initializeCustomSelect('customSelect4');
+            initializeCustomSelect('customSelect5');
+            initializeCustomSelect('customSelect6');
+            initializeCustomSelect('customSelect7');
+            initializeCustomSelect('customSelect8');
+        });
+
+        function initializeCustomSelect(customSelectId) {
+            const customSelect = document.getElementById(customSelectId);
+            const selectBox = customSelect.querySelector('.select-box');
+            const optionsContainer = customSelect.querySelector('.options');
+
+            selectBox.addEventListener('click', function () {
+                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
             });
 
-            function initializeCustomSelect(customSelectId) {
-                const customSelect = document.getElementById(customSelectId);
-                const selectBox = customSelect.querySelector('.select-box');
-                const optionsContainer = customSelect.querySelector('.options');
+            optionsContainer.addEventListener('click', function (e) {
+                const selectedOption = e.target.closest('.option');
+                if (selectedOption) {
+                    const selectedValue = selectedOption.getAttribute('data-value');
+                    selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+                    optionsContainer.style.display = 'none';
 
-                selectBox.addEventListener('click', function () {
-                    optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-                });
+                    // Add your logic here to handle the selected value
+                    console.log('Selected Value for', customSelectId, ':', selectedValue);
+                }
+            });
 
-                optionsContainer.addEventListener('click', function (e) {
-                    const selectedOption = e.target.closest('.option');
-                    if (selectedOption) {
-                        const selectedValue = selectedOption.getAttribute('data-value');
-                        selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
-                        optionsContainer.style.display = 'none';
-
-                        // Add your logic here to handle the selected value
-                        console.log('Selected Value for', customSelectId, ':', selectedValue);
-                    }
-                });
-
-                document.addEventListener('click', function (e) {
-                    if (!customSelect.contains(e.target)) {
-                        optionsContainer.style.display = 'none';
-                    }
-                });
-            }
+            document.addEventListener('click', function (e) {
+                if (!customSelect.contains(e.target)) {
+                    optionsContainer.style.display = 'none';
+                }
+            });
+        }
 
 
 
 
 
 
-        </script>
+    </script>
 </body>
 
 </html>

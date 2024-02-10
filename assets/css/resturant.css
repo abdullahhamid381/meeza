@@ -815,4 +815,7 @@ a {
 }
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .map-div .map {
   padding-top: 20px;
+}
+.resturant-parent .width-resturant .hero-parent .grid .cardstwo .map-div .map iframe {
+  width: 100%;
 }/*# sourceMappingURL=resturant.css.map */

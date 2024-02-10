@@ -928,10 +928,16 @@ gap: 10px;
                         }
                         .map{
                             padding-top: 20px;
+                            iframe{
+                                width: 100%;
+                            }
                         }
                     }
                 }
             }
         }
     }
+
+    
 }
+
