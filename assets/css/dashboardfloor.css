@@ -527,6 +527,11 @@ a {
   background-color: #f0f0f0;
 }
 @media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .reserve .reserve-button {
     width: 100%;
     margin: auto;
