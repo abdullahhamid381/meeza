@@ -447,6 +447,121 @@ a {
         .reserve-button {
           width: 100%;
 
+          #openModalBtn {
+            background: none;
+            border: none;
+            background: #064789;
+            color: white;
+            padding: 10px 0px;
+            font-size: 20px;
+            font-family: "ABeeZee", sans-serif;
+            font-style: italic;
+            width: 100%;
+          }
+
+          /* Styles for the modal */
+          .walkin {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+
+            // Modal Content/Box
+
+            &-content {
+              background-color: #D9D9D9;
+              margin: 5% auto;
+              /* 5% from the top and centered */
+              padding: 20px;
+              border: 1px solid #888;
+              width: 20%;
+              /* Could be more or less, depending on screen size */
+
+              .title {
+                border-bottom: 1px solid #000000;
+                padding-bottom: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: 400;
+                  font-style: italic;
+                  font-family: 'ABeeZee', sans-serif;
+                  color: black;
+                }
+
+                // Close Button
+                .close {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+
+                  &:hover,
+                  &:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+              .fields{
+                .title-fields{padding: 10px 0;
+                  h1{
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: #03284E;
+                    font-family: 'ABeeZee', sans-serif;
+                  }
+                }
+              .options-fields{
+.item{
+  background: #2CA062;
+.checkbox{
+  display: flex;
+  gap:0 15px;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  align-items: center;
+  .check-field{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    input{  }
+  }
+  span{
+    color: white;
+    font-size: 18px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+  }
+  
+}
+}
+              }
+              }
+            }
+          }
+
+
+
           @include lg {
             width: 100%;
             margin: auto;
@@ -460,7 +575,7 @@ a {
               border: none;
               background: #064789;
               color: white;
-              padding: 10px 60px;
+              padding: 10px 00px;
               font-size: 20px;
               font-family: "ABeeZee", sans-serif;
               font-style: italic;
@@ -475,7 +590,7 @@ a {
 
       .calender {
         display: flex;
-        gap: 0 10px;
+        gap: 0 20px;
         padding: 10px 0;
 
         @include lg {
@@ -489,11 +604,13 @@ a {
           display: flex;
           gap: 0 10px;
           background: #064789;
-.input{
-  width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
+          .input {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
           @include lg {
             margin: auto;
             width: 100%;
@@ -727,168 +844,179 @@ a {
         padding: 40px 0;
 
         .table-status {
-        border: 1px solid #E7E8F2;
-        padding: 40px;
-        border-radius: 12px;
+          border: 1px solid #E7E8F2;
+          padding: 40px;
+          border-radius: 12px;
 
-            .main-row {
+          .main-row {
 
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             place-content: center;
             border-bottom: 1px solid whitesmoke;
-@include lg{
-  grid-template-columns: 1fr;
-  gap: 10px 0;
-}
-           h3{
-            font-size: 14px;
-            font-family: 'ABeeZee', sans-serif;
-            font-weight: 400;
-           }
+
+            @include lg {
+              grid-template-columns: 1fr;
+              gap: 10px 0;
             }
 
-            .main-row-second {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-           
-              @include lg{
-                grid-template-columns: 1fr;
-                gap: 10px 0;
-                border-top: 1px solid #064789;
+            h3 {
+              font-size: 14px;
+              font-family: 'ABeeZee', sans-serif;
+              font-weight: 400;
+            }
+          }
+
+          .main-row-second {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            @include lg {
+              grid-template-columns: 1fr;
+              gap: 10px 0;
+              border-top: 1px solid #064789;
+            }
+
+            .first {
+              border-bottom: 1px solid whitesmoke;
+              padding: 10px 0;
+
+              .time {
+                display: flex;
+                gap: 0 10px;
               }
 
-              .first {
-                border-bottom: 1px solid whitesmoke;
-                padding: 10px 0;
-           .time{
-            display: flex;
-            gap: 0 10px;
-           }
-           .lunch{
-            display: flex;
-            gap: 0 10px;
-            padding: 5px;
-           }
-           h3{
-            font-size: 16px;
-            font-weight: 400;
-            font-family: 'ABeeZee', sans-serif;
-           }
+              .lunch {
+                display: flex;
+                gap: 0 10px;
+                padding: 5px;
+              }
 
-               
+              h3 {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'ABeeZee', sans-serif;
+              }
 
-                .lunch {
-               
 
-                  .custom-select {
-                    position: relative;
-                    width: 208px;
 
-                    .select-box {
-                      display: flex;
-                      align-items: center;
-                      /* justify-content: space-between; */
-                      background: white;
-                      cursor: pointer;
-                      gap: 0 10px;
+              .lunch {
 
-                      .icon {
-                        img {
-                          width: 100%;
-                        }
-                      }
 
-                      span {
-                        font-family: 'ABeeZee', sans-serif;
-                        font-family: 'ABeeZee', sans-serif;
-                        font-size: 14px;
-                      }
+                .custom-select {
+                  position: relative;
+                  width: 208px;
 
-                      i {
+                  .select-box {
+                    display: flex;
+                    align-items: center;
+                    /* justify-content: space-between; */
+                    background: white;
+                    cursor: pointer;
+                    gap: 0 10px;
 
-                        font-size: 14px;
-
+                    .icon {
+                      img {
+                        width: 100%;
                       }
                     }
 
-                    .options {
-                      position: absolute;
-                      top: 100%;
-                      left: 0;
-                      width: 100%;
-                      border-top: 1px solid #ccc;
+                    span {
+                      font-family: 'ABeeZee', sans-serif;
+                      font-family: 'ABeeZee', sans-serif;
+                      font-size: 14px;
+                    }
 
-                      display: none;
-                      background: white;
-                      z-index: 8888;
-                      border-radius: 12px;
+                    i {
 
-                      .option {
-                        padding: 10px;
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
+                      font-size: 14px;
 
-                        span {
-                          font-family: 'ABeeZee', sans-serif;
-                          font-size: 14px;
-                          color: white;
-                        }
+                    }
+                  }
 
+                  .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
 
+                    display: none;
+                    background: white;
+                    z-index: 8888;
+                    border-radius: 12px;
+
+                    .option {
+                      padding: 10px;
+                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+
+                      span {
+                        font-family: 'ABeeZee', sans-serif;
+                        font-size: 14px;
+                        color: white;
                       }
+
+
                     }
                   }
                 }
               }
             }
-            .addational-row {
+          }
 
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              place-content: center;
-              border-bottom: 1px solid whitesmoke;
-  padding: 15px 0;
+          .addational-row {
 
-  @include lg{
-    grid-template-columns: 1fr;
-    gap: 10px 0;
-  }
-             h3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-content: center;
+            border-bottom: 1px solid whitesmoke;
+            padding: 15px 0;
+
+            @include lg {
+              grid-template-columns: 1fr;
+              gap: 10px 0;
+            }
+
+            h3 {
               font-size: 14px;
               font-family: 'ABeeZee', sans-serif;
               font-weight: 400;
-              
-             }
-              }
-  
 
-            .pagination-parent{
-              display: flex;
-              justify-content: end;
-              padding: 20px 0 0 0;
-              @include lg{
-                justify-content: center;
-              }
-              .pagination a {
-                color: black;
-                float: left;
-                padding: 8px 16px;
-                text-decoration: none;
-                transition: background-color .3s;
-              }
-              
-              /* Style the active/current link */
-              .pagination a.active {
-                background-color: dodgerblue;
-                color: white;
-              }
-              
-              /* Add a grey background color on mouse-over */
-              .pagination a:hover:not(.active) {background-color: #ddd;}
             }
-          
+          }
+
+
+          .pagination-parent {
+            display: flex;
+            justify-content: end;
+            padding: 20px 0 0 0;
+
+            @include lg {
+              justify-content: center;
+            }
+
+            .pagination a {
+              color: black;
+              float: left;
+              padding: 8px 16px;
+              text-decoration: none;
+              transition: background-color .3s;
+            }
+
+            /* Style the active/current link */
+            .pagination a.active {
+              background-color: dodgerblue;
+              color: white;
+            }
+
+            /* Add a grey background color on mouse-over */
+            .pagination a:hover:not(.active) {
+              background-color: #ddd;
+            }
+          }
+
         }
       }
 

@@ -474,7 +474,7 @@ img {
   .hero-about-parent .hero-back .text {
     position: absolute;
     top: 110px;
-    left: 230px;
+    left: 510px;
   }
 }
 @media only screen and (max-width: 992px) {

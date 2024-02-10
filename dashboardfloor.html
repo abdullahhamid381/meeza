@@ -447,7 +447,100 @@
 
           </div>
           <div class="reserve-button">
-            <a href=""><button>Waitlist</button></a>
+          <button id="openModalBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="walkin">
+            
+              <!-- Modal content -->
+              <div class="walkin-content">
+              <div class="title">
+                 <h2>Walk In</h2>
+                <span class="close">&times;</span>
+               
+              </div>
+
+
+               <div class="fields">
+                <div class="title-fields">
+                  <h1>Tables</h1>
+                </div>
+                <div class="options-fields">
+                  <div class="item">
+                    <div class="checkbox">
+                     <div class="check-field">
+                      <input type="checkbox" name="" id="">
+                     </div>
+                     <div>
+                      <span>1   </span>
+                     </div>
+                     <div>
+                      <span>|  1-5  | </span>
+                     </div>
+                     <div>
+                      <span>Available</span>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-fields">
+                  <div class="item">
+                    <div class="checkbox">
+                     <div class="check-field">
+                      <input type="checkbox" name="" id="">
+                     </div>
+                     <div>
+                      <span>1   </span>
+                     </div>
+                     <div>
+                      <span>|  1-5  | </span>
+                     </div>
+                     <div>
+                      <span>Available</span>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-fields">
+                  <div class="item">
+                    <div class="checkbox">
+                     <div class="check-field">
+                      <input type="checkbox" name="" id="">
+                     </div>
+                     <div>
+                      <span>1   </span>
+                     </div>
+                     <div>
+                      <span>|  1-5  | </span>
+                     </div>
+                     <div>
+                      <span>Available</span>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-fields">
+                  <div class="item">
+                    <div class="checkbox">
+                     <div class="check-field">
+                      <input type="checkbox" name="" id="">
+                     </div>
+                     <div>
+                      <span>1   </span>
+                     </div>
+                     <div>
+                      <span>|  1-5  | </span>
+                     </div>
+                     <div>
+                      <span>Available</span>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+            
+            </div>
 
           </div>
           <div class="reserve-button">
@@ -620,6 +713,9 @@
     </div>
   </div>
 
+
+
+
   <script>
 
 
@@ -627,7 +723,7 @@
 
 
 
-
+// SHOW FOR MODAL BOX
 
 
 /*=============== SHOW MENU ===============*/
@@ -645,41 +741,6 @@ navClose.addEventListener('click', () =>{
    navMenu.classList.remove('show-menu')
 })
 
-/*=============== SEARCH ===============*/
-const search = document.getElementById('search'),
-      searchBtn = document.getElementById('search-btn'),
-      searchClose = document.getElementById('search-close')
-
-/* Search show */
-searchBtn.addEventListener('click', () =>{
-   search.classList.add('show-search')
-})
-
-/* Search hidden */
-searchClose.addEventListener('click', () =>{
-   search.classList.remove('show-search')
-})
-
-/*=============== LOGIN ===============*/
-const login = document.getElementById('login'),
-      loginBtn = document.getElementById('login-btn'),
-      loginClose = document.getElementById('login-close')
-
-/* Login show */
-loginBtn.addEventListener('click', () =>{
-   login.classList.add('show-login')
-})
-
-/* Login hidden */
-loginClose.addEventListener('click', () =>{
-   login.classList.remove('show-login')
-})
-
-$(".accordion-item__line").click(function () {
-   var container = $(this).parents(".accordion-list__item");
-   var answer = container.find(".accordion-item");
-   answer.toggleClass("accordion-item--opened");
- });
 
 
 
@@ -689,6 +750,8 @@ $(".accordion-item__line").click(function () {
 
 
   </script>
+
+
 <script>
    // MULTIPLE OPTION OF STATUS
 
@@ -735,6 +798,34 @@ $(".accordion-item__line").click(function () {
 
 
 
+</script>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("openModalBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 </script>
 </body>
 
