@@ -528,7 +528,7 @@ a {
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content {
-    width: 100%;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 992px) {
