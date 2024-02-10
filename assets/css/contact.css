@@ -27,6 +27,12 @@ a {
   /* For medium devices */
   /* For large devices */
 }
+@media only screen and (max-width: 992px) {
+  .nav-bar-parent {
+    width: 80%;
+    margin: auto;
+  }
+}
 .nav-bar-parent .header {
   position: fixed;
   top: 0;

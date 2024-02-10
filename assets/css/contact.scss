@@ -18,6 +18,10 @@ ul {
     max-width: 1300px;
     margin: auto;
     padding: 20px 0;
+    @include lg{
+      width: 80%;
+      margin: auto;
+  }
     .header {
         position: fixed;
         top: 0;

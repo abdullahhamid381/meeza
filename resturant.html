@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    
     <title>Multiple Select with Icons</title>
     <link rel="stylesheet" href="/assets/css/resturant.css">
+    
+   
+   
 </head>
 
 <body>
@@ -500,7 +504,7 @@
                             <div class="map">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707064996938!5m2!1sen!2s"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                   height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -509,7 +513,59 @@
             </div>
         </div>
 
+<!-- FOR NAVBAR -->
+<script>
+    /*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close')
 
+/* Menu show */
+navToggle.addEventListener('click', () =>{
+navMenu.classList.add('show-menu')
+})
+
+/* Menu hidden */
+navClose.addEventListener('click', () =>{
+navMenu.classList.remove('show-menu')
+})
+
+/*=============== SEARCH ===============*/
+const search = document.getElementById('search'),
+  searchBtn = document.getElementById('search-btn'),
+  searchClose = document.getElementById('search-close')
+
+/* Search show */
+searchBtn.addEventListener('click', () =>{
+search.classList.add('show-search')
+})
+
+/* Search hidden */
+searchClose.addEventListener('click', () =>{
+search.classList.remove('show-search')
+})
+
+/*=============== LOGIN ===============*/
+const login = document.getElementById('login'),
+  loginBtn = document.getElementById('login-btn'),
+  loginClose = document.getElementById('login-close')
+
+/* Login show */
+loginBtn.addEventListener('click', () =>{
+login.classList.add('show-login')
+})
+
+/* Login hidden */
+loginClose.addEventListener('click', () =>{
+login.classList.remove('show-login')
+})
+
+$(".accordion-item__line").click(function () {
+var container = $(this).parents(".accordion-list__item");
+var answer = container.find(".accordion-item");
+answer.toggleClass("accordion-item--opened");
+});
+</script>
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
