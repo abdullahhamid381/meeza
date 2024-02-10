@@ -109,6 +109,24 @@
                 }
                }
             }
+            .signin{
+                padding: 20px 0;
+                a{
+                    text-decoration: none;
+                    button{
+                        width: 100%;
+                        padding: 15px 0;
+                        font-size: 20px;
+                        font-family: 'ABeeZee', sans-serif;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        background: #064789;
+                        color: white;
+                        font-style: italic;
+                    }
+                }
+            }
         }
     }
 }

@@ -105,4 +105,22 @@
 }
 .signup-parent .width .fields .inputs .forgot span {
   text-align: center;
+}
+.signup-parent .width .fields .signin {
+  padding: 20px 0;
+}
+.signup-parent .width .fields .signin a {
+  text-decoration: none;
+}
+.signup-parent .width .fields .signin a button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #064789;
+  color: white;
+  font-style: italic;
 }/*# sourceMappingURL=signup.css.map */
