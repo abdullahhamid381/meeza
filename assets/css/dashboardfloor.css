@@ -413,6 +413,12 @@ a {
 .dashboard-parent #main-section .deafult .calender .date-calender {
   display: flex;
   gap: 0 10px;
+  background: #064789;
+}
+.dashboard-parent #main-section .deafult .calender .date-calender .input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .calender .date-calender {

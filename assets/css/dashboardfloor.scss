@@ -488,7 +488,12 @@ a {
         .date-calender {
           display: flex;
           gap: 0 10px;
-
+          background: #064789;
+.input{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+}
           @include lg {
             margin: auto;
             width: 100%;
