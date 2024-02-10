@@ -556,6 +556,68 @@ a {
 }
 }
               }
+
+              .custom-select {
+                position: relative;
+                width: 208px;
+
+                @include lg {
+                    width: 100%;
+                }
+
+                .select-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background: white;
+                    cursor: pointer;
+
+                    .icon {
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    span {
+                        font-family: 'ABeeZee', sans-serif;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        font-size: 14px;
+
+                    }
+                }
+
+                .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    border-top: none;
+                    display: none;
+                    background: white;
+                    z-index: 8888;
+
+                    .option {
+                        padding: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            font-family: 'ABeeZee', sans-serif;
+                            font-size: 16px;
+                        }
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+                    }
+                }
+            }
               }
             }
           }

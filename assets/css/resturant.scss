@@ -10,23 +10,26 @@
 body {
     background: #FAFBFF;
 }
+
 ul {
     list-style: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-.nav-bar-parent{
+}
+
+.nav-bar-parent {
     width: 100%;
     max-width: 1300px;
     margin: auto;
     padding: 20px 0;
-    @include lg{
+
+    @include lg {
         width: 80%;
         margin: auto;
     }
+
     .header {
         position: fixed;
         top: 0;
@@ -35,37 +38,38 @@ ul {
         background-color: var(--body-color);
         box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
         z-index: var(--z-fixed);
-      }
-      
-      .nav {
+    }
+
+    .nav {
         height: var(--header-height);
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-      
-      .nav__logo {
+    }
+
+    .nav__logo {
         font-size: 24px;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
         color: #000;
         font-family: 'ABeeZee', sans-serif;
-      }
-      
-      .nav__actions {
+    }
+
+    .nav__actions {
         display: flex;
         align-items: center;
         column-gap: 1rem;
-        @include xxsmobile{
-          display: flex;
-          align-items: center;
-          -moz-column-gap: 1rem;
-          column-gap: 10px;
+
+        @include xxsmobile {
+            display: flex;
+            align-items: center;
+            -moz-column-gap: 1rem;
+            column-gap: 10px;
         }
-      }
-      
-      .nav__actions button {
+    }
+
+    .nav__actions button {
         border: none;
         outline: none;
         padding: 13px 35px;
@@ -76,98 +80,101 @@ ul {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        @include mobile{
-          border: none;
-          outline: none;
-          padding: 10px 15px;
-          border-radius: 8px;
-          color: #000;
-          font-family: "ABeeZee", sans-serif;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+
+        @include mobile {
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #000;
+            font-family: "ABeeZee", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
-        @include xxsmobile{
-          border: none;
-          outline: none;
-          padding: 8px 9px;
-          border-radius: 8px;
-          color: #000;
-          font-family: "ABeeZee", sans-serif;
-          font-size: 11px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+
+        @include xxsmobile {
+            border: none;
+            outline: none;
+            padding: 8px 9px;
+            border-radius: 8px;
+            color: #000;
+            font-family: "ABeeZee", sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
-      }
-      
-      .nav__search,
-      .nav__login,
-      .nav__toggle,
-      .nav__close {
+    }
+
+    .nav__search,
+    .nav__login,
+    .nav__toggle,
+    .nav__close {
         font-size: 1.25rem;
         color: var(--title-color);
         cursor: pointer;
         transition: color .4s;
-      }
-      
-      :is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
+    }
+
+    :is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
         color: var(--first-color);
-      }
-      
-      /* Navigation for mobile devices */
-      @media screen and (max-width: 1023px) {
+    }
+
+    /* Navigation for mobile devices */
+    @media screen and (max-width: 1023px) {
         .nav__menu {
-          position: fixed;
-          top: -100%;
-          left: 0;
-          background-color: var(--body-color);
-          box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
-          width: 100%;
-          padding-block: 4.5rem 4rem;
-          transition: top 0.4s;
-          z-index: 111111;
-          background: white;
-      ;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            background-color: var(--body-color);
+            box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+            width: 100%;
+            padding-block: 4.5rem 4rem;
+            transition: top 0.4s;
+            z-index: 111111;
+            background: white;
+            ;
         }
-      }
-      
-      .nav__list {
+    }
+
+    .nav__list {
         display: flex;
         flex-direction: column;
         row-gap: 2.5rem;
         text-align: center;
-      }
-      
-      .nav__link {
+    }
+
+    .nav__link {
         color: #000;
-      
+
         font-family: 'ABeeZee', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-      }
-      
-      .nav__close {
+    }
+
+    .nav__close {
         position: absolute;
         top: 1.15rem;
         right: 1.5rem;
-        @include xxsmobile{
-          position: absolute;
-          top: 1.15rem;
-          right: 3.5rem;
+
+        @include xxsmobile {
+            position: absolute;
+            top: 1.15rem;
+            right: 3.5rem;
         }
-      }
-      
-      /* Show menu */
-      .show-menu {
+    }
+
+    /* Show menu */
+    .show-menu {
         top: 0;
-      }
-      
-      /*=============== SEARCH ===============*/
-      .search__form {
+    }
+
+    /*=============== SEARCH ===============*/
+    .search__form {
         display: flex;
         align-items: center;
         column-gap: .5rem;
@@ -177,41 +184,41 @@ ul {
         border-radius: .5rem;
         transform: translateY(-1rem);
         transition: transform .4s;
-      }
-      
-      .search__icon {
+    }
+
+    .search__icon {
         font-size: 1.25rem;
         color: var(--title-color);
-      }
-      
-      .search__input {
+    }
+
+    .search__input {
         width: 100%;
         padding-block: 1rem;
         background-color: var(--container-color);
         color: var(--text-color);
-      }
-      
-      .search__input::placeholder {
+    }
+
+    .search__input::placeholder {
         color: var(--text-color);
-      }
-      
-      /* Show search */
-      .show-search {
+    }
+
+    /* Show search */
+    .show-search {
         opacity: 1;
         pointer-events: initial;
-      }
-      
-      .show-search .search__form {
+    }
+
+    .show-search .search__form {
         transform: translateY(0);
-      }
-      
-      /*=============== LOGIN ===============*/
-      .login__form,
-      .login__group {
+    }
+
+    /*=============== LOGIN ===============*/
+    .login__form,
+    .login__group {
         display: grid;
-      }
-      
-      .login__form {
+    }
+
+    .login__form {
         background-color: var(--container-color);
         padding: 2rem 1.5rem 2.5rem;
         box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
@@ -220,53 +227,53 @@ ul {
         text-align: center;
         transform: translateY(-1rem);
         transition: transform .4s;
-      }
-      
-      .login__title {
+    }
+
+    .login__title {
         font-size: var(--h2-font-size);
         color: var(--title-color);
-      }
-      
-      .login__group {
+    }
+
+    .login__group {
         row-gap: 1rem;
-      }
-      
-      .login__label {
+    }
+
+    .login__label {
         display: block;
         text-align: initial;
         color: var(--title-color);
         font-weight: var(--font-medium);
         margin-bottom: .25rem;
-      }
-      
-      .login__input {
+    }
+
+    .login__input {
         width: 100%;
         background-color: var(--container-color);
         border: 2px solid var(--border-color);
         padding: 1rem;
         border-radius: .5rem;
         color: var(--text-color);
-      }
-      
-      .login__input::placeholder {
+    }
+
+    .login__input::placeholder {
         color: var(--text-color);
-      }
-      
-      .login__signup {
+    }
+
+    .login__signup {
         margin-bottom: .5rem;
-      }
-      
-      .login__signup a {
+    }
+
+    .login__signup a {
         color: var(--first-color);
-      }
-      
-      .login__forgot {
+    }
+
+    .login__forgot {
         display: inline-block;
         color: var(--first-color);
         margin-bottom: 1.25rem;
-      }
-      
-      .login__button {
+    }
+
+    .login__button {
         display: inline-block;
         background-color: var(--first-color);
         width: 100%;
@@ -276,94 +283,97 @@ ul {
         border-radius: .5rem;
         cursor: pointer;
         transition: box-shadow .4s;
-      }
-      
-      .login__button:hover {
+    }
+
+    .login__button:hover {
         box-shadow: 0 4px 24px hsla(230, 75%, 40%, .4);
-      }
-      
-      /* Show login */
-      .show-login {
+    }
+
+    /* Show login */
+    .show-login {
         opacity: 1;
         pointer-events: initial;
-      }
-      
-      .show-login .login__form {
+    }
+
+    .show-login .login__form {
         transform: translateY(0);
-      }
-      
-      /*=============== BREAKPOINTS ===============*/
-      /* For medium devices */
-      @media screen and (min-width: 576px) {
-      
+    }
+
+    /*=============== BREAKPOINTS ===============*/
+    /* For medium devices */
+    @media screen and (min-width: 576px) {
+
         .search,
         .login {
-          padding-top: 10rem;
+            padding-top: 10rem;
         }
-      
+
         .search__form {
-          max-width: 450px;
-          margin-inline: auto;
+            max-width: 450px;
+            margin-inline: auto;
         }
-      
+
         .search__close,
         .login__close {
-          width: max-content;
-          top: 5rem;
-          left: 0;
-          right: 0;
-          margin-inline: auto;
-          font-size: 2rem;
+            width: max-content;
+            top: 5rem;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            font-size: 2rem;
         }
-      
+
         .login__form {
-          max-width: 400px;
-          margin-inline: auto;
+            max-width: 400px;
+            margin-inline: auto;
         }
-      }
-      
-      /* For large devices */
-      @media screen and (min-width: 1023px) {
+    }
+
+    /* For large devices */
+    @media screen and (min-width: 1023px) {
         .nav {
-          height: calc(var(--header-height) + 2rem);
-          column-gap: 3rem;
+            height: calc(var(--header-height) + 2rem);
+            column-gap: 3rem;
         }
-      
+
         .nav__close,
         .nav__toggle {
-          display: none;
+            display: none;
         }
-      
+
         .nav__menu {}
-      
+
         .nav__list {
-          flex-direction: row;
-          column-gap: 8rem;
+            flex-direction: row;
+            column-gap: 8rem;
         }
-      
+
         .login__form {
-          padding: 3rem 2rem 3.5rem;
+            padding: 3rem 2rem 3.5rem;
         }
-      }
-      
-      @media screen and (min-width: 1150px) {
+    }
+
+    @media screen and (min-width: 1150px) {
         .container {
-          margin-inline: auto;
+            margin-inline: auto;
         }
-      }
+    }
 }
+
 .resturant-parent {
-padding-top: 20px;
+    padding-top: 20px;
     height: 100vh;
 
     .width-resturant {
         max-width: 1300px;
         width: 100%;
         margin: auto;
-@include lg{
-    width: 90%;
-    margin: auto;
-}
+
+        @include lg {
+            width: 90%;
+            margin: auto;
+        }
+
         .select {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -372,7 +382,7 @@ padding-top: 20px;
             /* place-content: center; */
             place-items: center;
 
-            @include lg{
+            @include lg {
                 grid-template-columns: 1fr;
                 gap: 10px 0;
             }
@@ -380,9 +390,11 @@ padding-top: 20px;
             .custom-select {
                 position: relative;
                 width: 208px;
-@include lg{
-    width: 100%;
-}
+
+                @include lg {
+                    width: 100%;
+                }
+
                 .select-box {
                     display: flex;
                     align-items: center;
@@ -417,7 +429,8 @@ padding-top: 20px;
                     border-top: none;
                     display: none;
                     background: white;
-z-index: 8888;
+                    z-index: 8888;
+
                     .option {
                         padding: 10px;
                         cursor: pointer;
@@ -443,9 +456,11 @@ z-index: 8888;
         .search {
             position: relative;
             margin: 40px 0;
-@include lg{
-    position: unset;
-}
+
+            @include lg {
+                position: unset;
+            }
+
             .text {
                 width: 100%;
 
@@ -467,10 +482,12 @@ z-index: 8888;
                 position: absolute;
                 top: 0;
                 right: 0;
-@include lg{
-    position: unset;
-    margin-top: 10px;
-}
+
+                @include lg {
+                    position: unset;
+                    margin-top: 10px;
+                }
+
                 button {
 
                     padding: 20px 61px;
@@ -490,12 +507,15 @@ z-index: 8888;
 
         .hero-parent {
             position: relative;
-            @include lg{
+
+            @include lg {
                 position: unset;
             }
-            @include lg{
+
+            @include lg {
                 position: unset;
             }
+
             .img {
                 img {
                     width: 100%;
@@ -514,17 +534,19 @@ z-index: 8888;
                 left: 31px;
                 /* bottom: 10px; */
                 top: 460px;
-            
-@include lg{
-    grid-template-columns: 1fr;
-    position: unset;
-    width: 80%;
-    margin: auto;
-}
+
+                @include lg {
+                    grid-template-columns: 1fr;
+                    position: unset;
+                    width: 80%;
+                    margin: auto;
+                }
+
                 .cardsfirst {
                     padding: 20px 0;
                     background: white;
-                    border-radius: 12px;   
+                    border-radius: 12px;
+
                     .nav {
                         display: flex;
                         gap: 20px;
@@ -636,9 +658,11 @@ z-index: 8888;
                             grid-template-columns: 1fr 1fr;
                             gap: 20px;
                             margin-top: 20px;
-@include lg{
-    grid-template-columns: 1fr;
-}
+
+                            @include lg {
+                                grid-template-columns: 1fr;
+                            }
+
                             .card {
                                 padding: 20px;
                                 border: 1px solid #D9D9D9;
@@ -686,16 +710,19 @@ z-index: 8888;
                             }
                         }
                     }
-                    .people-review{
+
+                    .people-review {
                         padding: 0 40px;
-                        .people-review-title{
-                            h1{
+
+                        .people-review-title {
+                            h1 {
                                 font-size: 24px;
                                 font-family: 'ABeeZee', sans-serif;
                                 font-style: italic;
                             }
                         }
-                        .people-review-card{
+
+                        .people-review-card {
                             display: flex;
                             gap: 20px;
                             background: #EBF2FA;
@@ -703,24 +730,28 @@ z-index: 8888;
                             border-radius: 8px;
                             margin-top: 20px;
                             align-items: center;
-                            .img{
-                                img{
+
+                            .img {
+                                img {
                                     width: 100%;
                                 }
-                                h3{
+
+                                h3 {
                                     font-size: 14px;
                                     font-family: 'ABeeZee', sans-serif;
                                     text-align: center;
                                     padding-top: 5px;
                                 }
                             }
-                            .para-people-review{
-                                span{
+
+                            .para-people-review {
+                                span {
                                     text-align: center;
                                     font-size: 14px;
                                     font-family: 'ABeeZee', sans-serif;
                                 }
-                                p{
+
+                                p {
                                     padding-top: 10px;
                                     line-height: 24px;
                                     font-size: 16px;
@@ -735,7 +766,7 @@ z-index: 8888;
                     background: white;
                     padding: 40px;
                     height: 880px;
-border-radius: 12px;                
+                    border-radius: 12px;
 
                     .title {
                         h1 {
@@ -907,28 +938,33 @@ border-radius: 12px;
                             display: flex;
                             align-items: center;
                             padding: 20px 0;
-gap: 10px;
+                            gap: 10px;
+
                             img {
                                 width: 100%;
                             }
-                            span{
+
+                            span {
                                 font-size: 18px;
                                 font-family: 'ABeeZee', sans-serif;
                             }
                         }
                     }
-                    .map-div{
-                        .title-map{
-                            h1{
+
+                    .map-div {
+                        .title-map {
+                            h1 {
                                 font-size: 20px;
-                                font-family: 'ABeeZee', sans-serif;  
+                                font-family: 'ABeeZee', sans-serif;
                                 font-style: italic;
                                 text-align: center;
                             }
                         }
-                        .map{
+
+                        .map {
                             padding-top: 20px;
-                            iframe{
+
+                            iframe {
                                 width: 100%;
                             }
                         }
@@ -938,6 +974,5 @@ gap: 10px;
         }
     }
 
-    
-}
 
+}

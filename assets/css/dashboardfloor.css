@@ -475,6 +475,57 @@ a {
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
 }
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select {
+  position: relative;
+  width: 208px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select {
+    width: 100%;
+  }
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .select-box .icon img {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .select-box i {
+  font-size: 14px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+  z-index: 8888;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .reserve .reserve-button {
     width: 100%;
