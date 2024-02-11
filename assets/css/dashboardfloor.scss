@@ -430,6 +430,9 @@ a {
             display: flex;
             gap: 0 10px;
             align-items: center;
+            @include lg{
+              align-items: baseline;
+            }
             img{
               width: 100%;
             }
@@ -448,6 +451,9 @@ a {
                 border: none;
                 border-radius: 4px;
                 color: white;
+                @include lg{
+                  margin-top: 5px;
+                }
               }
             }
         

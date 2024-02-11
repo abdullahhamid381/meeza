@@ -366,6 +366,11 @@ a {
   gap: 0 10px;
   align-items: center;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div {
+    align-items: baseline;
+  }
+}
 .dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div img {
   width: 100%;
 }
@@ -385,6 +390,11 @@ a {
   border: none;
   border-radius: 4px;
   color: white;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar button {
+    margin-top: 5px;
+  }
 }
 .dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #toggle-button {
   cursor: pointer;
