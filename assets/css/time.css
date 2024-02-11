@@ -975,6 +975,11 @@ a {
   /* Style the active/current link */
   /* Add a grey background color on mouse-over */
 }
+@media only screen and (max-width: 450px) {
+  .dashboard-time-parent #main-section .deafult .time-table {
+    padding-bottom: 80px;
+  }
+}
 .dashboard-time-parent #main-section .deafult .time-table .table .title {
   display: grid;
   grid-template-columns: 1fr auto;
