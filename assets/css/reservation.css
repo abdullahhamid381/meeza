@@ -831,6 +831,11 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 0 120px;
 }
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
 .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields .date-field {
   display: flex;
   justify-content: space-between;
@@ -899,6 +904,23 @@ a {
   cursor: pointer;
   padding: 8px;
   font-size: 16px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields #quantity-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields #quantity-selector #current-quantity {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields #quantity-selector #next-btn, .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-fields #quantity-selector #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 .dashboard-reservation-parent #toggle-btn {
   display: none;

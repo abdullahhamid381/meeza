@@ -2,636 +2,681 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Dashboard</title>
-  <link rel="stylesheet" href="/assets/css/reservation.css">
-  <!--=============== REMIXICONS ===============-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/reservation.css">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="dashboard-reservation-parent">
+    <div class="dashboard-reservation-parent">
 
 
-    <!-- SIDEBAR SECTION==============================  -->
+        <!-- SIDEBAR SECTION==============================  -->
 
 
-    <header class="hero-parent" id="header" style="background: #064789;">
-      <nav class="nav container">
-        <div class="logo-div">
-          <a href="#" class="nav__logo">Logo</a>
-        </div>
-
-        <div class="nav__menu" id="nav-menu" style="padding-left: 30px;">
-          <ul class="nav__list">
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
-              </div>
-              <a href="#" class="nav__link">Floor</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-event-accepted-100 1.png" alt="">
-              </div>
-              <a href="#" class="nav__link">Bookings</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-restaurant-100 1.png" alt="">
-              </div>
-              <a href="#" class="nav__link">Times</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-payment-100 (1) 1.png" alt="">
-              </div>
-              <a href="#" class="nav__link">Tables</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
-              </div>
-              <a href="#" class="nav__link">Employees</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
-              </div>
-              <a href="#" class="nav__link">Shifts</a>
-            </li>
-            <li class="nav__item" id="list">
-              <div>
-                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
-              </div>
-              <a href="#" class="nav__link">Revenue</a>
-            </li>
-
-
-
-
-          </ul>
-
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line" style="color: white;"></i>
-          </div>
-        </div>
-
-
-      </nav>
-    </header>
-
-
-    <!-- MAIN SECTION  -->
-
-    <div id="main-section">
-      <button id="toggle-btn" onclick="toggleSidebar()">Toggle Sidebar</button>
-      <div class="deafult">
-        <div class="intro-title">
-          <div class="flex">
-            <div class="title">
-              <h2>Good Morning, Deiaalskka</h2>
-              <p>Welcome Back, nice to see you again</p>
-            </div>
-            <div class="user">
-              <div class="nav__actions">
-
-
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
+        <header class="hero-parent" id="header" style="background: #064789;">
+            <nav class="nav container">
+                <div class="logo-div">
+                    <a href="#" class="nav__logo">Logo</a>
                 </div>
-              </div>
 
-              <div class="img">
-                <div class="search-div">
+                <div class="nav__menu" id="nav-menu" style="padding-left: 30px;">
+                    <ul class="nav__list">
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Floor</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-event-accepted-100 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Bookings</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-restaurant-100 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Times</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-payment-100 (1) 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Tables</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Employees</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Shifts</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Revenue</a>
+                        </li>
 
-                  <div>
-                    <img id="toggle-button" onclick="toggleSearchBar()" src="/assets/img/search.png" alt="">
-                  </div>
-                  <div id="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button onclick="performSearch()">Search</button>
-                  </div>
-                </div>
-              </div>
-              <div class="img">
-                <img src="/assets/img/bell.png" alt="">
-              </div>
-              <div class="img">
-                <img src="/assets/img/Ellipse 15.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- RESERVE BUTTONS=================== -->
 
 
-        <div class="reserve">
-          <div class="reserve-button">
-            <a href=""><button>Reserve</button></a>
 
-          </div>
-          <div class="reserve-button">
-            <a href=""><button>Table Search</button></a>
+                    </ul>
 
-          </div>
-          <div class="reserve-button">
-            <a href=""><button>Waitlist</button></a>
-
-          </div>
-
-
-          <!-- WALK IN =============== -->
-
-          <div class="reserve-button">
-            <button id="openModalBtn">Walk In</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="walkin">
-
-              <!-- Modal content -->
-              <div class="walkin-content">
-                <div class="title">
-                  <h2>Walk In</h2>
-                  <span class="close">&times;</span>
-
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line" style="color: white;"></i>
+                    </div>
                 </div>
 
 
-                <div class="fields">
-                  <div class="title-fields">
-                    <h1>Tables</h1>
-                  </div>
-                  <div class="options-fields">
-                    <div class="item">
-                      <div class="checkbox">
-                        <div class="check-field">
-                          <input type="checkbox" name="" id="">
-                        </div>
-                        <div>
-                          <span>1 </span>
-                        </div>
-                        <div>
-                          <span>| 1-5 | </span>
-                        </div>
-                        <div>
-                          <span>Available</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="options-fields">
-                    <div class="item">
-                      <div class="checkbox">
-                        <div class="check-field">
-                          <input type="checkbox" name="" id="">
-                        </div>
-                        <div>
-                          <span>1 </span>
-                        </div>
-                        <div>
-                          <span>| 1-5 | </span>
-                        </div>
-                        <div>
-                          <span>Available</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="options-fields">
-                    <div class="item">
-                      <div class="checkbox">
-                        <div class="check-field">
-                          <input type="checkbox" name="" id="">
-                        </div>
-                        <div>
-                          <span>1 </span>
-                        </div>
-                        <div>
-                          <span>| 1-5 | </span>
-                        </div>
-                        <div>
-                          <span>Available</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="options-fields">
-                    <div class="item">
-                      <div class="checkbox">
-                        <div class="check-field">
-                          <input type="checkbox" name="" id="">
-                        </div>
-                        <div>
-                          <span>1 </span>
-                        </div>
-                        <div>
-                          <span>| 1-5 | </span>
-                        </div>
-                        <div>
-                          <span>Available</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="custom-select" id="customSelect10">
-                    <div class="select-box">
-
-                      <span class="placeholder">A People</span>
-                      <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="options">
-                      <div class="option" data-value="option1">
-                        <span>United States</span>
-                      </div>
-                      <div class="option" data-value="option2">
-                        <span>United Arab</span>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-        <!-- CALENDER DIV================== -->
-
-        <div class="calender">
-          <div class="date-calender">
-            <div class="input">
-              <input type="text" placeholder="MM/YY/DD">
-            </div>
-            <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
-          </div>
-          <div class="opening">
-            <button>
-              Opening
-            </button>
-          </div>
-        </div>
+            </nav>
+        </header>
 
 
-       <div class="reserve-form">
-        <div class="title-form">
-            <h1>New Reservation</h1>
-        </div>
-        <div class="reservation-detail">
-            <h1>Reservation Details</h1>
-            <div class="grid">
-                <div class="first-fields">
+        <!-- MAIN SECTION  -->
 
-
-                    <div class="date-field">
+        <div id="main-section">
+            <button id="toggle-btn" onclick="toggleSidebar()">Toggle Sidebar</button>
+            <div class="deafult">
+                <div class="intro-title">
+                    <div class="flex">
                         <div class="title">
-                            <h1>Date</h1>
+                            <h2>Good Morning, Deiaalskka</h2>
+                            <p>Welcome Back, nice to see you again</p>
                         </div>
-                        <div id="calendar">
-                            
-                        <div class="buttons">
-                            <div id="current-date"></div>
-                            <i class="fa-solid fa-chevron-left" id="back-btn" onclick="previousDay()"></i>
-                            <i class="fa-solid fa-chevron-right" id="next-btn" onclick="nextDay()"></i>
+                        <div class="user">
+                            <div class="nav__actions">
+
+
+                                <!-- Toggle button -->
+                                <div class="nav__toggle" id="nav-toggle">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+
+                            <div class="img">
+                                <div class="search-div">
+
+                                    <div>
+                                        <img id="toggle-button" onclick="toggleSearchBar()" src="/assets/img/search.png"
+                                            alt="">
+                                    </div>
+                                    <div id="search-bar">
+                                        <input type="text" placeholder="Search...">
+                                        <button onclick="performSearch()">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="/assets/img/bell.png" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="/assets/img/Ellipse 15.png" alt="">
+                            </div>
                         </div>
-                            
-                          </div>
                     </div>
-    
-    
-                      <div id="time-selector">
-                     
-                        <div class="title">
-                            <h1>Time</h1>
-                        </div>
-                        <div id="calendar">
-                            
-                        <div class="buttons">
-                            <div id="current-time"></div>
-                            <i class="fa-solid fa-chevron-left" id="back-btn" onclick="decreaseTime()"></i>
-                            <i class="fa-solid fa-chevron-right" id="next-btn" onclick="increaseTime()"></i>
-                        </div>
-                            
-                          </div>
-
-
-                        
-                      </div>
-                    
                 </div>
-    
-                <div class="second-field">
-                    <div class="firstname">
-                        <input type="text">
+
+                <!-- RESERVE BUTTONS=================== -->
+
+
+                <div class="reserve">
+                    <div class="reserve-button">
+                        <a href=""><button>Reserve</button></a>
+
+                    </div>
+                    <div class="reserve-button">
+                        <a href=""><button>Table Search</button></a>
+
+                    </div>
+                    <div class="reserve-button">
+                        <a href=""><button>Waitlist</button></a>
+
+                    </div>
+
+
+                    <!-- WALK IN =============== -->
+
+                    <div class="reserve-button">
+                        <button id="openModalBtn">Walk In</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="walkin">
+
+                            <!-- Modal content -->
+                            <div class="walkin-content">
+                                <div class="title">
+                                    <h2>Walk In</h2>
+                                    <span class="close">&times;</span>
+
+                                </div>
+
+
+                                <div class="fields">
+                                    <div class="title-fields">
+                                        <h1>Tables</h1>
+                                    </div>
+                                    <div class="options-fields">
+                                        <div class="item">
+                                            <div class="checkbox">
+                                                <div class="check-field">
+                                                    <input type="checkbox" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <span>1 </span>
+                                                </div>
+                                                <div>
+                                                    <span>| 1-5 | </span>
+                                                </div>
+                                                <div>
+                                                    <span>Available</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-fields">
+                                        <div class="item">
+                                            <div class="checkbox">
+                                                <div class="check-field">
+                                                    <input type="checkbox" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <span>1 </span>
+                                                </div>
+                                                <div>
+                                                    <span>| 1-5 | </span>
+                                                </div>
+                                                <div>
+                                                    <span>Available</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-fields">
+                                        <div class="item">
+                                            <div class="checkbox">
+                                                <div class="check-field">
+                                                    <input type="checkbox" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <span>1 </span>
+                                                </div>
+                                                <div>
+                                                    <span>| 1-5 | </span>
+                                                </div>
+                                                <div>
+                                                    <span>Available</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-fields">
+                                        <div class="item">
+                                            <div class="checkbox">
+                                                <div class="check-field">
+                                                    <input type="checkbox" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <span>1 </span>
+                                                </div>
+                                                <div>
+                                                    <span>| 1-5 | </span>
+                                                </div>
+                                                <div>
+                                                    <span>Available</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="custom-select" id="customSelect10">
+                                        <div class="select-box">
+
+                                            <span class="placeholder">A People</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option" data-value="option1">
+                                                <span>United States</span>
+                                            </div>
+                                            <div class="option" data-value="option2">
+                                                <span>United Arab</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CALENDER DIV================== -->
+
+                <div class="calender">
+                    <div class="date-calender">
+                        <div class="input">
+                            <input type="text" placeholder="MM/YY/DD">
+                        </div>
+                        <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
+                    </div>
+                    <div class="opening">
+                        <button>
+                            Opening
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="reserve-form">
+                    <div class="title-form">
+                        <h1>New Reservation</h1>
+                    </div>
+                    <div class="reservation-detail">
+                        <h1>Reservation Details</h1>
+                        <div class="grid">
+                            <div class="first-fields">
+
+                                <!-- CALENDER====================== -->
+                                <div class="date-field">
+                                    <div class="title">
+                                        <h1>Date</h1>
+                                    </div>
+                                    <div id="calendar">
+
+                                        <div class="buttons">
+                                            <div id="current-date"></div>
+                                            <i class="fa-solid fa-chevron-left" id="back-btn"
+                                                onclick="previousDay()"></i>
+                                            <i class="fa-solid fa-chevron-right" id="next-btn" onclick="nextDay()"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- TIME ====================== -->
+
+                                <div id="time-selector">
+
+                                    <div class="title">
+                                        <h1>Time</h1>
+                                    </div>
+                                    <div id="calendar">
+
+                                        <div class="buttons">
+                                            <div id="current-time"></div>
+                                            <i class="fa-solid fa-chevron-left" id="back-btn"
+                                                onclick="decreaseTime()"></i>
+                                            <i class="fa-solid fa-chevron-right" id="next-btn"
+                                                onclick="increaseTime()"></i>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+
+                                <!-- GUESTS -->
+
+
+                                <div id="quantity-selector">
+                                    <div id="current-quantity"></div>
+                                    <button id="back-btn" onclick="decreaseQuantity()">Decrease by 1</button>
+                                    <button id="next-btn" onclick="increaseQuantity()">Increase by 1</button>
+                                  </div>
+
+                            </div>
+
+                            <div class="second-field">
+                                <div class="firstname">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-       </div>
-      </div>
 
+        </div>
     </div>
-  </div>
-
-
-
-<!-- FOR DYNAMICALLY DATE -->
-
-<script>
-    var currentDate = new Date();
-
-    function updateCalendar() {
-      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      var currentDateString = currentDate.toLocaleDateString('en-US', options);
-
-      document.getElementById("current-date").innerHTML = currentDateString;
-    }
-
-    function nextDay() {
-      currentDate.setDate(currentDate.getDate() + 1);
-      updateCalendar();
-    }
-
-    function previousDay() {
-      currentDate.setDate(currentDate.getDate() - 1);
-      updateCalendar();
-    }
-
-    // Initial update
-    updateCalendar();
-  </script>
-
-
-<!-- FOR DYNAMICALLY TIME=========== -->
-
-<script>
-    var currentTime = new Date();
-    currentTime.setHours(0, 0, 0, 0);
-
-    function updateTime() {
-      var options = { hour: 'numeric', minute: 'numeric', hour12: true };
-      var currentTimeString = currentTime.toLocaleTimeString('en-US', options);
-
-      document.getElementById("current-time").innerHTML = currentTimeString;
-    }
-
-    function increaseTime() {
-      currentTime.setMinutes(currentTime.getMinutes() + 15);
-      updateTime();
-    }
-
-    function decreaseTime() {
-      currentTime.setMinutes(currentTime.getMinutes() - 15);
-      updateTime();
-    }
-
-    function updateCustomTime() {
-      var hours = document.getElementById("hours").value;
-      var minutes = document.getElementById("minutes").value;
-      var ampm = document.getElementById("ampm").value;
-
-      // Convert to 24-hour format for consistency
-      if (ampm === 'PM' && hours < 12) {
-        hours = parseInt(hours, 10) + 12;
-      } else if (ampm === 'AM' && hours == 12) {
-        hours = 0;
-      }
-
-      currentTime.setHours(hours, minutes);
-      updateTime();
-    }
-
-    // Initial update
-    updateTime();
-  </script>
-
-  <!-- FOR SEARCHBAR====== -->
-
-  <script>
-    function toggleSearchBar() {
-      var searchBar = document.getElementById("search-bar");
-      searchBar.style.display = (searchBar.style.display === 'none') ? 'block' : 'none';
-    }
-
-    function performSearch() {
-      // Add your search logic here
-      alert("Performing search...");
-    }
-  </script>
-
-  <!-- FOR SIDE BAR HIDE AND SHOW -->
-
-  <script>
 
 
 
 
+    <!-- FOR GUESTS -->
 
 
+    <script>
+        var currentQuantity = 0;
 
-
-
-    /*=============== SHOW MENU ===============*/
-    const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
-
-    /* Menu show */
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.add('show-menu')
-    })
-
-    /* Menu hidden */
-    navClose.addEventListener('click', () => {
-      navMenu.classList.remove('show-menu')
-    })
-
-    /*=============== SEARCH ===============*/
-    const search = document.getElementById('search'),
-      searchBtn = document.getElementById('search-btn'),
-      searchClose = document.getElementById('search-close')
-
-    /* Search show */
-    searchBtn.addEventListener('click', () => {
-      search.classList.add('show-search')
-    })
-
-    /* Search hidden */
-    searchClose.addEventListener('click', () => {
-      search.classList.remove('show-search')
-    })
-
-    /*=============== LOGIN ===============*/
-    const login = document.getElementById('login'),
-      loginBtn = document.getElementById('login-btn'),
-      loginClose = document.getElementById('login-close')
-
-    /* Login show */
-    loginBtn.addEventListener('click', () => {
-      login.classList.add('show-login')
-    })
-
-    /* Login hidden */
-    loginClose.addEventListener('click', () => {
-      login.classList.remove('show-login')
-    })
-
-    $(".accordion-item__line").click(function () {
-      var container = $(this).parents(".accordion-list__item");
-      var answer = container.find(".accordion-item");
-      answer.toggleClass("accordion-item--opened");
-    });
-
-
-
-
-
-
-
-
-  </script>
-
-  <!-- FOR WALKIN============ -->
-
-
-  <script>
-    // MULTIPLE OPTION OF STATUS
-
-    document.addEventListener('DOMContentLoaded', function () {
-
-      initializeCustomSelect('customSelect10');
-    });
-
-    function initializeCustomSelect(customSelectId) {
-      const customSelect = document.getElementById(customSelectId);
-      const selectBox = customSelect.querySelector('.select-box');
-      const optionsContainer = customSelect.querySelector('.options');
-
-      selectBox.addEventListener('click', function () {
-        optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-      });
-
-      optionsContainer.addEventListener('click', function (e) {
-        const selectedOption = e.target.closest('.option');
-        if (selectedOption) {
-          const selectedValue = selectedOption.getAttribute('data-value');
-          selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
-          optionsContainer.style.display = 'none';
-
-          // Add your logic here to handle the selected value
-          console.log('Selected Value for', customSelectId, ':', selectedValue);
+        function updateQuantity() {
+            document.getElementById("current-quantity").innerHTML = "Quantity: " + currentQuantity;
         }
-      });
 
-      document.addEventListener('click', function (e) {
-        if (!customSelect.contains(e.target)) {
-          optionsContainer.style.display = 'none';
+        function increaseQuantity() {
+            currentQuantity += 1;
+            updateQuantity();
         }
-      });
-    }
 
-
-
-
-
-  </script>
-
-  <script>
-    // MULTIPLE OPTION OF STATUS
-
-    document.addEventListener('DOMContentLoaded', function () {
-      initializeCustomSelect('customSelect1');
-      initializeCustomSelect('customSelect2');
-      initializeCustomSelect('customSelect3');
-      initializeCustomSelect('customSelect4');
-      initializeCustomSelect('customSelect5');
-      initializeCustomSelect('customSelect6');
-      initializeCustomSelect('customSelect7');
-      initializeCustomSelect('customSelect8');
-      initializeCustomSelect('customSelect10');
-    });
-
-    function initializeCustomSelect(customSelectId) {
-      const customSelect = document.getElementById(customSelectId);
-      const selectBox = customSelect.querySelector('.select-box');
-      const optionsContainer = customSelect.querySelector('.options');
-
-      selectBox.addEventListener('click', function () {
-        optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-      });
-
-      optionsContainer.addEventListener('click', function (e) {
-        const selectedOption = e.target.closest('.option');
-        if (selectedOption) {
-          const selectedValue = selectedOption.getAttribute('data-value');
-          selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
-          optionsContainer.style.display = 'none';
-
-          // Add your logic here to handle the selected value
-          console.log('Selected Value for', customSelectId, ':', selectedValue);
+        function decreaseQuantity() {
+            if (currentQuantity > 0) {
+                currentQuantity -= 1;
+                updateQuantity();
+            }
         }
-      });
 
-      document.addEventListener('click', function (e) {
-        if (!customSelect.contains(e.target)) {
-          optionsContainer.style.display = 'none';
+        // Initial update
+        updateQuantity();
+    </script>
+
+
+
+    <!-- FOR DYNAMICALLY DATE -->
+
+    <script>
+        var currentDate = new Date();
+
+        function updateCalendar() {
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+            document.getElementById("current-date").innerHTML = currentDateString;
         }
-      });
-    }
+
+        function nextDay() {
+            currentDate.setDate(currentDate.getDate() + 1);
+            updateCalendar();
+        }
+
+        function previousDay() {
+            currentDate.setDate(currentDate.getDate() - 1);
+            updateCalendar();
+        }
+
+        // Initial update
+        updateCalendar();
+    </script>
+
+
+    <!-- FOR DYNAMICALLY TIME=========== -->
+
+    <script>
+        var currentTime = new Date();
+        currentTime.setHours(0, 0, 0, 0);
+
+        function updateTime() {
+            var options = { hour: 'numeric', minute: 'numeric', hour12: true };
+            var currentTimeString = currentTime.toLocaleTimeString('en-US', options);
+
+            document.getElementById("current-time").innerHTML = currentTimeString;
+        }
+
+        function increaseTime() {
+            currentTime.setMinutes(currentTime.getMinutes() + 15);
+            updateTime();
+        }
+
+        function decreaseTime() {
+            currentTime.setMinutes(currentTime.getMinutes() - 15);
+            updateTime();
+        }
+
+        function updateCustomTime() {
+            var hours = document.getElementById("hours").value;
+            var minutes = document.getElementById("minutes").value;
+            var ampm = document.getElementById("ampm").value;
+
+            // Convert to 24-hour format for consistency
+            if (ampm === 'PM' && hours < 12) {
+                hours = parseInt(hours, 10) + 12;
+            } else if (ampm === 'AM' && hours == 12) {
+                hours = 0;
+            }
+
+            currentTime.setHours(hours, minutes);
+            updateTime();
+        }
+
+        // Initial update
+        updateTime();
+    </script>
+
+    <!-- FOR SEARCHBAR====== -->
+
+    <script>
+        function toggleSearchBar() {
+            var searchBar = document.getElementById("search-bar");
+            searchBar.style.display = (searchBar.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function performSearch() {
+            // Add your search logic here
+            alert("Performing search...");
+        }
+    </script>
+
+    <!-- FOR SIDE BAR HIDE AND SHOW -->
+
+    <script>
 
 
 
 
 
-  </script>
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("openModalBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
+        /*=============== SHOW MENU ===============*/
+        const navMenu = document.getElementById('nav-menu'),
+            navToggle = document.getElementById('nav-toggle'),
+            navClose = document.getElementById('nav-close')
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
+        /* Menu show */
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu')
+        })
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+        /* Menu hidden */
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu')
+        })
+
+        /*=============== SEARCH ===============*/
+        const search = document.getElementById('search'),
+            searchBtn = document.getElementById('search-btn'),
+            searchClose = document.getElementById('search-close')
+
+        /* Search show */
+        searchBtn.addEventListener('click', () => {
+            search.classList.add('show-search')
+        })
+
+        /* Search hidden */
+        searchClose.addEventListener('click', () => {
+            search.classList.remove('show-search')
+        })
+
+        /*=============== LOGIN ===============*/
+        const login = document.getElementById('login'),
+            loginBtn = document.getElementById('login-btn'),
+            loginClose = document.getElementById('login-close')
+
+        /* Login show */
+        loginBtn.addEventListener('click', () => {
+            login.classList.add('show-login')
+        })
+
+        /* Login hidden */
+        loginClose.addEventListener('click', () => {
+            login.classList.remove('show-login')
+        })
+
+        $(".accordion-item__line").click(function () {
+            var container = $(this).parents(".accordion-list__item");
+            var answer = container.find(".accordion-item");
+            answer.toggleClass("accordion-item--opened");
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+    <!-- FOR WALKIN============ -->
+
+
+    <script>
+        // MULTIPLE OPTION OF STATUS
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            initializeCustomSelect('customSelect10');
+        });
+
+        function initializeCustomSelect(customSelectId) {
+            const customSelect = document.getElementById(customSelectId);
+            const selectBox = customSelect.querySelector('.select-box');
+            const optionsContainer = customSelect.querySelector('.options');
+
+            selectBox.addEventListener('click', function () {
+                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+            });
+
+            optionsContainer.addEventListener('click', function (e) {
+                const selectedOption = e.target.closest('.option');
+                if (selectedOption) {
+                    const selectedValue = selectedOption.getAttribute('data-value');
+                    selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+                    optionsContainer.style.display = 'none';
+
+                    // Add your logic here to handle the selected value
+                    console.log('Selected Value for', customSelectId, ':', selectedValue);
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!customSelect.contains(e.target)) {
+                    optionsContainer.style.display = 'none';
+                }
+            });
+        }
+
+
+
+
+
+    </script>
+
+    <script>
+        // MULTIPLE OPTION OF STATUS
+
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeCustomSelect('customSelect1');
+            initializeCustomSelect('customSelect2');
+            initializeCustomSelect('customSelect3');
+            initializeCustomSelect('customSelect4');
+            initializeCustomSelect('customSelect5');
+            initializeCustomSelect('customSelect6');
+            initializeCustomSelect('customSelect7');
+            initializeCustomSelect('customSelect8');
+            initializeCustomSelect('customSelect10');
+        });
+
+        function initializeCustomSelect(customSelectId) {
+            const customSelect = document.getElementById(customSelectId);
+            const selectBox = customSelect.querySelector('.select-box');
+            const optionsContainer = customSelect.querySelector('.options');
+
+            selectBox.addEventListener('click', function () {
+                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+            });
+
+            optionsContainer.addEventListener('click', function (e) {
+                const selectedOption = e.target.closest('.option');
+                if (selectedOption) {
+                    const selectedValue = selectedOption.getAttribute('data-value');
+                    selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+                    optionsContainer.style.display = 'none';
+
+                    // Add your logic here to handle the selected value
+                    console.log('Selected Value for', customSelectId, ':', selectedValue);
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!customSelect.contains(e.target)) {
+                    optionsContainer.style.display = 'none';
+                }
+            });
+        }
+
+
+
+
+
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
