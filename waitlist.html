@@ -323,7 +323,7 @@
 
                 <div class="reserve-form">
                     <div class="title-form">
-                        <h1>New Reservation</h1>
+                        <h1>Wait List Form</h1>
                     </div>
                     <div class="reservation-detail">
                         <h1 class="form-title">Reservation Details</h1>
@@ -447,14 +447,31 @@
                                         </div>
                                     </div>
 
-                                    <div class="buttons-mail">
+                                    <div class="custom-select" id="customSelect15">
+                                        <div class="select-box">
+
+                                            <span class="placeholder">Waiting Time 20-30 Min</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option" data-value="option1">
+                                                <span>Waiter 1</span>
+                                            </div>
+                                            <div class="option" data-value="option2">
+                                                <span>Waiter 2</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="buttons-mail">
                                         <div class="mail">
                                             <input type="button" value=" Send SMS">
                                         </div>
                                         <div class="sms">
                                             <input type="button" value=" Send SMS">
                                         </div>
-                                    </div>
+                                    </div> -->
 
 
                                 </div>
@@ -510,7 +527,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="custom-select" id="customSelect15">
+                                    <!-- <div class="custom-select" id="customSelect15">
                                         <div class="select-box">
 
                                             <span class="placeholder">Reservation Status</span>
@@ -525,7 +542,7 @@
                                             </div>
 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="booking-button">
@@ -768,6 +785,7 @@
             initializeCustomSelect('customSelect13');
             initializeCustomSelect('customSelect14');
             initializeCustomSelect('customSelect15');
+            initializeCustomSelect('customSelect16');
         });
 
         function initializeCustomSelect(customSelectId) {
