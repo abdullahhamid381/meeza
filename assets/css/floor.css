@@ -1023,11 +1023,13 @@ a {
   place-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
+  padding-left: 240px;
 }
 @media only screen and (max-width: 992px) {
   .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel .images {
     grid-template-columns: 1fr;
     gap: 50px 0 !important;
+    padding-left: 0;
   }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel .images .rotate {

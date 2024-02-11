@@ -1213,9 +1213,11 @@ gap: 0 10px;
             place-content: center;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 0;
+            padding-left: 240px;
             @include lg{
                 grid-template-columns: 1fr;
                gap: 50px 0 !important;
+               padding-left: 0;
             }
         //   ROTATE=========================
 
