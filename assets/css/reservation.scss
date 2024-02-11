@@ -1,0 +1,1009 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './media.scss';
+
+
+
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.dashboard-reservation-parent {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: auto;
+
+  @include lg {
+    grid-template-columns: 1fr;
+  }
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #064789;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+    z-index: var(--z-fixed);
+
+  }
+
+  .nav {
+    height: var(--header-height);
+
+    padding: 20px 0 0 0;
+    align-items: center;
+
+    @include lg {
+      height: var(--header-height);
+      padding: 20px 0 0 0;
+      align-items: center;
+      margin-top: -144px;
+    }
+  }
+
+  .logo-div {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7999BE;
+
+    .nav__logo {
+      font-size: 30px;
+
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+      color: #ffffff;
+      font-family: 'ABeeZee', sans-serif;
+      padding-left: 30px;
+
+      img {
+        width: 100%;
+
+        @include lg {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .nav__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    flex-direction: column;
+
+    @include xxsmobile {
+      display: flex;
+      align-items: center;
+      -moz-column-gap: 1rem;
+      column-gap: 10px;
+    }
+  }
+
+  .nav__actions button {
+    border: none;
+    outline: none;
+    padding: 13px 35px;
+    border-radius: 8px;
+    color: #000;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include mobile {
+      border: none;
+      outline: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: #000;
+      font-family: "ABeeZee", sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    @include xxsmobile {
+      border: none;
+      outline: none;
+      padding: 8px 9px;
+      border-radius: 8px;
+      color: #000;
+      font-family: "ABeeZee", sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .nav__search,
+  .nav__login,
+  .nav__toggle,
+  .nav__close {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .4s;
+  }
+
+
+
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1023px) {
+    .nav__menu {
+      position: fixed;
+      top: -150%;
+      left: 0;
+      background-color: var(--body-color);
+      box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+      width: 60%;
+      padding-block: 4.5rem 4rem;
+      transition: top 0.4s;
+      z-index: 111111;
+      background: #064789;
+      padding-left: 30px;
+      height: 100vh;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    /* text-align: center; */
+    padding: 0;
+
+    #list {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    .nav__link {
+      color: rgb(255, 255, 255);
+
+      font-family: 'ABeeZee', sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+
+      line-height: normal;
+    }
+  }
+
+
+
+
+  .nav__close {
+    position: absolute;
+    top: 1.15rem;
+    right: 1.5rem;
+
+    @include xxsmobile {
+      position: absolute;
+      top: 1.15rem;
+      right: 3.5rem;
+    }
+  }
+
+  /* Show menu */
+  .show-menu {
+    top: 0;
+  }
+
+  /*=============== SEARCH ===============*/
+  .search__form {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--container-color);
+    box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    transform: translateY(-1rem);
+    transition: transform .4s;
+  }
+
+  .search__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+  }
+
+  .search__input {
+    width: 100%;
+    padding-block: 1rem;
+    background-color: var(--container-color);
+    color: var(--text-color);
+  }
+
+  .search__input::placeholder {
+    color: var(--text-color);
+  }
+
+  /* Show search */
+  .show-search {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .show-search .search__form {
+    transform: translateY(0);
+  }
+
+  /*=============== LOGIN ===============*/
+  .login__form,
+  .login__group {
+    display: grid;
+  }
+
+  .login__form {
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem 2.5rem;
+    box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
+    border-radius: 1rem;
+    row-gap: 1.25rem;
+    text-align: center;
+    transform: translateY(-1rem);
+    transition: transform .4s;
+  }
+
+  .login__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+  }
+
+  .login__group {
+    row-gap: 1rem;
+  }
+
+  .login__label {
+    display: block;
+    text-align: initial;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+  }
+
+  .login__input {
+    width: 100%;
+    background-color: var(--container-color);
+    border: 2px solid var(--border-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--text-color);
+  }
+
+  .login__input::placeholder {
+    color: var(--text-color);
+  }
+
+  .login__signup {
+    margin-bottom: .5rem;
+  }
+
+  .login__signup a {
+    color: var(--first-color);
+  }
+
+  .login__forgot {
+    display: inline-block;
+    color: var(--first-color);
+    margin-bottom: 1.25rem;
+  }
+
+  .login__button {
+    display: inline-block;
+    background-color: var(--first-color);
+    width: 100%;
+    color: #fff;
+    font-weight: var(--font-semi-bold);
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: box-shadow .4s;
+  }
+
+
+
+  /*=============== BREAKPOINTS ===============*/
+  /* For medium devices */
+  @media screen and (min-width: 576px) {
+
+    .search,
+    .login {
+      padding-top: 10rem;
+    }
+
+    .search__form {
+      max-width: 450px;
+      margin-inline: auto;
+    }
+
+    .search__close,
+    .login__close {
+      width: max-content;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      font-size: 2rem;
+    }
+
+    .login__form {
+      max-width: 400px;
+      margin-inline: auto;
+    }
+  }
+
+  /* For large devices */
+  @media screen and (min-width: 1023px) {
+    .nav {
+      height: calc(var(--header-height) + 2rem);
+      column-gap: 3rem;
+    }
+
+    .nav__close,
+    .nav__toggle {
+      display: none;
+    }
+
+    .nav__menu {}
+
+    .nav__list {
+      gap: 35px 0;
+      flex-direction: column;
+
+    }
+
+    .login__form {
+      padding: 3rem 2rem 3.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    .container {
+      margin-inline: auto;
+    }
+  }
+
+
+  // MAIN SECTION SATRT FROM HERE===================
+
+
+  #main-section {
+
+
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 25px;
+
+
+    .deafult {
+      .intro-title {
+        .flex {
+          display: flex;
+          justify-content: space-between;
+
+          @include lg {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .title {
+            h2 {
+              font-size: 20px;
+              font-family: 'ABeeZee', sans-serif;
+              font-style: italic;
+              margin: 0;
+
+            }
+
+            p {
+              font-size: 16px;
+              font-family: 'ABeeZee', sans-serif;
+            }
+          }
+
+          .user {
+            display: flex;
+            gap: 20px;
+
+            .img {
+           .search-div{
+            display: flex;
+            gap: 0 10px;
+            align-items: center;
+            @include lg{
+              align-items: baseline;
+            }
+            img{
+              width: 100%;
+            }
+            #search-bar {
+              display: none; /* Initially hide the search bar */
+              transition: display 0.5s ease; /* Add smooth transition effect */
+              input{
+                padding: 10px 10px;
+                outline: none;
+                border: 1px solid whitesmoke;
+                border-radius: 4px;
+              }
+              button{
+                padding: 11px 10px;
+                background: #064789;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                @include lg{
+                  margin-top: 5px;
+                }
+              }
+            }
+        
+            #toggle-button {
+              cursor: pointer;
+            }
+           }
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .reserve {
+        display: flex;
+        gap: 0 10px;
+        padding-top: 5px;
+
+        @include lg {
+          flex-direction: column;
+          gap: 10px 0;
+        }
+
+        .reserve-button {
+          width: 100%;
+
+          #openModalBtn {
+            background: none;
+            border: none;
+            background: #064789;
+            color: white;
+            padding: 10px 0px;
+            font-size: 20px;
+            font-family: "ABeeZee", sans-serif;
+            font-style: italic;
+            width: 100%;
+          }
+
+          
+// RESERVE MODAL====================================
+
+
+          /* Styles for the modal */
+          .reserve {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+
+            // Modal Content/Box
+
+            &-content {
+              background-color: #ffffff;
+              margin: 5% auto;
+              /* 5% from the top and centered */
+              padding: 20px;
+              border: 1px solid #888;
+              width: 20%;
+              /* Could be more or less, depending on screen size */
+
+              .title {
+              background: #F4F4F4;
+                padding-bottom: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: 400;
+                  font-style: italic;
+                  font-family: 'ABeeZee', sans-serif;
+                  color: black;
+                }
+
+                // Close Button
+                .close {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+
+                  &:hover,
+                  &:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              .fields {
+                .title-fields {
+                  padding: 10px 0;
+
+                  h1 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: #03284E;
+                    font-family: 'ABeeZee', sans-serif;
+                  }
+                }
+
+                .options-fields {
+                  .item {
+                    background: #2CA062;
+
+                    .checkbox {
+                      display: flex;
+                      gap: 0 15px;
+                      justify-content: center;
+                      padding: 15px 0;
+                      border-bottom: 1px solid white;
+                      align-items: center;
+
+                      .check-field {
+                        border: 2px solid white;
+                        padding: 5px;
+                        border-radius: 4px;
+
+                        input {}
+                      }
+
+                      span {
+                        color: white;
+                        font-size: 18px;
+                        font-family: "ABeeZee", sans-serif;
+                        font-weight: 400;
+                      }
+
+                    }
+                  }
+                }
+
+                .custom-select {
+                  position: relative;
+                  width: 208px;
+
+                  @include lg {
+                    width: 100%;
+                  }
+
+                  .select-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background: white;
+                    cursor: pointer;
+
+                    .icon {
+                      img {
+                        width: 100%;
+                      }
+                    }
+
+                    span {
+                      font-family: 'ABeeZee', sans-serif;
+                      font-size: 16px;
+                    }
+
+                    i {
+                      font-size: 14px;
+
+                    }
+                  }
+
+                  .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    border-top: none;
+                    display: none;
+                    background: white;
+                    z-index: 8888;
+
+                    .option {
+                      padding: 10px;
+                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+
+                      span {
+                        font-family: 'ABeeZee', sans-serif;
+                        font-size: 16px;
+                      }
+
+                      &:hover {
+                        background-color: #f0f0f0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              @include lg {
+                width: 80%;
+              }
+            }
+          }
+
+          /* Styles for the modal */
+          .walkin {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+
+            // Modal Content/Box
+
+            &-content {
+              background-color: #D9D9D9;
+              margin: 5% auto;
+              /* 5% from the top and centered */
+              padding: 20px;
+              border: 1px solid #888;
+              width: 20%;
+              /* Could be more or less, depending on screen size */
+
+              .title {
+                border-bottom: 1px solid #000000;
+                padding-bottom: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: 400;
+                  font-style: italic;
+                  font-family: 'ABeeZee', sans-serif;
+                  color: black;
+                }
+
+                // Close Button
+                .close {
+                  color: #aaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+
+                  &:hover,
+                  &:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+
+              .fields {
+                .title-fields {
+                  padding: 10px 0;
+
+                  h1 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: italic;
+                    color: #03284E;
+                    font-family: 'ABeeZee', sans-serif;
+                  }
+                }
+
+                .options-fields {
+                  .item {
+                    background: #2CA062;
+
+                    .checkbox {
+                      display: flex;
+                      gap: 0 15px;
+                      justify-content: center;
+                      padding: 15px 0;
+                      border-bottom: 1px solid white;
+                      align-items: center;
+
+                      .check-field {
+                        border: 2px solid white;
+                        padding: 5px;
+                        border-radius: 4px;
+
+                        input {}
+                      }
+
+                      span {
+                        color: white;
+                        font-size: 18px;
+                        font-family: "ABeeZee", sans-serif;
+                        font-weight: 400;
+                      }
+
+                    }
+                  }
+                }
+
+                .custom-select {
+                  position: relative;
+                  width: 208px;
+
+                  @include lg {
+                    width: 100%;
+                  }
+
+                  .select-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background: white;
+                    cursor: pointer;
+
+                    .icon {
+                      img {
+                        width: 100%;
+                      }
+                    }
+
+                    span {
+                      font-family: 'ABeeZee', sans-serif;
+                      font-size: 16px;
+                    }
+
+                    i {
+                      font-size: 14px;
+
+                    }
+                  }
+
+                  .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    border-top: 1px solid #ccc;
+                    border-top: none;
+                    display: none;
+                    background: white;
+                    z-index: 8888;
+
+                    .option {
+                      padding: 10px;
+                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+
+                      span {
+                        font-family: 'ABeeZee', sans-serif;
+                        font-size: 16px;
+                      }
+
+                      &:hover {
+                        background-color: #f0f0f0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              @include lg {
+                width: 80%;
+              }
+            }
+          }
+
+
+
+          @include lg {
+            width: 100%;
+            margin: auto;
+          }
+
+          a {
+            text-decoration: none;
+
+            button {
+              background: none;
+              border: none;
+              background: #064789;
+              color: white;
+              padding: 10px 00px;
+              font-size: 20px;
+              font-family: "ABeeZee", sans-serif;
+              font-style: italic;
+              width: 100%;
+
+
+            }
+          }
+
+        }
+      }
+
+      .calender {
+        display: flex;
+        gap: 0 20px;
+        padding: 10px 0;
+
+        @include lg {
+          flex-direction: column;
+          gap: 10px 0;
+          align-items: center;
+
+        }
+
+        .date-calender {
+          display: flex;
+          gap: 0 10px;
+          background: #064789;
+
+          .input {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          @include lg {
+            margin: auto;
+            width: 100%;
+          }
+
+          input {
+            border: none;
+            background: #064789;
+            color: white;
+            padding: 10px 80px;
+            font-size: 20px;
+            font-family: "ABeeZee", sans-serif;
+            font-style: italic;
+            outline: none;
+
+            @include lg {
+              border: none;
+              background: #064789;
+              color: white;
+              padding: 10px 67px;
+              font-size: 20px;
+              font-family: "ABeeZee", sans-serif;
+              font-style: italic;
+              outline: none;
+              width: 68%;
+              text-align: center;
+            }
+          }
+
+          input::placeholder {
+            color: #FFFFFF;
+          }
+
+          .img {
+            background: #03284E;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include lg {
+              display: none;
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .opening {
+          @include lg {
+            width: 100%;
+          }
+
+          button {
+            background: none;
+            border: none;
+            background: #064789;
+            color: white;
+            padding: 10px 80px;
+            font-size: 20px;
+            font-family: 'ABeeZee', sans-serif;
+            font-style: italic;
+
+            @include lg {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+
+ 
+
+    }
+  }
+
+  #toggle-btn {
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-content h3 {
+    color: #333;
+  }
+
+  .main-content p {
+    color: #555;
+  }
+
+  #toogle {
+    color: red;
+  }
+}
