@@ -826,10 +826,29 @@ a {
     width: 100%;
   }
 }
+.dashboard-reservation-parent #main-section .deafult .reserve-form .title-form {
+  padding: 20px;
+  background: #F4F4F4;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .title-form h1 {
+  color: black;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .form-title {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
 .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 100px;
+  padding: 0 20px;
 }
 .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid {
   display: flex;
@@ -1194,6 +1213,7 @@ a {
   cursor: pointer;
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
+  border-radius: 4px;
   font-style: italic;
   width: 15%;
 }

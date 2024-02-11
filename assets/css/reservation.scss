@@ -982,11 +982,25 @@ a {
 
             .reserve-form {
                 .title-form {
-                    h1 {}
+                    padding: 20px;
+                    background: #F4F4F4;
+                    h1 {
+                        color: black;
+                        font-family: "ABeeZee", sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
                 }
 
                 .reservation-detail {
-                    h1 {}
+                    .form-title {
+                        padding: 20px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: "ABeeZee", sans-serif;
+                        font-style: italic;
+                    }
 
 // FORM GRID========================
 
@@ -995,7 +1009,7 @@ a {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         gap: 0 100px;
-
+padding: 0 20px;
 
 // FIRST GRID=========================
 
@@ -1453,6 +1467,7 @@ transition: .8s;
     cursor: pointer;
     font-size: 20px;
     font-family: "ABeeZee", sans-serif;
+    border-radius: 4px;
     font-style: italic;
     width: 15%;
                       }
