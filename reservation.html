@@ -331,11 +331,11 @@
                                         <div id="calendar">
 
                                             <div class="buttons">
-                                                <div id="current-date"></div>
+                                                <div id="current-datetwo"></div>
                                                 <i class="fa-solid fa-chevron-left" id="back-btn"
-                                                    onclick="previousDay()"></i>
+                                                    onclick="previousDaytwo()"></i>
                                                 <i class="fa-solid fa-chevron-right" id="next-btn"
-                                                    onclick="nextDay()"></i>
+                                                    onclick="nextDaytwo()"></i>
                                             </div>
 
                                         </div>
@@ -577,6 +577,29 @@
         }
 
         function previousDay() {
+            currentDate.setDate(currentDate.getDate() - 1);
+            updateCalendar();
+        }
+
+        // Initial update
+        updateCalendar();
+    </script>
+    <script>
+        var currentDate = new Date();
+
+        function updateCalendar() {
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+            document.getElementById("current-datetwo").innerHTML = currentDateString;
+        }
+
+        function nextDaytwo() {
+            currentDate.setDate(currentDate.getDate() + 1);
+            updateCalendar();
+        }
+
+        function previousDaytwo() {
             currentDate.setDate(currentDate.getDate() - 1);
             updateCalendar();
         }
