@@ -972,13 +972,33 @@ a {
 .dashboard-table-parent #main-section .deafult .table-tabs .tab-header {
   border-bottom: 1px solid #ccc;
   display: flex;
+  gap: 0 40px;
+  padding: 50px 0;
+  justify-content: center;
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab {
-  padding: 10px;
+  padding: 0 10px;
+  width: 8%;
+  justify-content: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  background: #03284E;
+  transition: 0.8s;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .tab i {
+  font-size: 16px;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .tab h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab:hover {
-  background-color: #eee;
+  background-color: #064789;
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel {
   display: none;
