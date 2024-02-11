@@ -304,151 +304,88 @@
                         <!-- FORM GRID============ -->
 
 
-                        <div class="grid">
+                        <form action="">
+                            <div class="grid">
 
-<!-- FIRST GRID============================= -->
+                                <!-- FIRST GRID============================= -->
 
 
-                            <div class="first-grid">
+                                <div class="first-grid">
 
-                                <!-- CALENDER====================== -->
-                                <div class="date-field">
-                                    <div class="title">
-                                        <h1>Date</h1>
+                                    <!-- CALENDER====================== -->
+                                    <div class="date-field">
+                                        <div class="title">
+                                            <h1>Date</h1>
+                                        </div>
+                                        <div id="calendar">
+
+                                            <div class="buttons">
+                                                <div id="current-date"></div>
+                                                <i class="fa-solid fa-chevron-left" id="back-btn"
+                                                    onclick="previousDay()"></i>
+                                                <i class="fa-solid fa-chevron-right" id="next-btn"
+                                                    onclick="nextDay()"></i>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <div id="calendar">
 
-                                        <div class="buttons">
-                                            <div id="current-date"></div>
-                                            <i class="fa-solid fa-chevron-left" id="back-btn"
-                                                onclick="previousDay()"></i>
-                                            <i class="fa-solid fa-chevron-right" id="next-btn" onclick="nextDay()"></i>
+                                    <!-- TIME ====================== -->
+
+                                    <div id="time-selector">
+
+                                        <div class="title">
+                                            <h1>Time</h1>
+                                        </div>
+                                        <div id="calendar">
+
+                                            <div class="buttons">
+                                                <div id="current-time"></div>
+                                                <i class="fa-solid fa-chevron-left" id="back-btn"
+                                                    onclick="decreaseTime()"></i>
+                                                <i class="fa-solid fa-chevron-right" id="next-btn"
+                                                    onclick="increaseTime()"></i>
+                                            </div>
+
                                         </div>
 
+
+
                                     </div>
-                                </div>
 
-                                <!-- TIME ====================== -->
 
-                                <div id="time-selector">
 
-                                    <div class="title">
-                                        <h1>Time</h1>
-                                    </div>
-                                    <div id="calendar">
+                                    <!-- GUESTS -->
 
-                                        <div class="buttons">
-                                            <div id="current-time"></div>
-                                            <i class="fa-solid fa-chevron-left" id="back-btn"
-                                                onclick="decreaseTime()"></i>
-                                            <i class="fa-solid fa-chevron-right" id="next-btn"
-                                                onclick="increaseTime()"></i>
+
+                                    <div id="quantity-selector">
+
+                                        <div class="title">
+                                            <h1>Guests</h1>
+                                        </div>
+                                        <div id="calendar">
+
+                                            <div class="buttons">
+                                                <div id="current-quantity">0</div>
+                                                <i class="fa-solid fa-chevron-left" id="back-btn"
+                                                    onclick="decreaseQuantity()"></i>
+                                                <i class="fa-solid fa-chevron-right" id="next-btn"
+                                                    onclick="increaseQuantity()"></i>
+                                            </div>
+
                                         </div>
 
-                                    </div>
-
-
-
-                                </div>
-
-
-
-                                <!-- GUESTS -->
-
-
-                                <div id="quantity-selector">
-
-                                    <div class="title">
-                                        <h1>Guests</h1>
-                                    </div>
-                                    <div id="calendar">
-
-                                        <div class="buttons">
-                                            <div id="current-quantity">0</div>
-                                            <i class="fa-solid fa-chevron-left" id="back-btn" onclick="decreaseQuantity()"></i>
-                                            <i class="fa-solid fa-chevron-right" id="next-btn" onclick="increaseQuantity()"></i>
-                                        </div>
 
                                     </div>
 
-                                  
-                                  </div>
 
 
+                                    <!-- SIITING AREA ==================-->
 
-<!-- SIITING AREA ==================-->
-
-<div class="custom-select" id="customSelect11">
-    <div class="select-box">
-
-        <span class="placeholder">Sitting Area</span>
-        <i class="fas fa-chevron-down"></i>
-    </div>
-    <div class="options">
-        <div class="option" data-value="option1">
-            <span>Hall</span>
-        </div>
-        <div class="option" data-value="option2">
-            <span>Lounge</span>
-        </div>
-
-    </div>
-</div>
-
-
-<!-- WAITER=============== -->
-
-
-<div class="custom-select" id="customSelect12">
-    <div class="select-box">
-
-        <span class="placeholder">Waiter</span>
-        <i class="fas fa-chevron-down"></i>
-    </div>
-    <div class="options">
-        <div class="option" data-value="option1">
-            <span>Waiter 1</span>
-        </div>
-        <div class="option" data-value="option2">
-            <span>Waiter 2</span>
-        </div>
-
-    </div>
-</div>
-
-<div class="buttons-mail">
-    <div class="mail">
-        <input type="button" value=" Send SMS">
-    </div>
-    <div class="sms">
-        <input type="button" value=" Send SMS">
-    </div>
-</div>
-
-
-                            </div>
-
-<!-- SECOND GRID================================== -->
-
-                            <div class="second-grid">
-                                <div class="firstname">
-                                    <input type="text" placeholder="First Name">
-                                </div>
-                                <div class="firstname">
-                                    <input type="text" placeholder="Last Name">
-                                </div>
-                                <div class="firstname">
-                                    <input type="email" placeholder="Email ">
-                                </div>
-                                <div class="firstname">
-                                    <input type="email" placeholder="Contact Number ">
-                                </div>
-
-                                <div class="book">
-                                    <div class="custom-select" id="customSelect13">
+                                    <div class="custom-select" id="customSelect11">
                                         <div class="select-box">
-                                    
-                                            <span class="placeholder">New Guest?</span>
+
+                                            <span class="placeholder">Sitting Area</span>
                                             <i class="fas fa-chevron-down"></i>
                                         </div>
                                         <div class="options">
@@ -458,45 +395,114 @@
                                             <div class="option" data-value="option2">
                                                 <span>Lounge</span>
                                             </div>
-                                    
+
                                         </div>
                                     </div>
-                                    <div class="custom-select" id="customSelect14">
+
+
+                                    <!-- WAITER=============== -->
+
+
+                                    <div class="custom-select" id="customSelect12">
                                         <div class="select-box">
-                                    
-                                            <span class="placeholder">Booked by</span>
+
+                                            <span class="placeholder">Waiter</span>
                                             <i class="fas fa-chevron-down"></i>
                                         </div>
                                         <div class="options">
                                             <div class="option" data-value="option1">
-                                                <span>Hall</span>
+                                                <span>Waiter 1</span>
                                             </div>
                                             <div class="option" data-value="option2">
-                                                <span>Lounge</span>
+                                                <span>Waiter 2</span>
                                             </div>
-                                    
+
                                         </div>
                                     </div>
+
+                                    <div class="buttons-mail">
+                                        <div class="mail">
+                                            <input type="button" value=" Send SMS">
+                                        </div>
+                                        <div class="sms">
+                                            <input type="button" value=" Send SMS">
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
-                                <div class="custom-select" id="customSelect15">
-                                    <div class="select-box">
-                                
-                                        <span class="placeholder">Reservation Status</span>
-                                        <i class="fas fa-chevron-down"></i>
+                                <!-- SECOND GRID================================== -->
+
+                                <div class="second-grid">
+                                    <div class="firstname">
+                                        <input type="text" placeholder="First Name">
                                     </div>
-                                    <div class="options">
-                                        <div class="option" data-value="option1">
-                                            <span>Confirm</span>
+                                    <div class="firstname">
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="firstname">
+                                        <input type="email" placeholder="Email ">
+                                    </div>
+                                    <div class="firstname">
+                                        <input type="email" placeholder="Contact Number ">
+                                    </div>
+
+                                    <div class="book">
+                                        <div class="custom-select" id="customSelect13">
+                                            <div class="select-box">
+
+                                                <span class="placeholder">New Guest?</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="options">
+                                                <div class="option" data-value="option1">
+                                                    <span>Hall</span>
+                                                </div>
+                                                <div class="option" data-value="option2">
+                                                    <span>Lounge</span>
+                                                </div>
+
+                                            </div>
                                         </div>
-                                        <div class="option" data-value="option2">
-                                            <span>Pending</span>
+                                        <div class="custom-select" id="customSelect14">
+                                            <div class="select-box">
+
+                                                <span class="placeholder">Booked by</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="options">
+                                                <div class="option" data-value="option1">
+                                                    <span>Hall</span>
+                                                </div>
+                                                <div class="option" data-value="option2">
+                                                    <span>Lounge</span>
+                                                </div>
+
+                                            </div>
                                         </div>
-                                
+                                    </div>
+
+                                    <div class="custom-select" id="customSelect15">
+                                        <div class="select-box">
+
+                                            <span class="placeholder">Reservation Status</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option" data-value="option1">
+                                                <span>Confirm</span>
+                                            </div>
+                                            <div class="option" data-value="option2">
+                                                <span>Pending</span>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -513,31 +519,31 @@
     <script>
         var currentQuantity = 0; // Default quantity is 1
         var step = 1;
-    
+
         function updateQuantity() {
-          document.getElementById("current-quantity").innerHTML = "" + currentQuantity;
+            document.getElementById("current-quantity").innerHTML = "" + currentQuantity;
         }
 
-        
+
         function increaseQuantity() {
-          currentQuantity += step;
-          updateQuantity();
-        }
-    
-        function decreaseQuantity() {
-          if (currentQuantity >= step) {
-            currentQuantity -= step;
+            currentQuantity += step;
             updateQuantity();
-          }
         }
-    
-        document.getElementById("step-input").addEventListener("input", function() {
-          step = parseInt(this.value) || 1; // Use the entered step value or default to 1 if not a valid number
+
+        function decreaseQuantity() {
+            if (currentQuantity >= step) {
+                currentQuantity -= step;
+                updateQuantity();
+            }
+        }
+
+        document.getElementById("step-input").addEventListener("input", function () {
+            step = parseInt(this.value) || 1; // Use the entered step value or default to 1 if not a valid number
         });
-    
+
         // Initial update
         updateQuantity();
-      </script>
+    </script>
 
 
     <!-- FOR DYNAMICALLY DATE -->
