@@ -990,6 +990,7 @@ a {
 
 // FORM GRID========================
 
+                   form{
                     .grid {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
@@ -1436,6 +1437,27 @@ transition: .8s;
                             }
                         }
                     }
+
+                    .booking-button{
+                        display: flex;
+                        justify-content: end;
+                        margin: 30px 0;
+                        padding: 20px;
+                        background: #F4F4F4;
+                      input{
+                        background: none;
+    border: none;
+    background: #064789;
+    color: white;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    width: 15%;
+                      }
+                    }
+                   }
 
                 }
             }

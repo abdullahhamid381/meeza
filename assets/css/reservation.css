@@ -826,17 +826,17 @@ a {
     width: 100%;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 100px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid {
   display: flex;
   flex-direction: column;
   gap: 30px 0;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -844,33 +844,33 @@ a {
   padding: 10px;
   border-radius: 4px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field .title h1 {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field .title h1 {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field #calendar {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field #calendar {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field #calendar .buttons {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field #calendar .buttons {
   display: flex;
   gap: 0 5px;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field #calendar .buttons #current-date {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field #calendar .buttons #current-date {
   font-size: 16px;
   font-weight: 400;
   font-family: "ABeeZee", sans-serif;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field #calendar .buttons #next-btn,
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .date-field #calendar .buttons #back-btn {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field #calendar .buttons #next-btn,
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .date-field #calendar .buttons #back-btn {
   cursor: pointer;
   padding: 8px;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -878,34 +878,34 @@ a {
   padding: 10px;
   border-radius: 4px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector .title h1 {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector .title h1 {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector #calendar {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector #calendar {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector #calendar .buttons {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector #calendar .buttons {
   display: flex;
   gap: 0 5px;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector #calendar .buttons #current-time {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector #calendar .buttons #current-time {
   padding-right: 130px;
   font-size: 16px;
   font-weight: 400;
   font-family: "ABeeZee", sans-serif;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector #calendar .buttons #next-btn,
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #time-selector #calendar .buttons #back-btn {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector #calendar .buttons #next-btn,
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #time-selector #calendar .buttons #back-btn {
   cursor: pointer;
   padding: 8px;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -913,34 +913,34 @@ a {
   padding: 10px;
   border-radius: 4px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector .title h1 {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector .title h1 {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector #calendar {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector #calendar {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector #calendar .buttons {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector #calendar .buttons {
   display: flex;
   gap: 0 5px;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector #calendar .buttons #current-quantity {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector #calendar .buttons #current-quantity {
   padding-right: 190px;
   font-size: 16px;
   font-weight: 400;
   font-family: "ABeeZee", sans-serif;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector #calendar .buttons #next-btn,
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid #quantity-selector #calendar .buttons #back-btn {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector #calendar .buttons #next-btn,
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid #quantity-selector #calendar .buttons #back-btn {
   cursor: pointer;
   padding: 8px;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select {
   position: relative;
   width: 100%;
   border: 1px solid whitesmoke;
@@ -948,11 +948,11 @@ a {
   border-radius: 4px;
 }
 @media only screen and (max-width: 992px) {
-  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select {
     width: 100%;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .select-box {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -960,18 +960,18 @@ a {
   background: white;
   cursor: pointer;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .select-box .icon img {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .select-box .icon img {
   width: 100%;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .select-box span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .select-box i {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .select-box i {
   font-size: 16px;
   padding-right: 22px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .options {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -982,27 +982,27 @@ a {
   background: white;
   z-index: 8888;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .options .option {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .options .option span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .custom-select .options .option:hover {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .custom-select .options .option:hover {
   background-color: #f0f0f0;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail {
   display: flex;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .mail {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .mail {
   display: flex;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .mail input {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .mail input {
   background: none;
   border: none;
   background: #064789;
@@ -1014,14 +1014,14 @@ a {
   cursor: pointer;
   transition: 0.8s;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .mail input:hover {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .mail input:hover {
   background: #427AA1;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .sms {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .sms {
   display: flex;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .sms input {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .sms input {
   background: none;
   border: none;
   background: #427AA1;
@@ -1033,19 +1033,19 @@ a {
   font-size: 16px;
   transition: 0.8s;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .first-grid .buttons-mail .sms input:hover {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid .buttons-mail .sms input:hover {
   background: #064789;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid {
   display: flex;
   flex-direction: column;
   gap: 30px 0;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .firstname {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .firstname {
   border-radius: 4px;
   border: 1px solid whitesmoke;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .firstname input {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .firstname input {
   color: black;
   padding: 20px 20px 20px 20px;
   border: none;
@@ -1053,22 +1053,22 @@ a {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .firstname input::-moz-placeholder {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .firstname input::-moz-placeholder {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
   color: black;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .firstname input::placeholder {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .firstname input::placeholder {
   font-size: 16px;
   font-family: "ABeeZee", sans-serif;
   color: black;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 10px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select {
   position: relative;
   width: 100%;
   border: 1px solid whitesmoke;
@@ -1076,11 +1076,11 @@ a {
   border-radius: 4px;
 }
 @media only screen and (max-width: 992px) {
-  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select {
     width: 100%;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .select-box {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1088,18 +1088,18 @@ a {
   background: white;
   cursor: pointer;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .select-box .icon img {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .select-box .icon img {
   width: 100%;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .select-box span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .select-box i {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .select-box i {
   font-size: 16px;
   padding-right: 22px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .options {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -1110,20 +1110,20 @@ a {
   background: white;
   z-index: 8888;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .options .option {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .options .option span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .book .custom-select .options .option:hover {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .book .custom-select .options .option:hover {
   background-color: #f0f0f0;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select {
   position: relative;
   width: 100%;
   border: 1px solid whitesmoke;
@@ -1131,11 +1131,11 @@ a {
   border-radius: 4px;
 }
 @media only screen and (max-width: 992px) {
-  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select {
     width: 100%;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .select-box {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .select-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1143,18 +1143,18 @@ a {
   background: white;
   cursor: pointer;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .select-box .icon img {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .select-box .icon img {
   width: 100%;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .select-box span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .select-box span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .select-box i {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .select-box i {
   font-size: 16px;
   padding-right: 22px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .options {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .options {
   position: absolute;
   top: 100%;
   left: 0;
@@ -1165,18 +1165,37 @@ a {
   background: white;
   z-index: 8888;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .options .option {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .options .option {
   padding: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .options .option span {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .options .option span {
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
 }
-.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .grid .second-grid .custom-select .options .option:hover {
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .second-grid .custom-select .options .option:hover {
   background-color: #f0f0f0;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button {
+  display: flex;
+  justify-content: end;
+  margin: 30px 0;
+  padding: 20px;
+  background: #F4F4F4;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button input {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  width: 15%;
 }
 .dashboard-reservation-parent #toggle-btn {
   display: none;
