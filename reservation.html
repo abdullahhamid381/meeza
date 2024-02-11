@@ -276,11 +276,142 @@
           </div>
         </div>
 
-      
+        <!-- CALENDER DIV================== -->
+
+        <div class="calender">
+          <div class="date-calender">
+            <div class="input">
+              <input type="text" placeholder="MM/YY/DD">
+            </div>
+            <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
+          </div>
+          <div class="opening">
+            <button>
+              Opening
+            </button>
+          </div>
+        </div>
+
+
+       <div class="reserve-form">
+        <div class="title-form">
+            <h1>New Reservation</h1>
+        </div>
+        <div class="reservation-detail">
+            <h1>Reservation Details</h1>
+            <div class="first-fields">
+                <div class="date-field">
+                    <div class="title">
+                        <h1>Date</h1>
+                    </div>
+                    <div id="calendar">
+                        <div id="current-date"></div>
+                    <div class="buttons">
+                        <i class="fa-solid fa-chevron-left" id="back-btn" onclick="previousDay()"></i>
+                        <i class="fa-solid fa-chevron-right" id="next-btn" onclick="nextDay()"></i>
+                    </div>
+                        
+                      </div>
+                </div>
+
+
+                  <div id="time-selector">
+                    <div id="custom-time-inputs">
+                      <label for="hours">Hours:</label>
+                      <input type="number" id="hours" min="1" max="12">
+                      <label for="minutes">Minutes:</label>
+                      <input type="number" id="minutes" min="0" max="59" step="15">
+                      <select id="ampm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                      </select>
+                      <button onclick="updateCustomTime()">Set Custom Time</button>
+                    </div>
+                
+                    <div id="current-time"></div>
+                    <button id="back-btn" onclick="decreaseTime()">Decrease 15 mins</button>
+                    <button id="next-btn" onclick="increaseTime()">Increase 15 mins</button>
+                  </div>
+                
+            </div>
+        </div>
+       </div>
       </div>
 
     </div>
   </div>
+
+
+
+<!-- FOR DYNAMICALLY DATE -->
+
+<script>
+    var currentDate = new Date();
+
+    function updateCalendar() {
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+      document.getElementById("current-date").innerHTML = currentDateString;
+    }
+
+    function nextDay() {
+      currentDate.setDate(currentDate.getDate() + 1);
+      updateCalendar();
+    }
+
+    function previousDay() {
+      currentDate.setDate(currentDate.getDate() - 1);
+      updateCalendar();
+    }
+
+    // Initial update
+    updateCalendar();
+  </script>
+
+
+<!-- FOR DYNAMICALLY TIME=========== -->
+
+<script>
+    var currentTime = new Date();
+    currentTime.setHours(0, 0, 0, 0);
+
+    function updateTime() {
+      var options = { hour: 'numeric', minute: 'numeric', hour12: true };
+      var currentTimeString = currentTime.toLocaleTimeString('en-US', options);
+
+      document.getElementById("current-time").innerHTML = currentTimeString;
+    }
+
+    function increaseTime() {
+      currentTime.setMinutes(currentTime.getMinutes() + 15);
+      updateTime();
+    }
+
+    function decreaseTime() {
+      currentTime.setMinutes(currentTime.getMinutes() - 15);
+      updateTime();
+    }
+
+    function updateCustomTime() {
+      var hours = document.getElementById("hours").value;
+      var minutes = document.getElementById("minutes").value;
+      var ampm = document.getElementById("ampm").value;
+
+      // Convert to 24-hour format for consistency
+      if (ampm === 'PM' && hours < 12) {
+        hours = parseInt(hours, 10) + 12;
+      } else if (ampm === 'AM' && hours == 12) {
+        hours = 0;
+      }
+
+      currentTime.setHours(hours, minutes);
+      updateTime();
+    }
+
+    // Initial update
+    updateTime();
+  </script>
 
   <!-- FOR SEARCHBAR====== -->
 

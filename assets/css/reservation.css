@@ -824,6 +824,60 @@ a {
     width: 100%;
   }
 }
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field .title h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field #calendar {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin: 20px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field #calendar .buttons {
+  display: flex;
+  gap: 0 5px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field #calendar .buttons #current-date {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field #calendar .buttons #next-btn, .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields .date-field #calendar .buttons #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector #custom-time-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector #custom-time-inputs input {
+  width: 50px;
+  text-align: center;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector #current-time {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector #next-btn, .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail .first-fields #time-selector #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
 .dashboard-reservation-parent #toggle-btn {
   display: none;
   background-color: #3498db;
