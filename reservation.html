@@ -281,8 +281,19 @@
 
                 <div class="calender">
                     <div class="date-calender">
-                        <div class="input">
-                            <input type="text" placeholder="MM/YY/DD">
+                        <div class="date-field">
+                            <div id="calendar">
+
+                                <div class="buttons">
+                                    <i class="fa-solid fa-chevron-left" id="back-btn"
+                                    onclick="previousDay()"></i>
+                                    <div id="current-date"></div>
+                                   
+                                    <i class="fa-solid fa-chevron-right" id="next-btn"
+                                        onclick="nextDay()"></i>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
                     </div>

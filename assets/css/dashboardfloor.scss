@@ -882,94 +882,115 @@ a {
         padding: 10px 0;
 
         @include lg {
-          flex-direction: column;
-          gap: 10px 0;
-          align-items: center;
+            flex-direction: column;
+            gap: 10px 0;
+            align-items: center;
 
         }
 
         .date-calender {
-          display: flex;
-          gap: 0 10px;
-          background: #064789;
-
-          .input {
-            width: 100%;
             display: flex;
-            justify-content: center;
-          }
-
-          @include lg {
-            margin: auto;
-            width: 100%;
-          }
-
-          input {
-            border: none;
-            background: #064789;
-            color: white;
-            padding: 10px 80px;
-            font-size: 20px;
-            font-family: "ABeeZee", sans-serif;
-            font-style: italic;
-            outline: none;
-
-            @include lg {
-              border: none;
-              background: #064789;
-              color: white;
-              padding: 10px 67px;
-              font-size: 20px;
-              font-family: "ABeeZee", sans-serif;
-              font-style: italic;
-              outline: none;
-              width: 68%;
-              text-align: center;
+            gap: 0 10px;
+            @include lg{
+                width: 100%;
+                justify-content: center;
+                background: #064789;
             }
-          }
+// CALENDER DATE==========================
 
-          input::placeholder {
-            color: #FFFFFF;
-          }
+.date-field {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid whitesmoke;
+padding: 10px;
+border-radius: 4px;
+background: #064789;
+color: white;
+font-family: 'ABeeZee', sans-serif;
+font-size: 20px;
+@include lg{
+border: none;
+}
 
-          .img {
-            background: #03284E;
-            padding: 0 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+.title {
+h1 {
+    font-size: 16px;
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
 
-            @include lg {
-              display: none;
+}
+}
+
+#calendar {
+display: flex;
+align-items: center;
+gap: 0 10px;
+
+
+.buttons {
+    display: flex;
+    gap: 0 5px;
+    align-items: center;
+
+    #current-date {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'ABeeZee', sans-serif;
+
+    }
+
+    #next-btn,
+    #back-btn {
+        cursor: pointer;
+        padding: 8px;
+        font-size: 16px;
+
+    }
+}
+}
+}
+
+            .img {
+                background: #03284E;
+                padding: 0 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+
+                @include lg {
+                    display: none;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
-
-            img {
-              width: 100%;
-            }
-          }
         }
 
         .opening {
-          @include lg {
-            width: 100%;
-          }
-
-          button {
-            background: none;
-            border: none;
-            background: #064789;
-            color: white;
-            padding: 10px 80px;
-            font-size: 20px;
-            font-family: 'ABeeZee', sans-serif;
-            font-style: italic;
-
             @include lg {
-              width: 100%;
+                width: 100%;
+                
             }
-          }
+
+            button {
+                background: none;
+                border: none;
+                background: #064789;
+                color: white;
+                padding: 20px 80px;
+                font-size: 20px;
+                font-family: 'ABeeZee', sans-serif;
+                font-style: italic;
+@include lg{padding: 10px 80px;}
+                @include lg {
+                    width: 100%;
+                }
+            }
         }
-      }
+    }
 
       .table-parent {
 

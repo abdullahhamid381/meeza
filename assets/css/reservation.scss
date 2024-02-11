@@ -900,53 +900,73 @@ a {
                 .date-calender {
                     display: flex;
                     gap: 0 10px;
-                    background: #064789;
-
-                    .input {
+                    @include lg{
                         width: 100%;
-                        display: flex;
                         justify-content: center;
-                    }
-
-                    @include lg {
-                        margin: auto;
-                        width: 100%;
-                    }
-
-                    input {
-                        border: none;
                         background: #064789;
-                        color: white;
-                        padding: 10px 80px;
-                        font-size: 20px;
-                        font-family: "ABeeZee", sans-serif;
-                        font-style: italic;
-                        outline: none;
-
-                        @include lg {
-                            border: none;
-                            background: #064789;
-                            color: white;
-                            padding: 10px 67px;
-                            font-size: 20px;
-                            font-family: "ABeeZee", sans-serif;
-                            font-style: italic;
-                            outline: none;
-                            width: 68%;
-                            text-align: center;
-                        }
                     }
+  // CALENDER DATE==========================
 
-                    input::placeholder {
-                        color: #FFFFFF;
-                    }
+  .date-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 4px;
+    background: #064789;
+    color: white;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+    @include lg{
+        border: none;
+    }
+
+    .title {
+        h1 {
+            font-size: 16px;
+            font-family: 'ABeeZee', sans-serif;
+            font-weight: 400;
+
+        }
+    }
+
+    #calendar {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+
+
+        .buttons {
+            display: flex;
+            gap: 0 5px;
+            align-items: center;
+
+            #current-date {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'ABeeZee', sans-serif;
+
+            }
+
+            #next-btn,
+            #back-btn {
+                cursor: pointer;
+                padding: 8px;
+                font-size: 16px;
+
+            }
+        }
+    }
+}
 
                     .img {
                         background: #03284E;
-                        padding: 0 10px;
+                        padding: 0 20px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                    
 
                         @include lg {
                             display: none;
@@ -961,6 +981,7 @@ a {
                 .opening {
                     @include lg {
                         width: 100%;
+                        
                     }
 
                     button {
@@ -968,11 +989,11 @@ a {
                         border: none;
                         background: #064789;
                         color: white;
-                        padding: 10px 80px;
+                        padding: 20px 80px;
                         font-size: 20px;
                         font-family: 'ABeeZee', sans-serif;
                         font-style: italic;
-
+@include lg{padding: 10px 80px;}
                         @include lg {
                             width: 100%;
                         }
@@ -1010,6 +1031,10 @@ a {
                         grid-template-columns: 1fr 1fr;
                         gap: 0 100px;
 padding: 0 20px;
+@include lg{
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+}
 
 // FIRST GRID=========================
 
@@ -1458,6 +1483,9 @@ transition: .8s;
                         margin: 30px 0;
                         padding: 20px;
                         background: #F4F4F4;
+                        @include lg{
+                            justify-content: baseline;
+                        }
                       input{
                         background: none;
     border: none;
@@ -1470,6 +1498,9 @@ transition: .8s;
     border-radius: 4px;
     font-style: italic;
     width: 15%;
+    @include lg{
+        width: 100%;
+    }
                       }
                     }
                    }

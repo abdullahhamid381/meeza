@@ -748,52 +748,60 @@ a {
 .dashboard-reservation-parent #main-section .deafult .calender .date-calender {
   display: flex;
   gap: 0 10px;
-  background: #064789;
-}
-.dashboard-reservation-parent #main-section .deafult .calender .date-calender .input {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 @media only screen and (max-width: 992px) {
   .dashboard-reservation-parent #main-section .deafult .calender .date-calender {
-    margin: auto;
     width: 100%;
+    justify-content: center;
+    background: #064789;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .calender .date-calender input {
-  border: none;
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 4px;
   background: #064789;
   color: white;
-  padding: 10px 80px;
-  font-size: 20px;
   font-family: "ABeeZee", sans-serif;
-  font-style: italic;
-  outline: none;
+  font-size: 20px;
 }
 @media only screen and (max-width: 992px) {
-  .dashboard-reservation-parent #main-section .deafult .calender .date-calender input {
+  .dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field {
     border: none;
-    background: #064789;
-    color: white;
-    padding: 10px 67px;
-    font-size: 20px;
-    font-family: "ABeeZee", sans-serif;
-    font-style: italic;
-    outline: none;
-    width: 68%;
-    text-align: center;
   }
 }
-.dashboard-reservation-parent #main-section .deafult .calender .date-calender input::-moz-placeholder {
-  color: #FFFFFF;
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field .title h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
 }
-.dashboard-reservation-parent #main-section .deafult .calender .date-calender input::placeholder {
-  color: #FFFFFF;
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field #calendar {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons {
+  display: flex;
+  gap: 0 5px;
+  align-items: center;
+}
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #current-date {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #next-btn,
+.dashboard-reservation-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
 }
 .dashboard-reservation-parent #main-section .deafult .calender .date-calender .img {
   background: #03284E;
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -816,10 +824,15 @@ a {
   border: none;
   background: #064789;
   color: white;
-  padding: 10px 80px;
+  padding: 20px 80px;
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-reservation-parent #main-section .deafult .calender .opening button {
+    padding: 10px 80px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .dashboard-reservation-parent #main-section .deafult .calender .opening button {
@@ -849,6 +862,12 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 0 100px;
   padding: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
 }
 .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .grid .first-grid {
   display: flex;
@@ -1204,6 +1223,11 @@ a {
   padding: 20px;
   background: #F4F4F4;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button {
+    justify-content: baseline;
+  }
+}
 .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button input {
   background: none;
   border: none;
@@ -1216,6 +1240,11 @@ a {
   border-radius: 4px;
   font-style: italic;
   width: 15%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-reservation-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button input {
+    width: 100%;
+  }
 }
 .dashboard-reservation-parent #toggle-btn {
   display: none;

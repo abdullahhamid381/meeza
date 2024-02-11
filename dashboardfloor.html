@@ -280,18 +280,28 @@
 
         <div class="calender">
           <div class="date-calender">
-            <div class="input">
-              <input type="text" placeholder="MM/YY/DD">
-            </div>
-            <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
+              <div class="date-field">
+                  <div id="calendar">
+
+                      <div class="buttons">
+                          <i class="fa-solid fa-chevron-left" id="back-btn"
+                          onclick="previousDay()"></i>
+                          <div id="current-date"></div>
+                         
+                          <i class="fa-solid fa-chevron-right" id="next-btn"
+                              onclick="nextDay()"></i>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="img"> <img src="/assets/img/icons8-calendar-plus-80 1.png" alt=""></div>
           </div>
           <div class="opening">
-            <button>
-              Opening
-            </button>
+              <button>
+                  Opening
+              </button>
           </div>
-        </div>
-
+      </div>
 
         <!-- table div -->
 
@@ -851,6 +861,32 @@
 
     </div>
   </div>
+  
+      <!-- FOR DYNAMICALLY DATE -->
+
+      <script>
+        var currentDate = new Date();
+
+        function updateCalendar() {
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+            document.getElementById("current-date").innerHTML = currentDateString;
+        }
+
+        function nextDay() {
+            currentDate.setDate(currentDate.getDate() + 1);
+            updateCalendar();
+        }
+
+        function previousDay() {
+            currentDate.setDate(currentDate.getDate() - 1);
+            updateCalendar();
+        }
+
+        // Initial update
+        updateCalendar();
+    </script>
 
   <!-- FOR SEARCHBAR====== -->
 
@@ -937,6 +973,11 @@
 
 
   </script>
+
+
+
+
+
 
   <!-- FOR WALKIN============ -->
 

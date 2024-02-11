@@ -746,52 +746,60 @@ a {
 .dashboard-parent #main-section .deafult .calender .date-calender {
   display: flex;
   gap: 0 10px;
-  background: #064789;
-}
-.dashboard-parent #main-section .deafult .calender .date-calender .input {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .calender .date-calender {
-    margin: auto;
     width: 100%;
+    justify-content: center;
+    background: #064789;
   }
 }
-.dashboard-parent #main-section .deafult .calender .date-calender input {
-  border: none;
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 4px;
   background: #064789;
   color: white;
-  padding: 10px 80px;
-  font-size: 20px;
   font-family: "ABeeZee", sans-serif;
-  font-style: italic;
-  outline: none;
+  font-size: 20px;
 }
 @media only screen and (max-width: 992px) {
-  .dashboard-parent #main-section .deafult .calender .date-calender input {
+  .dashboard-parent #main-section .deafult .calender .date-calender .date-field {
     border: none;
-    background: #064789;
-    color: white;
-    padding: 10px 67px;
-    font-size: 20px;
-    font-family: "ABeeZee", sans-serif;
-    font-style: italic;
-    outline: none;
-    width: 68%;
-    text-align: center;
   }
 }
-.dashboard-parent #main-section .deafult .calender .date-calender input::-moz-placeholder {
-  color: #FFFFFF;
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field .title h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
 }
-.dashboard-parent #main-section .deafult .calender .date-calender input::placeholder {
-  color: #FFFFFF;
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field #calendar {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons {
+  display: flex;
+  gap: 0 5px;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #current-date {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #next-btn,
+.dashboard-parent #main-section .deafult .calender .date-calender .date-field #calendar .buttons #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
 }
 .dashboard-parent #main-section .deafult .calender .date-calender .img {
   background: #03284E;
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -814,10 +822,15 @@ a {
   border: none;
   background: #064789;
   color: white;
-  padding: 10px 80px;
+  padding: 20px 80px;
   font-size: 20px;
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .calender .opening button {
+    padding: 10px 80px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .dashboard-parent #main-section .deafult .calender .opening button {
