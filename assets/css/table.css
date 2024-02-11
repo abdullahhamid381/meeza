@@ -971,6 +971,9 @@ a {
   padding: 30px 50px;
   border-radius: 4px;
   margin: 30px 0;
+  /* Pagination links */
+  /* Style the active/current link */
+  /* Add a grey background color on mouse-over */
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tabs-container {
   width: 100%;
@@ -1057,6 +1060,24 @@ a {
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel.show {
   display: block;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .pagination {
+  display: flex;
+  justify-content: end;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .table-tabs .pagination a:hover:not(.active) {
+  background-color: #ddd;
 }
 .dashboard-table-parent #toggle-btn {
   display: none;
