@@ -361,6 +361,34 @@ a {
   display: flex;
   gap: 20px;
 }
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div {
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div img {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar {
+  display: none; /* Initially hide the search bar */
+  transition: display 0.5s ease; /* Add smooth transition effect */
+}
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar input {
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+}
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar button {
+  padding: 11px 10px;
+  background: #064789;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+.dashboard-parent #main-section .deafult .intro-title .flex .user .img .search-div #toggle-button {
+  cursor: pointer;
+}
 .dashboard-parent #main-section .deafult .intro-title .flex .user .img img {
   width: 100%;
 }
@@ -378,6 +406,7 @@ a {
 .dashboard-parent #main-section .deafult .reserve .reserve-button {
   width: 100%;
   /* Styles for the modal */
+  /* Styles for the modal */
 }
 .dashboard-parent #main-section .deafult .reserve .reserve-button #openModalBtn {
   background: none;
@@ -389,6 +418,147 @@ a {
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
   width: 100%;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  /* Could be more or less, depending on screen size */
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .title {
+  background: #F4F4F4;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "ABeeZee", sans-serif;
+  color: black;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .title .close:hover, .dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .title-fields {
+  padding: 10px 0;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .title-fields h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #03284E;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .options-fields .item {
+  background: #2CA062;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .options-fields .item .checkbox {
+  display: flex;
+  gap: 0 15px;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .options-fields .item .checkbox .check-field {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .options-fields .item .checkbox span {
+  color: white;
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select {
+  position: relative;
+  width: 208px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select {
+    width: 100%;
+  }
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .select-box .icon img {
+  width: 100%;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .select-box i {
+  font-size: 14px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+  z-index: 8888;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content .fields .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent #main-section .deafult .reserve .reserve-button .reserve-content {
+    width: 80%;
+  }
 }
 .dashboard-parent #main-section .deafult .reserve .reserve-button .walkin {
   display: none;
