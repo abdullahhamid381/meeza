@@ -637,6 +637,10 @@ a {
 }
 .dashboard-reservation-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .options-fields .item {
   background: #2CA062;
+  transition: 0.8s;
+}
+.dashboard-reservation-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .options-fields .item:hover {
+  background: #03284E;
 }
 .dashboard-reservation-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .options-fields .item .checkbox {
   display: flex;
@@ -659,7 +663,8 @@ a {
 }
 .dashboard-reservation-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select {
   position: relative;
-  width: 208px;
+  width: 100%;
+  padding-top: 10px;
 }
 @media only screen and (max-width: 992px) {
   .dashboard-reservation-parent #main-section .deafult .reserve .reserve-button .walkin-content .fields .custom-select {

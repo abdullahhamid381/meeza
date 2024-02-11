@@ -16,7 +16,7 @@ a {
 
 
 
-.dashboard-reservation-parent {
+.dashboard-waitlist-parent {
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: auto;
@@ -905,65 +905,68 @@ a {
                 .date-calender {
                     display: flex;
                     gap: 0 10px;
-                    @include lg{
+
+                    @include lg {
                         width: 100%;
                         justify-content: center;
                         background: #064789;
                     }
-  // CALENDER DATE==========================
 
-  .date-field {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid whitesmoke;
-    padding: 10px;
-    border-radius: 4px;
-    background: #064789;
-    color: white;
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 20px;
-    @include lg{
-        border: none;
-    }
+                    // CALENDER DATE==========================
 
-    .title {
-        h1 {
-            font-size: 16px;
-            font-family: 'ABeeZee', sans-serif;
-            font-weight: 400;
+                    .date-field {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 1px solid whitesmoke;
+                        padding: 10px;
+                        border-radius: 4px;
+                        background: #064789;
+                        color: white;
+                        font-family: 'ABeeZee', sans-serif;
+                        font-size: 20px;
 
-        }
-    }
+                        @include lg {
+                            border: none;
+                        }
 
-    #calendar {
-        display: flex;
-        align-items: center;
-        gap: 0 10px;
+                        .title {
+                            h1 {
+                                font-size: 16px;
+                                font-family: 'ABeeZee', sans-serif;
+                                font-weight: 400;
+
+                            }
+                        }
+
+                        #calendar {
+                            display: flex;
+                            align-items: center;
+                            gap: 0 10px;
 
 
-        .buttons {
-            display: flex;
-            gap: 0 5px;
-            align-items: center;
+                            .buttons {
+                                display: flex;
+                                gap: 0 5px;
+                                align-items: center;
 
-            #current-date {
-                font-size: 16px;
-                font-weight: 400;
-                font-family: 'ABeeZee', sans-serif;
+                                #current-date {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-family: 'ABeeZee', sans-serif;
 
-            }
+                                }
 
-            #next-btn,
-            #back-btn {
-                cursor: pointer;
-                padding: 8px;
-                font-size: 16px;
+                                #next-btn,
+                                #back-btn {
+                                    cursor: pointer;
+                                    padding: 8px;
+                                    font-size: 16px;
 
-            }
-        }
-    }
-}
+                                }
+                            }
+                        }
+                    }
 
                     .img {
                         background: #03284E;
@@ -971,7 +974,7 @@ a {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                    
+
 
                         @include lg {
                             display: none;
@@ -986,7 +989,7 @@ a {
                 .opening {
                     @include lg {
                         width: 100%;
-                        
+
                     }
 
                     button {
@@ -998,7 +1001,11 @@ a {
                         font-size: 20px;
                         font-family: 'ABeeZee', sans-serif;
                         font-style: italic;
-@include lg{padding: 10px 80px;}
+
+                        @include lg {
+                            padding: 10px 80px;
+                        }
+
                         @include lg {
                             width: 100%;
                         }
@@ -1010,6 +1017,7 @@ a {
                 .title-form {
                     padding: 20px;
                     background: #F4F4F4;
+
                     h1 {
                         color: black;
                         font-family: "ABeeZee", sans-serif;
@@ -1028,362 +1036,221 @@ a {
                         font-style: italic;
                     }
 
-// FORM GRID========================
+                    // FORM GRID========================
 
-                   form{
-                    .grid {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        gap: 0 100px;
-padding: 0 20px;
-@include lg{
-    grid-template-columns: 1fr;
-    gap: 30px 0;
-}
+                    form {
+                        .grid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 0 100px;
+                            padding: 0 20px;
 
-// FIRST GRID=========================
-
-                        .first-grid {
-
-                            display: flex;
-                            flex-direction: column;
-                            gap: 30px 0;
-
-
-                            // CALENDER DATE==========================
-
-                            .date-field {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                border: 1px solid whitesmoke;
-                                padding: 10px;
-                                border-radius: 4px;
-
-                                .title {
-                                    h1 {
-                                        font-size: 16px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-weight: 400;
-
-                                    }
-                                }
-
-                                #calendar {
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 0 10px;
-
-
-                                    .buttons {
-                                        display: flex;
-                                        gap: 0 5px;
-                                        align-items: center;
-
-                                        #current-date {
-                                            font-size: 16px;
-                                            font-weight: 400;
-                                            font-family: 'ABeeZee', sans-serif;
-
-                                        }
-
-                                        #next-btn,
-                                        #back-btn {
-                                            cursor: pointer;
-                                            padding: 8px;
-                                            font-size: 16px;
-
-                                        }
-                                    }
-                                }
+                            @include lg {
+                                grid-template-columns: 1fr;
+                                gap: 30px 0;
                             }
 
-                            // TIME =====================
+                            // FIRST GRID=========================
 
+                            .first-grid {
 
-                            #time-selector {
                                 display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                border: 1px solid whitesmoke;
-                                padding: 10px;
-                                border-radius: 4px;
+                                flex-direction: column;
+                                gap: 30px 0;
 
-                                .title {
-                                    h1 {
-                                        font-size: 16px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-weight: 400;
 
-                                    }
-                                }
+                                // CALENDER DATE==========================
 
-                                #calendar {
+                                .date-field {
                                     display: flex;
-                                    align-items: center;
-                                    gap: 0 10px;
-
-
-
-                                    .buttons {
-                                        display: flex;
-                                        gap: 0 5px;
-                                        align-items: center;
-
-                                        #current-time {
-                                            padding-right: 130px;
-                                            font-size: 16px;
-                                            font-weight: 400;
-                                            font-family: 'ABeeZee', sans-serif;
-
-                                        }
-
-                                        #next-btn,
-                                        #back-btn {
-                                            cursor: pointer;
-                                            padding: 8px;
-                                            font-size: 16px;
-
-                                        }
-                                    }
-                                }
-                            }
-
-
-
-                            // GUESTS QUANTITY
-
-
-                            #quantity-selector {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                border: 1px solid whitesmoke;
-                                padding: 10px;
-                                border-radius: 4px;
-
-                                .title {
-                                    h1 {
-                                        font-size: 16px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-weight: 400;
-
-                                    }
-                                }
-
-                                #calendar {
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 0 10px;
-
-
-
-                                    .buttons {
-                                        display: flex;
-                                        gap: 0 5px;
-                                        align-items: center;
-
-                                        #current-quantity {
-                                            padding-right: 190px;
-                                            font-size: 16px;
-                                            font-weight: 400;
-                                            font-family: 'ABeeZee', sans-serif;
-
-                                        }
-
-                                        #next-btn,
-                                        #back-btn {
-                                            cursor: pointer;
-                                            padding: 8px;
-                                            font-size: 16px;
-
-                                        }
-                                    }
-                                }
-                            }
-
-                            // SITTIING AND WAITER ==============================
-
-                            .custom-select {
-                                position: relative;
-                                width: 100%;
-
-                                border: 1px solid whitesmoke;
-                                padding: 0px;
-                                border-radius: 4px;
-
-                                @include lg {
-                                    width: 100%;
-                                }
-
-                                .select-box {
-                                    display: flex;
-                                    align-items: center;
                                     justify-content: space-between;
-                                    padding: 20px 10px;
-                                    background: white;
-                                    cursor: pointer;
+                                    align-items: center;
+                                    border: 1px solid whitesmoke;
+                                    padding: 10px;
+                                    border-radius: 4px;
 
-                                    .icon {
-                                        img {
-                                            width: 100%;
+                                    .title {
+                                        h1 {
+                                            font-size: 16px;
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-weight: 400;
+
                                         }
                                     }
 
-                                    span {
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-size: 16px;
-                                    }
-
-                                    i {
-                                        font-size: 16px;
-                                        padding-right: 22px;
-
-                                    }
-                                }
-
-                                .options {
-                                    position: absolute;
-                                    top: 100%;
-                                    left: 0;
-                                    width: 100%;
-                                    border-top: 1px solid #ccc;
-                                    border-top: none;
-                                    display: none;
-                                    background: white;
-                                    z-index: 8888;
-
-                                    .option {
-                                        padding: 10px;
-                                        cursor: pointer;
+                                    #calendar {
                                         display: flex;
                                         align-items: center;
+                                        gap: 0 10px;
 
-                                        span {
-                                            font-family: 'ABeeZee', sans-serif;
+
+                                        .buttons {
+                                            display: flex;
+                                            gap: 0 5px;
+                                            align-items: center;
+
+                                            #current-date {
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-family: 'ABeeZee', sans-serif;
+
+                                            }
+
+                                            #next-btn,
+                                            #back-btn {
+                                                cursor: pointer;
+                                                padding: 8px;
+                                                font-size: 16px;
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // TIME =====================
+
+
+                                #time-selector {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border: 1px solid whitesmoke;
+                                    padding: 10px;
+                                    border-radius: 4px;
+
+                                    .title {
+                                        h1 {
                                             font-size: 16px;
-                                        }
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-weight: 400;
 
-                                        &:hover {
-                                            background-color: #f0f0f0;
+                                        }
+                                    }
+
+                                    #calendar {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0 10px;
+
+
+
+                                        .buttons {
+                                            display: flex;
+                                            gap: 0 5px;
+                                            align-items: center;
+
+                                            #current-time {
+                                                padding-right: 130px;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-family: 'ABeeZee', sans-serif;
+
+                                            }
+
+                                            #next-btn,
+                                            #back-btn {
+                                                cursor: pointer;
+                                                padding: 8px;
+                                                font-size: 16px;
+
+                                            }
                                         }
                                     }
                                 }
-                            }
-                            .buttons-mail{
-                                display: flex;
-                                .mail{
+
+
+
+                                // GUESTS QUANTITY
+
+
+                                #quantity-selector {
                                     display: flex;
+                                    justify-content: space-between;
                                     align-items: center;
-                                    
-                                    input{
-                                        background: none;
-                                        border: none;
-                                        background: #064789;
-                                        color: white;
-                                        padding: 15px 20px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-weight: 400;
-                                        font-size: 16px;
-                                        cursor: pointer;
-                                        transition: .8s;
-                                        &:hover{
-                                            background: #427AA1;
+                                    border: 1px solid whitesmoke;
+                                    padding: 10px;
+                                    border-radius: 4px;
+
+                                    .title {
+                                        h1 {
+                                            font-size: 16px;
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-weight: 400;
+
                                         }
-                                        
                                     }
-                                }
-                                .sms{
-                                    display: flex;
-                                    align-items: center;
-                                    
-                                    input{
-                                        background: none;
-                                        border: none;
-                                        background: #427AA1;
-                                        color: white;
-                                        cursor: pointer;
-                                        padding: 15px 20px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-weight: 400;
-                                        font-size: 16px;
-transition: .8s;
-&:hover{
-    background: #064789;
-}
-                                    }
-                                   
-                                }
-                            }
-                        }
+
+                                    #calendar {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0 10px;
 
 
-                        // SECOND GRID===================
 
-                        .second-grid{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 30px 0;
-                            .firstname{
-                               border-radius: 4px;
-                                border: 1px solid whitesmoke;
-                              
-                                input{
-                                   color: black;
-                                    padding: 20px 20px 20px 20px;
-                                    border: none;
-                                    outline: none;
-                                    font-family: 'ABeeZee', sans-serif;
-                                    font-size: 16px;
-                                    &::placeholder{
-                                        font-size: 16px;
-                                        font-family: 'ABeeZee', sans-serif;
-                                        color: black;
+                                        .buttons {
+                                            display: flex;
+                                            gap: 0 5px;
+                                            align-items: center;
+
+                                            #current-quantity {
+                                                padding-right: 190px;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-family: 'ABeeZee', sans-serif;
+
+                                            }
+
+                                            #next-btn,
+                                            #back-btn {
+                                                cursor: pointer;
+                                                padding: 8px;
+                                                font-size: 16px;
+
+                                            }
+                                        }
                                     }
                                 }
-                            }
-                            .book{
-                                display: grid;
-                                grid-template-columns: 1fr 1fr;
-                                gap: 0 10px ;
+
+                                // SITTIING AND WAITER ==============================
+
                                 .custom-select {
                                     position: relative;
                                     width: 100%;
-    
+
                                     border: 1px solid whitesmoke;
                                     padding: 0px;
                                     border-radius: 4px;
-    
+
                                     @include lg {
                                         width: 100%;
                                     }
-    
+
                                     .select-box {
-                                         display: flex;
+                                        display: flex;
                                         align-items: center;
                                         justify-content: space-between;
                                         padding: 20px 10px;
                                         background: white;
                                         cursor: pointer;
-    
+
                                         .icon {
                                             img {
                                                 width: 100%;
                                             }
                                         }
-    
+
                                         span {
                                             font-family: 'ABeeZee', sans-serif;
                                             font-size: 16px;
                                         }
-    
+
                                         i {
                                             font-size: 16px;
                                             padding-right: 22px;
-    
+
                                         }
                                     }
-    
+
                                     .options {
                                         position: absolute;
                                         top: 100%;
@@ -1394,18 +1261,237 @@ transition: .8s;
                                         display: none;
                                         background: white;
                                         z-index: 8888;
-    
+
                                         .option {
                                             padding: 10px;
                                             cursor: pointer;
                                             display: flex;
                                             align-items: center;
-    
+
                                             span {
                                                 font-family: 'ABeeZee', sans-serif;
                                                 font-size: 16px;
                                             }
-    
+
+                                            &:hover {
+                                                background-color: #f0f0f0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .buttons-mail {
+                                    display: flex;
+
+                                    .mail {
+                                        display: flex;
+                                        align-items: center;
+
+                                        input {
+                                            background: none;
+                                            border: none;
+                                            background: #064789;
+                                            color: white;
+                                            padding: 15px 20px;
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            cursor: pointer;
+                                            transition: .8s;
+
+                                            &:hover {
+                                                background: #427AA1;
+                                            }
+
+                                        }
+                                    }
+
+                                    .sms {
+                                        display: flex;
+                                        align-items: center;
+
+                                        input {
+                                            background: none;
+                                            border: none;
+                                            background: #427AA1;
+                                            color: white;
+                                            cursor: pointer;
+                                            padding: 15px 20px;
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            transition: .8s;
+
+                                            &:hover {
+                                                background: #064789;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+
+                            // SECOND GRID===================
+
+                            .second-grid {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px 0;
+
+                                .firstname {
+                                    border-radius: 4px;
+                                    border: 1px solid whitesmoke;
+
+                                    input {
+                                        color: black;
+                                        padding: 20px 20px 20px 20px;
+                                        border: none;
+                                        outline: none;
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-size: 16px;
+
+                                        &::placeholder {
+                                            font-size: 16px;
+                                            font-family: 'ABeeZee', sans-serif;
+                                            color: black;
+                                        }
+                                    }
+                                }
+
+                                .book {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    gap: 0 10px;
+
+                                    .custom-select {
+                                        position: relative;
+                                        width: 100%;
+
+                                        border: 1px solid whitesmoke;
+                                        padding: 0px;
+                                        border-radius: 4px;
+
+                                        @include lg {
+                                            width: 100%;
+                                        }
+
+                                        .select-box {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            padding: 20px 10px;
+                                            background: white;
+                                            cursor: pointer;
+
+                                            .icon {
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+
+                                            span {
+                                                font-family: 'ABeeZee', sans-serif;
+                                                font-size: 16px;
+                                            }
+
+                                            i {
+                                                font-size: 16px;
+                                                padding-right: 22px;
+
+                                            }
+                                        }
+
+                                        .options {
+                                            position: absolute;
+                                            top: 100%;
+                                            left: 0;
+                                            width: 100%;
+                                            border-top: 1px solid #ccc;
+                                            border-top: none;
+                                            display: none;
+                                            background: white;
+                                            z-index: 8888;
+
+                                            .option {
+                                                padding: 10px;
+                                                cursor: pointer;
+                                                display: flex;
+                                                align-items: center;
+
+                                                span {
+                                                    font-family: 'ABeeZee', sans-serif;
+                                                    font-size: 16px;
+                                                }
+
+                                                &:hover {
+                                                    background-color: #f0f0f0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .custom-select {
+                                    position: relative;
+                                    width: 100%;
+
+                                    border: 1px solid whitesmoke;
+                                    padding: 0px;
+                                    border-radius: 4px;
+
+                                    @include lg {
+                                        width: 100%;
+                                    }
+
+                                    .select-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding: 20px 10px;
+                                        background: white;
+                                        cursor: pointer;
+
+                                        .icon {
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        span {
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-size: 16px;
+                                        }
+
+                                        i {
+                                            font-size: 16px;
+                                            padding-right: 22px;
+
+                                        }
+                                    }
+
+                                    .options {
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 0;
+                                        width: 100%;
+                                        border-top: 1px solid #ccc;
+                                        border-top: none;
+                                        display: none;
+                                        background: white;
+                                        z-index: 8888;
+
+                                        .option {
+                                            padding: 10px;
+                                            cursor: pointer;
+                                            display: flex;
+                                            align-items: center;
+
+                                            span {
+                                                font-family: 'ABeeZee', sans-serif;
+                                                font-size: 16px;
+                                            }
+
                                             &:hover {
                                                 background-color: #f0f0f0;
                                             }
@@ -1413,102 +1499,38 @@ transition: .8s;
                                     }
                                 }
                             }
-                            .custom-select {
-                                position: relative;
-                                width: 100%;
+                        }
 
-                                border: 1px solid whitesmoke;
-                                padding: 0px;
+                        .booking-button {
+                            display: flex;
+                            justify-content: end;
+                            margin: 30px 0;
+                            padding: 20px;
+                            background: #F4F4F4;
+
+                            @include lg {
+                                justify-content: baseline;
+                            }
+
+                            input {
+                                background: none;
+                                border: none;
+                                background: #064789;
+                                color: white;
+                                padding: 10px 0px;
+                                cursor: pointer;
+                                font-size: 20px;
+                                font-family: "ABeeZee", sans-serif;
                                 border-radius: 4px;
+                                font-style: italic;
+                                width: 15%;
 
                                 @include lg {
                                     width: 100%;
                                 }
-
-                                .select-box {
-                                     display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    padding: 20px 10px;
-                                    background: white;
-                                    cursor: pointer;
-
-                                    .icon {
-                                        img {
-                                            width: 100%;
-                                        }
-                                    }
-
-                                    span {
-                                        font-family: 'ABeeZee', sans-serif;
-                                        font-size: 16px;
-                                    }
-
-                                    i {
-                                        font-size: 16px;
-                                        padding-right: 22px;
-
-                                    }
-                                }
-
-                                .options {
-                                    position: absolute;
-                                    top: 100%;
-                                    left: 0;
-                                    width: 100%;
-                                    border-top: 1px solid #ccc;
-                                    border-top: none;
-                                    display: none;
-                                    background: white;
-                                    z-index: 8888;
-
-                                    .option {
-                                        padding: 10px;
-                                        cursor: pointer;
-                                        display: flex;
-                                        align-items: center;
-
-                                        span {
-                                            font-family: 'ABeeZee', sans-serif;
-                                            font-size: 16px;
-                                        }
-
-                                        &:hover {
-                                            background-color: #f0f0f0;
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
-
-                    .booking-button{
-                        display: flex;
-                        justify-content: end;
-                        margin: 30px 0;
-                        padding: 20px;
-                        background: #F4F4F4;
-                        @include lg{
-                            justify-content: baseline;
-                        }
-                      input{
-                        background: none;
-    border: none;
-    background: #064789;
-    color: white;
-    padding: 10px 0px;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: "ABeeZee", sans-serif;
-    border-radius: 4px;
-    font-style: italic;
-    width: 15%;
-    @include lg{
-        width: 100%;
-    }
-                      }
-                    }
-                   }
 
                 }
             }
