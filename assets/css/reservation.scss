@@ -988,19 +988,24 @@ a {
                 .reservation-detail {
                     h1 {}
 
+// FORM GRID========================
+
                     .grid {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
-                        gap: 0 120px;
+                        gap: 0 100px;
 
-                        .first-fields {
+
+// FIRST GRID=========================
+
+                        .first-grid {
 
                             display: flex;
-flex-direction: column;
-gap: 30px 0;
+                            flex-direction: column;
+                            gap: 30px 0;
 
 
-// CALENDER DATE==========================
+                            // CALENDER DATE==========================
 
                             .date-field {
                                 display: flex;
@@ -1099,25 +1104,336 @@ gap: 30px 0;
                                 }
                             }
 
+
+
+                            // GUESTS QUANTITY
+
+
                             #quantity-selector {
                                 display: flex;
-                                flex-direction: column;
+                                justify-content: space-between;
                                 align-items: center;
-                                margin: 20px;
-                          
-                                #current-quantity {
-                                  font-size: 18px;
-                                  font-weight: bold;
-                                  margin-bottom: 10px;
+                                border: 1px solid whitesmoke;
+                                padding: 10px;
+                                border-radius: 4px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 16px;
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-weight: 400;
+
+                                    }
                                 }
-                          
-                                #next-btn, #back-btn {
-                                  cursor: pointer;
-                                  padding: 8px;
-                                  font-size: 16px;
-                                  margin-top: 10px;
+
+                                #calendar {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0 10px;
+
+
+
+                                    .buttons {
+                                        display: flex;
+                                        gap: 0 5px;
+                                        align-items: center;
+
+                                        #current-quantity {
+                                            padding-right: 190px;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-family: 'ABeeZee', sans-serif;
+
+                                        }
+
+                                        #next-btn,
+                                        #back-btn {
+                                            cursor: pointer;
+                                            padding: 8px;
+                                            font-size: 16px;
+
+                                        }
+                                    }
                                 }
-                              }
+                            }
+
+                            // SITTIING AND WAITER ==============================
+
+                            .custom-select {
+                                position: relative;
+                                width: 100%;
+
+                                border: 1px solid whitesmoke;
+                                padding: 0px;
+                                border-radius: 4px;
+
+                                @include lg {
+                                    width: 100%;
+                                }
+
+                                .select-box {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 20px 10px;
+                                    background: white;
+                                    cursor: pointer;
+
+                                    .icon {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-size: 16px;
+                                    }
+
+                                    i {
+                                        font-size: 16px;
+                                        padding-right: 22px;
+
+                                    }
+                                }
+
+                                .options {
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    width: 100%;
+                                    border-top: 1px solid #ccc;
+                                    border-top: none;
+                                    display: none;
+                                    background: white;
+                                    z-index: 8888;
+
+                                    .option {
+                                        padding: 10px;
+                                        cursor: pointer;
+                                        display: flex;
+                                        align-items: center;
+
+                                        span {
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-size: 16px;
+                                        }
+
+                                        &:hover {
+                                            background-color: #f0f0f0;
+                                        }
+                                    }
+                                }
+                            }
+                            .buttons-mail{
+                                display: flex;
+                                .mail{
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    input{
+                                        background: none;
+                                        border: none;
+                                        background: #064789;
+                                        color: white;
+                                        padding: 15px 20px;
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        cursor: pointer;
+                                        transition: .8s;
+                                        &:hover{
+                                            background: #427AA1;
+                                        }
+                                        
+                                    }
+                                }
+                                .sms{
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    input{
+                                        background: none;
+                                        border: none;
+                                        background: #427AA1;
+                                        color: white;
+                                        cursor: pointer;
+                                        padding: 15px 20px;
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-weight: 400;
+                                        font-size: 16px;
+transition: .8s;
+&:hover{
+    background: #064789;
+}
+                                    }
+                                   
+                                }
+                            }
+                        }
+
+
+                        // SECOND GRID===================
+
+                        .second-grid{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px 0;
+                            .firstname{
+                               border-radius: 4px;
+                                border: 1px solid whitesmoke;
+                              
+                                input{
+                                   color: black;
+                                    padding: 20px 20px 20px 20px;
+                                    border: none;
+                                    outline: none;
+                                    font-family: 'ABeeZee', sans-serif;
+                                    font-size: 16px;
+                                    &::placeholder{
+                                        font-size: 16px;
+                                        font-family: 'ABeeZee', sans-serif;
+                                        color: black;
+                                    }
+                                }
+                            }
+                            .book{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 0 10px ;
+                                .custom-select {
+                                    position: relative;
+                                    width: 100%;
+    
+                                    border: 1px solid whitesmoke;
+                                    padding: 0px;
+                                    border-radius: 4px;
+    
+                                    @include lg {
+                                        width: 100%;
+                                    }
+    
+                                    .select-box {
+                                         display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding: 20px 10px;
+                                        background: white;
+                                        cursor: pointer;
+    
+                                        .icon {
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+    
+                                        span {
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-size: 16px;
+                                        }
+    
+                                        i {
+                                            font-size: 16px;
+                                            padding-right: 22px;
+    
+                                        }
+                                    }
+    
+                                    .options {
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 0;
+                                        width: 100%;
+                                        border-top: 1px solid #ccc;
+                                        border-top: none;
+                                        display: none;
+                                        background: white;
+                                        z-index: 8888;
+    
+                                        .option {
+                                            padding: 10px;
+                                            cursor: pointer;
+                                            display: flex;
+                                            align-items: center;
+    
+                                            span {
+                                                font-family: 'ABeeZee', sans-serif;
+                                                font-size: 16px;
+                                            }
+    
+                                            &:hover {
+                                                background-color: #f0f0f0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .custom-select {
+                                position: relative;
+                                width: 100%;
+
+                                border: 1px solid whitesmoke;
+                                padding: 0px;
+                                border-radius: 4px;
+
+                                @include lg {
+                                    width: 100%;
+                                }
+
+                                .select-box {
+                                     display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 20px 10px;
+                                    background: white;
+                                    cursor: pointer;
+
+                                    .icon {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    span {
+                                        font-family: 'ABeeZee', sans-serif;
+                                        font-size: 16px;
+                                    }
+
+                                    i {
+                                        font-size: 16px;
+                                        padding-right: 22px;
+
+                                    }
+                                }
+
+                                .options {
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0;
+                                    width: 100%;
+                                    border-top: 1px solid #ccc;
+                                    border-top: none;
+                                    display: none;
+                                    background: white;
+                                    z-index: 8888;
+
+                                    .option {
+                                        padding: 10px;
+                                        cursor: pointer;
+                                        display: flex;
+                                        align-items: center;
+
+                                        span {
+                                            font-family: 'ABeeZee', sans-serif;
+                                            font-size: 16px;
+                                        }
+
+                                        &:hover {
+                                            background-color: #f0f0f0;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
