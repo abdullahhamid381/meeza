@@ -966,15 +966,27 @@ a {
   color: white;
   font-weight: 400;
 }
+.dashboard-table-parent #main-section .deafult .table-tabs {
+  border: 1px solid #E7E8F2;
+  padding: 30px 50px;
+  border-radius: 4px;
+  margin: 30px 0;
+}
 .dashboard-table-parent #main-section .deafult .table-tabs .tabs-container {
   width: 100%;
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab-header {
   border-bottom: 1px solid #ccc;
   display: flex;
-  gap: 0 40px;
-  padding: 50px 0;
+  gap: 0 20px;
+  padding: 0 0 50px 0;
   justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-tabs .tab-header {
+    flex-direction: column;
+    gap: 10px 0;
+  }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab {
   padding: 0 10px;
@@ -986,6 +998,11 @@ a {
   gap: 0 10px;
   background: #03284E;
   transition: 0.8s;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-tabs .tab {
+    width: 100%;
+  }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .tab i {
   font-size: 16px;

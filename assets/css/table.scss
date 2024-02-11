@@ -1159,6 +1159,10 @@ gap: 0 10px;
 
 
 .table-tabs{
+    border: 1px solid #E7E8F2;
+    padding: 30px 50px;
+    border-radius: 4px;
+    margin: 30px 0;
     .tabs-container {
         width: 100%;
       }
@@ -1166,9 +1170,13 @@ gap: 0 10px;
       .tab-header {
         border-bottom: 1px solid #ccc;
         display: flex;
-        gap: 0 40px;
-        padding: 50px 0;
+        gap: 0 20px;
+        padding: 0 0 50px 0;
         justify-content: center;
+        @include lg{
+            flex-direction: column;
+            gap: 10px 0;
+        }
       }
       
       .tab {
@@ -1181,6 +1189,9 @@ gap: 0 10px;
         gap: 0 10px;
         background: #03284E;
         transition: .8s;
+        @include lg{
+            width: 100%;
+        }
         i{
             font-size: 16px;
             color: white;
