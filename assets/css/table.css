@@ -975,6 +975,14 @@ a {
   /* Style the active/current link */
   /* Add a grey background color on mouse-over */
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-tabs {
+    border: 1px solid #E7E8F2;
+    padding: 30px 50px 78px 50px;
+    border-radius: 4px;
+    margin: 30px 0;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-tabs .tabs-container {
   width: 100%;
 }
@@ -1064,6 +1072,11 @@ a {
 .dashboard-table-parent #main-section .deafult .table-tabs .pagination {
   display: flex;
   justify-content: end;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-tabs .pagination {
+    display: block;
+  }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs .pagination a {
   color: black;
