@@ -236,8 +236,7 @@
     </div>
     <div class="name">
         <div class="input">
-            <input type="tel" id="contactNumber" placeholder="Contact Number"
-                required>
+            <input type="tel" id="contactNumber" placeholder="Contact Number" required>
         </div>
         <div class="input">
             <input type="email" id="email" placeholder="Email" required>
@@ -245,11 +244,10 @@
     </div>
     <div class="name">
         <div class="input">
-            <input type="text" id="role" placeholder="Occasion (Optional)" required>
+            <input type="text" id="role" placeholder="Occasion (Optional)">
         </div>
         <div class="input">
-            <input type="text" id="shifts"
-                placeholder="Special Request (Optional)" required>
+            <input type="text" id="shifts" placeholder="Special Request (Optional)">
         </div>
     </div>
     <input type="submit" value="Confirm Reservation" class="submit">
@@ -259,9 +257,90 @@
         </div>
 
 
-        
+        <div class="footer">
+            <div class="width">
+                <div class="title">
+                    <h1 style="border-left: none;">Home</h1>
+                    <h1>Pricing</h1>
+                    <h1>Resources</h1>
+                    <h1>About</h1>
+                    <h1>Contact</h1>
+                </div>
+                <div class="icons">
+    
+                    <div class="facebook">
+                        <img src="/assets/img/facebook (1).png" alt="">
+    
+    
+                    </div>
+                    <div class="facebook">
+                        <img src="/assets/img/insta.png" alt="">
+    
+    
+                    </div>
+                    <div class="facebook">
+                        <img src="/assets/img/twiter.png" alt="">
+    
+    
+                    </div>
+                    <div class="facebook">
+                        <img src="/assets/img/youtube.png" alt="">
+    
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="copyright">
+    
+                <div class="width">
+                    <h1>
+                        @Copyright 2023 Restaurant Management App. All rights reserved.
+                    </h1>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!--=========== FOOTER============================ -->
+
+
+  
+
+
+    <!-- FORM VALIDATION -->
+
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var contactNumber = document.getElementById("contactNumber").value;
+            var email = document.getElementById("email").value;
+
+            if (!firstName) {
+                alert("Please enter your First Name");
+                return false;
+            }
+
+            if (!lastName) {
+                alert("Please enter your Last Name");
+                return false;
+            }
+
+            if (!contactNumber) {
+                alert("Please enter your Contact Number");
+                return false;
+            }
+
+            if (!email) {
+                alert("Please enter your Email");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
     
     <!-- FOR NAVBAR -->
     <script>
