@@ -222,7 +222,38 @@
             </div>
         </div>
     </div>
+
+  
  </div>
+ <form onsubmit="return validateForm()">
+    <div class="name">
+        <div class="input">
+            <input type="text" id="firstName" placeholder="First Name" required>
+        </div>
+        <div class="input">
+            <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+    </div>
+    <div class="name">
+        <div class="input">
+            <input type="tel" id="contactNumber" placeholder="Contact Number"
+                required>
+        </div>
+        <div class="input">
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+    </div>
+    <div class="name">
+        <div class="input">
+            <input type="text" id="role" placeholder="Occasion (Optional)" required>
+        </div>
+        <div class="input">
+            <input type="text" id="shifts"
+                placeholder="Special Request (Optional)" required>
+        </div>
+    </div>
+    <input type="submit" value="Confirm Reservation" class="submit">
+</form>
 </div>
 
         </div>
