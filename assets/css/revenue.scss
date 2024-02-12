@@ -545,9 +545,22 @@ a {
 
                 }
 
-               
             }
 
+            .grid-dollar{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px 0;
+                @include lg{
+                    grid-template-columns: 1fr ;
+                }
+                .dollars{
+                    img{
+                        width: 100%;
+
+                    }
+                }
+               }
             /* Add your styles here */
 
 

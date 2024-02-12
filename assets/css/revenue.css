@@ -461,6 +461,19 @@ a {
   color: #807D9B;
   padding: 5px 0;
 }
+.dashboard-table-parent #main-section .deafult .grid-dollar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .grid-dollar {
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-table-parent #main-section .deafult .grid-dollar .dollars img {
+  width: 100%;
+}
 .dashboard-table-parent #toggle-btn {
   display: none;
   background-color: #3498db;
