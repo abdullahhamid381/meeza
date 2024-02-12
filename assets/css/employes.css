@@ -461,6 +461,441 @@ a {
   color: #807D9B;
   padding: 5px 0;
 }
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs {
+  border: 1px solid #E7E8F2;
+  padding: 30px 50px;
+  border-radius: 4px;
+  margin: 30px 0;
+  /* Pagination links */
+  /* Style the active/current link */
+  /* Add a grey background color on mouse-over */
+}
+@media only screen and (max-width: 450px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs {
+    border: 1px solid #E7E8F2;
+    padding: 30px 50px 78px 50px;
+    border-radius: 4px;
+    margin: 30px 0;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tabs-container {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  gap: 0 80px;
+  padding: 0 0 20px 0;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .title {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  color: #064789;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab {
+  padding: 0 10px;
+  width: 15%;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  background: #03284E;
+  transition: 0.8s;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab {
+    width: 100%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab i {
+  font-size: 16px;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab:hover {
+  background-color: #064789;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel {
+  display: none;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .title-shift {
+  padding: 20px 0;
+  border-bottom: 1px solid #E7E8F2;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .title-shift h1 {
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #E7E8F2;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button {
+  width: 100%;
+  /* Styles for the modal */
+  /* Styles for the modal */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button #openModalBtn {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  width: 20%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  /* Could be more or less, depending on screen size */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title {
+  background: #F4F4F4;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "ABeeZee", sans-serif;
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close:hover, .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .title-fields {
+  padding: 10px 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .title-fields h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #03284E;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item {
+  background: #2CA062;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox {
+  display: flex;
+  gap: 0 15px;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox .check-field {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox span {
+  color: white;
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select {
+  position: relative;
+  width: 208px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select {
+    width: 100%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box .icon img {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box i {
+  font-size: 14px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+  z-index: 8888;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content {
+    width: 80%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content {
+  background-color: #E4E4E4;
+  margin: 5% auto;
+  /* padding: 20px; */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F4F4F4;
+  padding: 10PX 50PX;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close:hover, .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time {
+  padding: 35px 30px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date {
+  padding: 0px 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date span {
+  font-size: 14px;
+  color: #064789;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender {
+  display: flex;
+  gap: 0 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender {
+    width: 100%;
+    justify-content: center;
+    background: #064789;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field {
+    border: none;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field .title h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons {
+  display: flex;
+  gap: 0 5px;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #current-date {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons i {
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #next-btn,
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons input {
+  border: none;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons::-moz-placeholder {
+  color: black !important;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons::placeholder {
+  color: black !important;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button {
+    width: 100%;
+    margin: auto;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button a {
+  text-decoration: none;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button a button {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel.show {
+  display: block;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
+  display: flex;
+  justify-content: end;
+}
+@media only screen and (max-width: 450px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
+    display: block;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 .dashboard-table-parent #toggle-btn {
   display: none;
   background-color: #3498db;

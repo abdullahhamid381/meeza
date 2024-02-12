@@ -173,6 +173,141 @@
             </div>
            </div>
         </div>
+
+
+        <div class="employes-tabs">
+            <div class="table-tabs">
+                <div class="tabs-container">
+
+<!-- TABLE BUTTONS=================== -->
+
+                    <div class="tab-header">
+                        <div class="title">Shifts</div>
+                   
+                        <div class="tab" data-index="0">
+                            <h1>View All Employees</h1>
+                        </div>
+                     
+                        <div class="tab" data-index="1">
+                            <h1>Add New Employee</h1>
+                        </div>
+                      
+                     
+                    </div>
+
+                    <!-- TABLE PANNEL==================== -->
+                    <div class="tab-panels">
+                    
+                        <div class="tab-panel show" data-index="0">
+                    
+<div class="title-shift">
+    <h1>Assign Shifts</h1>
+</div>
+<div class="assign">
+    <p>Tuesday, 15 Aug, 2023 (08:00-17:00)</p>
+    <div class="reserve-button">
+        <button id="openModalBtn">Assign</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="walkin">
+
+            <!-- Modal content -->
+            <div class="walkin-content">
+                <div class="title">
+                    <h2>Assign a Shift</h2>
+                    <span class="close">&times;</span>
+
+                </div>
+<div class="date-time">
+    <div class="date">
+        <span>Select Date</span>
+        <div class="date-calender">
+            <div class="date-field">
+                <div id="calendar">
+
+                    <div class="buttons">
+                        <i class="fa-solid fa-chevron-left" id="back-btn" onclick="previousDay()"></i>
+                        <div id="current-date"></div>
+
+                        <i class="fa-solid fa-chevron-right" id="next-btn" onclick="nextDay()"></i>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="date" style="padding: 0;">
+        <span>Select Date</span>
+        <div class="date-calender">
+            <div class="date-field">
+                <div id="calendar">
+
+                    <div class="buttons">
+                     <input type="text" placeholder="8:00 - 1700">
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <input type="text" value="Assign" style="background: #03284E;text-align: center;color: white;width: 30%;padding: 10px 0; border: none; margin-left: 20px; border-radius: 4px; margin-top: 10px;">
+    
+</div>
+
+             
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+                        </div>
+                        
+
+                        <div class="tab-panel show" data-index="1">
+                   
+
+
+                        </div>
+
+                  
+
+
+
+
+
+
+
+
+                    
+
+
+
+                      
+                     
+
+                    
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </div>
+        </div>
        </div>
 
             </div>
@@ -184,6 +319,99 @@
 
 
 
+
+
+
+<!-- FOR DYNAMICALLY DATE=============== -->
+
+<script>
+    var currentDate = new Date();
+
+    function updateCalendar() {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById("current-date").innerHTML = currentDateString;
+    }
+
+    function nextDay() {
+        currentDate.setDate(currentDate.getDate() + 1);
+        updateCalendar();
+    }
+
+    function previousDay() {
+        currentDate.setDate(currentDate.getDate() - 1);
+        updateCalendar();
+    }
+
+    // Initial update
+    updateCalendar();
+</script>
+
+
+
+<!-- FOR MODAL -->
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+
+   <!-- FOR MULTIPLE TABS================ -->
+
+
+   <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.tab');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const index = this.dataset.index;
+                activateTab(index);
+            });
+        });
+
+        function activateTab(index) {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabPanels.forEach(panel => panel.classList.remove('show'));
+
+            tabs[index].classList.add('active');
+            tabPanels[index].classList.add('show');
+        }
+
+        // By default, activate the first tab
+        activateTab(0);
+    });
+
+</script>
 
 
 <!-- FOR DYNAMIC CALLENER -->
