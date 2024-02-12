@@ -547,6 +547,7 @@ a {
   grid-template-columns: 1fr 1fr;
   place-content: center;
   align-items: center;
+  gap: 0 20px;
   padding: 15px 0;
   border-bottom: 1px solid #E7E8F2;
 }
@@ -566,6 +567,20 @@ a {
   font-family: "ABeeZee", sans-serif;
   font-style: italic;
   width: 20%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button #openModalBtn {
+    background: none;
+    border: none;
+    background: #064789;
+    color: white;
+    padding: 10px 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    width: 80%;
+  }
 }
 .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve {
   display: none;
@@ -876,6 +891,7 @@ a {
 .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
   display: flex;
   justify-content: end;
+  margin-top: 30px;
 }
 @media only screen and (max-width: 450px) {
   .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
