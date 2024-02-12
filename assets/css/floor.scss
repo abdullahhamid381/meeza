@@ -1622,3 +1622,19 @@ gap: 0 10px;
     color: red;
   }
 }
+
+.setwalkbtndiv{
+  display: flex;
+  justify-content: end;
+    .setwalkbtn{
+      color: white;
+      border: none;
+      background: #2CA062;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'ABeeZee', sans-serif;
+      margin-top: 10px;
+      
+    
+    }
+  }
