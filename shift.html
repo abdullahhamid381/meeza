@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/shift.css">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard-table-parent">
+
+
+        <!-- SIDEBAR SECTION==============================  -->
+
+
+        <header class="hero-parent" id="header" style="background: #064789;">
+            <nav class="nav container">
+                <div class="logo-div">
+                    <a href="floor.html" class="nav__logo">Logo</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu" style="padding-left: 30px;">
+                    <ul class="nav__list">
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                            </div>
+                            <a href="floor.html" class="nav__link">Floor</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-event-accepted-100 1.png" alt="">
+                            </div>
+                            <a href="booking.html" class="nav__link">Bookings</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-restaurant-100 1.png" alt="">
+                            </div>
+                            <a href="time.html" class="nav__link">Times</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-payment-100 (1) 1.png" alt="">
+                            </div>
+                            <a href="table.html" class="nav__link">Tables</a>
+                        </li>
+                        <!-- <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Employees</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-dashboard-100 1.png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Shifts</a>
+                        </li>
+                        <li class="nav__item" id="list">
+                            <div>
+                                <img src="/assets/img/icons8-profit-100 (1) 1 (1).png" alt="">
+                            </div>
+                            <a href="#" class="nav__link">Revenue</a>
+                        </li>
+ -->
+
+
+
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line" style="color: white;"></i>
+                    </div>
+                </div>
+
+
+            </nav>
+        </header>
+
+
+        <!-- MAIN SECTION  -->
+
+        <div id="main-section">
+            <button id="toggle-btn" onclick="toggleSidebar()">Toggle Sidebar</button>
+            <div class="deafult">
+                <div class="intro-title">
+                    <div class="flex">
+                        <div class="title">
+                            <h2>Good Morning, Deiaalskka</h2>
+                            <p>Welcome Back, nice to see you again</p>
+                        </div>
+                        <div class="user">
+                            <div class="nav__actions">
+
+
+                                <!-- Toggle button -->
+                                <div class="nav__toggle" id="nav-toggle">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+
+                            <div class="img">
+                                <div class="search-div">
+
+                                    <div>
+                                        <img id="toggle-button" onclick="toggleSearchBar()" src="/assets/img/search.png"
+                                            alt="">
+                                    </div>
+                                    <div id="search-bar">
+                                        <input type="text" placeholder="Search...">
+                                        <button onclick="performSearch()">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="/assets/img/bell.png" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="/assets/img/Ellipse 15.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <div class="calender-time">
+
+       <div class="calender">
+     
+    <div class="display">
+        <h1 id="selectedDate" class="date">Your Shift for</h1>
+        <input type="" placeholder="8:00am - 6:00PM">
+    </div>
+
+ <div class="calender-show">
+           <div class="navigation">
+            
+            <span id="currentMonthYear"></span>
+            <div class="buttons">
+                <i onclick="previousMonth()" class="fa-solid fa-chevron-left"></i>
+               
+                <i onclick="nextMonth()" class="fa-solid fa-chevron-right"></i>
+               
+            
+            </div>
+          </div>
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+ </div>
+       </div>
+          </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- FOR DYNAMIC CALLENER -->
+
+<script>
+    let currentYear, currentMonth;
+
+    function generateCalendar(year, month) {
+      const calendarBody = document.querySelector('#calendar tbody');
+      calendarBody.innerHTML = '';
+
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+      let date = 1;
+
+      for (let i = 0; i < 6; i++) {
+        const row = document.createElement('tr');
+
+        for (let j = 0; j < 7; j++) {
+          const cell = document.createElement('td');
+
+          if ((i === 0 && j < firstDayOfMonth) || date > daysInMonth) {
+            cell.textContent = '';
+          } else {
+            cell.textContent = date;
+
+            cell.addEventListener('click', function () {
+              const selectedDateElement = document.querySelector('#selectedDate');
+              selectedDateElement.textContent = 'Your Shift for : ' + year + '-' + (month + 1) + '-' + cell.textContent;
+            });
+
+            date++;
+          }
+
+          row.appendChild(cell);
+        }
+
+        calendarBody.appendChild(row);
+      }
+
+      document.querySelector('#currentMonthYear').textContent = `${getMonthName(month)} ${year}`;
+    }
+
+    function getMonthName(month) {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return months[month];
+    }
+
+    function previousMonth() {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      generateCalendar(currentYear, currentMonth);
+    }
+
+    function nextMonth() {
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      generateCalendar(currentYear, currentMonth);
+    }
+
+    // Initialize with the current month and year
+    const currentDate = new Date();
+    currentYear = currentDate.getFullYear();
+    currentMonth = currentDate.getMonth();
+    generateCalendar(currentYear, currentMonth);
+
+  </script>
+
+    <!-- FOR SEARCHBAR====== -->
+
+    <script>
+        function toggleSearchBar() {
+            var searchBar = document.getElementById("search-bar");
+            searchBar.style.display = (searchBar.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function performSearch() {
+            // Add your search logic here
+            alert("Performing search...");
+        }
+    </script>
+
+
+
+    <!-- FOR SIDE BAR HIDE AND SHOW -->
+
+    <script>
+
+
+
+
+
+
+
+
+
+        /*=============== SHOW MENU ===============*/
+        const navMenu = document.getElementById('nav-menu'),
+            navToggle = document.getElementById('nav-toggle'),
+            navClose = document.getElementById('nav-close')
+
+        /* Menu show */
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu')
+        })
+
+        /* Menu hidden */
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu')
+        })
+
+        /*=============== SEARCH ===============*/
+        const search = document.getElementById('search'),
+            searchBtn = document.getElementById('search-btn'),
+            searchClose = document.getElementById('search-close')
+
+        /* Search show */
+        searchBtn.addEventListener('click', () => {
+            search.classList.add('show-search')
+        })
+
+        /* Search hidden */
+        searchClose.addEventListener('click', () => {
+            search.classList.remove('show-search')
+        })
+
+        /*=============== LOGIN ===============*/
+        const login = document.getElementById('login'),
+            loginBtn = document.getElementById('login-btn'),
+            loginClose = document.getElementById('login-close')
+
+        /* Login show */
+        loginBtn.addEventListener('click', () => {
+            login.classList.add('show-login')
+        })
+
+        /* Login hidden */
+        loginClose.addEventListener('click', () => {
+            login.classList.remove('show-login')
+        })
+
+        $(".accordion-item__line").click(function () {
+            var container = $(this).parents(".accordion-list__item");
+            var answer = container.find(".accordion-item");
+            answer.toggleClass("accordion-item--opened");
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+ 
+
+</body>
+
+</html>
