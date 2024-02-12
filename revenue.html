@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Dashboard</title>
-    <link rel="stylesheet" href="/assets/css/shift.css">
+    <link rel="stylesheet" href="/assets/css/revenue.css">
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -141,44 +141,43 @@
                     </div>
                 </div>
 
-          <div class="calender-time">
+       <!-- EMPLOYES SHIFTS================= -->
 
-       <div class="calender">
-     
-    <div class="display">
-        <h1 id="selectedDate" class="date">Your Shift for</h1>
-        <input type="" placeholder="8:00am - 6:00PM">
-    </div>
 
- <div class="calender-show">
-           <div class="navigation">
-            
-            <span id="currentMonthYear"></span>
-            <div class="buttons">
-                <i onclick="previousMonth()" class="fa-solid fa-chevron-left"></i>
-               
-                <i onclick="nextMonth()" class="fa-solid fa-chevron-right"></i>
-               
-            
+       <div class="employes-shift-parent">
+        <div class="employes-shift">
+            <div class="title">
+                <h1>Employee Shifts</h1>
             </div>
-          </div>
-        <table id="calendar">
-          <thead>
-            <tr>
-              <th>Sun</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
- </div>
+           <div class="grid">
+            <div class="cards">
+                <p class="title">Bookings</p>
+                <h1 class="time">$1589 <span style="color: #3DD598;">+2.5%</span></h1>
+                <span class="date">Compared to (984 last week)</span>
+                <br>
+              
+            </div>
+            <div class="cards">
+                <p class="title">Bookings</p>
+                <h1 class="time">$1589 <span style="color: #3DD598;">+2.5%</span></h1>
+                <span class="date">Compared to (984 last week)</span>
+                <br>
+              
+            </div>
+            <div class="cards">
+                <p class="title">Bookings</p>
+                <h1 class="time">$1589 <span style="color: #3DD598;">+2.5%</span></h1>
+                <span class="date">Compared to (984 last week)</span>
+                <br>
+              
+            </div>
+        
+           </div>
+        </div>
+
+
+    
        </div>
-          </div>
 
             </div>
 
@@ -189,6 +188,124 @@
 
 
 
+
+
+
+<!-- FORM VALIDATION -->
+
+<script>
+    function validateForm() {
+      // Get form values
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      var contactNumber = document.getElementById('contactNumber').value;
+      var email = document.getElementById('email').value;
+      var role = document.getElementById('role').value;
+      var shifts = document.getElementById('shifts').value;
+
+      // Perform validation
+      if (firstName === '' || lastName === '' || contactNumber === '' || email === '' || role === '' || shifts === '') {
+        alert('All fields are required. Please fill them out.');
+        return false;
+      }
+
+      // Additional validation logic can be added if needed
+
+      return true; // Form is valid
+    }
+  </script>
+
+
+<!-- FOR DYNAMICALLY DATE=============== -->
+
+<script>
+    var currentDate = new Date();
+
+    function updateCalendar() {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var currentDateString = currentDate.toLocaleDateString('en-US', options);
+
+        document.getElementById("current-date").innerHTML = currentDateString;
+    }
+
+    function nextDay() {
+        currentDate.setDate(currentDate.getDate() + 1);
+        updateCalendar();
+    }
+
+    function previousDay() {
+        currentDate.setDate(currentDate.getDate() - 1);
+        updateCalendar();
+    }
+
+    // Initial update
+    updateCalendar();
+</script>
+
+
+
+<!-- FOR MODAL -->
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+
+   <!-- FOR MULTIPLE TABS================ -->
+
+
+   <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.tab');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const index = this.dataset.index;
+                activateTab(index);
+            });
+        });
+
+        function activateTab(index) {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabPanels.forEach(panel => panel.classList.remove('show'));
+
+            tabs[index].classList.add('active');
+            tabPanels[index].classList.add('show');
+        }
+
+        // By default, activate the first tab
+        activateTab(0);
+    });
+
+</script>
 
 
 <!-- FOR DYNAMIC CALLENER -->
