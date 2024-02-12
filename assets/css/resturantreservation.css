@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #FAFBFF;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar-parent {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 0;
+  /* Navigation for mobile devices */
+  /* Show menu */
+  /*=============== SEARCH ===============*/
+  /* Show search */
+  /*=============== LOGIN ===============*/
+  /* Show login */
+  /*=============== BREAKPOINTS ===============*/
+  /* For medium devices */
+  /* For large devices */
+}
+@media only screen and (max-width: 992px) {
+  .nav-bar-parent {
+    width: 80%;
+    margin: auto;
+  }
+}
+.nav-bar-parent .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  box-shadow: 0 2px 16px hsla(230, 75%, 32%, 0.15);
+  z-index: var(--z-fixed);
+}
+.nav-bar-parent .nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-parent .nav__logo {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  font-family: "ABeeZee", sans-serif;
+}
+.nav-bar-parent .nav__actions {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+@media only screen and (max-width: 330px) {
+  .nav-bar-parent .nav__actions {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1rem;
+    column-gap: 10px;
+  }
+}
+.nav-bar-parent .nav__actions button {
+  border: none;
+  outline: none;
+  padding: 13px 35px;
+  border-radius: 8px;
+  color: #000;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 450px) {
+  .nav-bar-parent .nav__actions button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #000;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .nav-bar-parent .nav__actions button {
+    border: none;
+    outline: none;
+    padding: 8px 9px;
+    border-radius: 8px;
+    color: #000;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.nav-bar-parent .nav__search,
+.nav-bar-parent .nav__login,
+.nav-bar-parent .nav__toggle,
+.nav-bar-parent .nav__close {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.nav-bar-parent :is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
+  color: var(--first-color);
+}
+@media screen and (max-width: 1023px) {
+  .nav-bar-parent .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+    width: 100%;
+    padding-block: 4.5rem 4rem;
+    transition: top 0.4s;
+    z-index: 111111;
+    background: white;
+  }
+}
+.nav-bar-parent .nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  text-align: center;
+}
+.nav-bar-parent .nav__link {
+  color: #000;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-bar-parent .nav__close {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+}
+@media only screen and (max-width: 330px) {
+  .nav-bar-parent .nav__close {
+    position: absolute;
+    top: 1.15rem;
+    right: 3.5rem;
+  }
+}
+.nav-bar-parent .show-menu {
+  top: 0;
+}
+.nav-bar-parent .search__form {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.nav-bar-parent .search__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+.nav-bar-parent .search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+.nav-bar-parent .search__input::-moz-placeholder {
+  color: var(--text-color);
+}
+.nav-bar-parent .search__input::placeholder {
+  color: var(--text-color);
+}
+.nav-bar-parent .show-search {
+  opacity: 1;
+  pointer-events: initial;
+}
+.nav-bar-parent .show-search .search__form {
+  transform: translateY(0);
+}
+.nav-bar-parent .login__form,
+.nav-bar-parent .login__group {
+  display: grid;
+}
+.nav-bar-parent .login__form {
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  border-radius: 1rem;
+  row-gap: 1.25rem;
+  text-align: center;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.nav-bar-parent .login__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+.nav-bar-parent .login__group {
+  row-gap: 1rem;
+}
+.nav-bar-parent .login__label {
+  display: block;
+  text-align: initial;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+.nav-bar-parent .login__input {
+  width: 100%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+}
+.nav-bar-parent .login__input::-moz-placeholder {
+  color: var(--text-color);
+}
+.nav-bar-parent .login__input::placeholder {
+  color: var(--text-color);
+}
+.nav-bar-parent .login__signup {
+  margin-bottom: 0.5rem;
+}
+.nav-bar-parent .login__signup a {
+  color: var(--first-color);
+}
+.nav-bar-parent .login__forgot {
+  display: inline-block;
+  color: var(--first-color);
+  margin-bottom: 1.25rem;
+}
+.nav-bar-parent .login__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  width: 100%;
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+.nav-bar-parent .login__button:hover {
+  box-shadow: 0 4px 24px hsla(230, 75%, 40%, 0.4);
+}
+.nav-bar-parent .show-login {
+  opacity: 1;
+  pointer-events: initial;
+}
+.nav-bar-parent .show-login .login__form {
+  transform: translateY(0);
+}
+@media screen and (min-width: 576px) {
+  .nav-bar-parent .search,
+  .nav-bar-parent .login {
+    padding-top: 10rem;
+  }
+  .nav-bar-parent .search__form {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+  .nav-bar-parent .search__close,
+  .nav-bar-parent .login__close {
+    width: -moz-max-content;
+    width: max-content;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    font-size: 2rem;
+  }
+  .nav-bar-parent .login__form {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .nav-bar-parent .nav {
+    height: calc(var(--header-height) + 2rem);
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .nav-bar-parent .nav__close,
+  .nav-bar-parent .nav__toggle {
+    display: none;
+  }
+  .nav-bar-parent .nav__list {
+    flex-direction: row;
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+  }
+  .nav-bar-parent .login__form {
+    padding: 3rem 2rem 3.5rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .nav-bar-parent .container {
+    margin-inline: auto;
+  }
+}
+
+.resturant-reservation-parent {
+  padding-top: 20px;
+  height: 100vh;
+}
+.resturant-reservation-parent .width-resturant {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-reservation-parent .width-resturant {
+    width: 90%;
+    margin: auto;
+  }
+}
+.resturant-reservation-parent .width-resturant .select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* place-content: center; */
+  place-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-reservation-parent .width-resturant .select {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+}
+.resturant-reservation-parent .width-resturant .select .custom-select {
+  position: relative;
+  width: 208px;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-reservation-parent .width-resturant .select .custom-select {
+    width: 100%;
+  }
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .select-box .icon img {
+  width: 100%;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .select-box i {
+  font-size: 14px;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+  z-index: 8888;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.resturant-reservation-parent .width-resturant .select .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+.resturant-reservation-parent .width-resturant .search {
+  position: relative;
+  margin: 40px 0;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-reservation-parent .width-resturant .search {
+    position: unset;
+  }
+}
+.resturant-reservation-parent .width-resturant .search .text {
+  width: 100%;
+  margin: auto;
+}
+.resturant-reservation-parent .width-resturant .search .text input {
+  width: 97%;
+  outline: none;
+  padding: 20px 20px 20px 20px;
+  background: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.resturant-reservation-parent .width-resturant .search .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-reservation-parent .width-resturant .search .button {
+    position: unset;
+    margin-top: 10px;
+  }
+}
+.resturant-reservation-parent .width-resturant .search .button button {
+  padding: 20px 61px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: #064789;
+  color: white;
+  border-radius: 8px;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 80%;
+  gap: 0 20px;
+  align-items: center;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .img-div h1 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .img-div .img img {
+  width: 100%;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .detail .para p {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .detail .icon {
+  display: flex;
+  margin: 10px 0;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .detail .icon .calender {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding-right: 10px;
+}
+.resturant-reservation-parent .width-resturant .almost-done .grid .detail .icon .calender span {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}/*# sourceMappingURL=resturantreservation.css.map */

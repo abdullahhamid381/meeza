@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <title>Multiple Select with Icons</title>
+    <link rel="stylesheet" href="/assets/css/resturantreservation.css">
+
+
+
+</head>
+
+<body>
+    <div class="nav-bar-parent">
+        <header class="hero-parent" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Logo</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/about.html" class="nav__link">About Us</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/resturant.html" class="nav__link">Resturant</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/contact.html" class="nav__link">Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__actions">
+                    <!-- Search button -->
+                    <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
+
+                    <!-- Login button -->
+                    <!-- <i class="ri-user-line nav__login" ></i> -->
+
+                    <a href="/signin.html"> <button style="border: 1px solid #064789 ;background: none;cursor: pointer;"
+                            id="login-btn">Login</button></a>
+                    <a href="/signup.html"><button style="background: #064789;color: white; cursor: pointer;">Sign
+                            up</button></a>
+
+
+
+
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="resturant-reservation-parent">
+        <div class="width-resturant">
+
+            <!-- SELECT OPTION SECTION================= -->
+            <div class="select">
+                <div class="custom-select" id="customSelect1">
+                    <div class="select-box">
+                        <div class="icon">
+                            <img src="/assets/img/location.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder">United Kingdom</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="option1">
+                            <span>United States</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>United Arab</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="custom-select" id="customSelect2">
+                    <div class="select-box">
+                        <div class="icon">
+                            <img src="/assets/img/city.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder">City Name</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="options">
+
+                        <div class="option" data-value="option1">
+                            <span>London</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>New York</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-select" id="customSelect3">
+                    <div class="select-box">
+
+                        <div class="icon">
+                            <img src="/assets/img/cus.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder">Cuisines</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="options">
+
+                        <div class="option" data-value="option1">
+                            <span>London</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>New York</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-select" id="customSelect4">
+                    <div class="select-box">
+                        <div class="icon">
+                            <img src="/assets/img/food.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder">Food Types</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="options">
+
+                        <div class="option" data-value="option1">
+                            <span>Chinees</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>Italian</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>Pakistani</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-select" id="customSelect5">
+                    <div class="select-box">
+                        <div class="icon">
+                            <img src="/assets/img/label.png" alt="" width="100%">
+                        </div>
+                        <span class="placeholder">Labels</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="options">
+
+                        <div class="option" data-value="option1">
+                            <span>Chinees</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>Italian</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>Pakistani</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SEARCH OPTION================== -->
+
+            <div class="search">
+                <div class="text">
+                    <input type="text" placeholder="Search by Restaurant Name">
+                </div>
+                <div class="button">
+                    <button>Search</button>
+                </div>
+            </div>
+
+
+            <!-- RESTURANT HERO -->
+
+        
+<div class="almost-done">
+ <div class="grid">
+    <div class="img-div">
+        <h1>You’re almost done!</h1>
+        <div class="img">
+            <img src="/assets/img/RE.png" alt="">
+        </div>
+    </div>
+    <div class="detail">
+        <div class="para">
+            <p>Cravings Tapas - 8 Wilsey Square</p>
+        </div>
+        <div class="icon">
+            <div class="calender">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>August 3, 2023</span>
+            </div>
+            <div class="calender">
+                <i class="fa-regular fa-clock"></i>
+                <span>1:30 pm</span>
+            </div>
+            <div class="calender">
+                <i class="fa-solid fa-user"></i>
+                <span>4 People</span>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+        </div>
+
+
+        
+    </div>
+
+    
+    <!-- FOR NAVBAR -->
+    <script>
+        /*=============== SHOW MENU ===============*/
+        const navMenu = document.getElementById('nav-menu'),
+            navToggle = document.getElementById('nav-toggle'),
+            navClose = document.getElementById('nav-close')
+
+        /* Menu show */
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu')
+        })
+
+        /* Menu hidden */
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu')
+        })
+
+        /*=============== SEARCH ===============*/
+        const search = document.getElementById('search'),
+            searchBtn = document.getElementById('search-btn'),
+            searchClose = document.getElementById('search-close')
+
+        /* Search show */
+        searchBtn.addEventListener('click', () => {
+            search.classList.add('show-search')
+        })
+
+        /* Search hidden */
+        searchClose.addEventListener('click', () => {
+            search.classList.remove('show-search')
+        })
+
+        /*=============== LOGIN ===============*/
+        const login = document.getElementById('login'),
+            loginBtn = document.getElementById('login-btn'),
+            loginClose = document.getElementById('login-close')
+
+        /* Login show */
+        loginBtn.addEventListener('click', () => {
+            login.classList.add('show-login')
+        })
+
+        /* Login hidden */
+        loginClose.addEventListener('click', () => {
+            login.classList.remove('show-login')
+        })
+
+        $(".accordion-item__line").click(function () {
+            var container = $(this).parents(".accordion-list__item");
+            var answer = container.find(".accordion-item");
+            answer.toggleClass("accordion-item--opened");
+        });
+    </script>
+
+
+
+<!-- FOR MULTIPLE SELECT=========== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeCustomSelect('customSelect1');
+            initializeCustomSelect('customSelect2');
+            initializeCustomSelect('customSelect3');
+            initializeCustomSelect('customSelect4');
+            initializeCustomSelect('customSelect5');
+            initializeCustomSelect('customSelect6');
+            initializeCustomSelect('customSelect7');
+            initializeCustomSelect('customSelect8');
+        });
+
+        function initializeCustomSelect(customSelectId) {
+            const customSelect = document.getElementById(customSelectId);
+            const selectBox = customSelect.querySelector('.select-box');
+            const optionsContainer = customSelect.querySelector('.options');
+
+            selectBox.addEventListener('click', function () {
+                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+            });
+
+            optionsContainer.addEventListener('click', function (e) {
+                const selectedOption = e.target.closest('.option');
+                if (selectedOption) {
+                    const selectedValue = selectedOption.getAttribute('data-value');
+                    selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+                    optionsContainer.style.display = 'none';
+
+                    // Add your logic here to handle the selected value
+                    console.log('Selected Value for', customSelectId, ':', selectedValue);
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!customSelect.contains(e.target)) {
+                    optionsContainer.style.display = 'none';
+                }
+            });
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
