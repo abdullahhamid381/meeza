@@ -852,14 +852,6 @@ a {
   place-content: center;
   gap: 2px;
 }
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .help-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
-}
 .dashboard-table-parent #main-section .deafult .table-parent .help-table .help .item {
   background: #03284E;
   display: flex;
@@ -873,6 +865,11 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .help-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .limit-table {
   width: 100%;
   margin-bottom: 2px;
@@ -882,14 +879,6 @@ a {
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help .item {
   background: #427AA1;
@@ -904,6 +893,11 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .cover-table {
   width: 100%;
   margin-bottom: 2px;
@@ -913,14 +907,6 @@ a {
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help .item {
   background: #2CA062;
@@ -935,6 +921,11 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .occu-table {
   width: 100%;
   margin-bottom: 2px;
@@ -944,14 +935,6 @@ a {
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help .item {
   background: #03284E;
@@ -965,6 +948,11 @@ a {
   text-align: center;
   color: white;
   font-weight: 400;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help .item h3 {
+    font-size: 7px;
+  }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs {
   margin: 20px 0;

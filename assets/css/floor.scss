@@ -1011,12 +1011,12 @@ gap: 0 10px;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             place-content: center;
 
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
+            // @include lg {
+            //   display: grid;
+            //   grid-template-columns: 2fr 1fr;
+            //   place-content: center;
+            //   gap: 2px;
+            // }
 
             gap: 2px;
 
@@ -1032,6 +1032,9 @@ gap: 0 10px;
                 text-align: center;
                 color: white;
                 font-weight: 400;
+                @include lg{
+                  font-size: 9px;
+                }
               }
             }
           }
@@ -1049,12 +1052,12 @@ gap: 0 10px;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             place-content: center;
 
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
+            // @include lg {
+            //   display: grid;
+            //   grid-template-columns: 2fr 1fr;
+            //   place-content: center;
+            //   gap: 2px;
+            // }
 
             gap: 2px;
 
@@ -1070,6 +1073,9 @@ gap: 0 10px;
                 text-align: center;
                 color: white;
                 font-weight: 400;
+                @include lg{
+                  font-size: 9px;
+                }
               }
             }
           }
@@ -1086,12 +1092,12 @@ gap: 0 10px;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             place-content: center;
 
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
+            // @include lg {
+            //   display: grid;
+            //   grid-template-columns: 2fr 1fr;
+            //   place-content: center;
+            //   gap: 2px;
+            // }
 
             gap: 2px;
 
@@ -1107,6 +1113,9 @@ gap: 0 10px;
                 text-align: center;
                 color: white;
                 font-weight: 400;
+                @include lg{
+                  font-size: 9px;
+                }
               }
             }
           }
@@ -1126,12 +1135,7 @@ gap: 0 10px;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             place-content: center;
 
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
+          
 
             gap: 2px;
 
@@ -1147,6 +1151,9 @@ gap: 0 10px;
                 text-align: center;
                 color: white;
                 font-weight: 400;
+                @include lg{
+                  font-size: 7px;
+                }
               }
             }
           }
