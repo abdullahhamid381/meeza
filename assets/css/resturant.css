@@ -822,6 +822,12 @@ a {
 .resturant-parent .footer {
   background: black;
   padding: 60px 0 0 0;
+  margin-top: 2500px;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-parent .footer {
+    margin-top: 0;
+  }
 }
 .resturant-parent .footer .width {
   max-width: 1300px;

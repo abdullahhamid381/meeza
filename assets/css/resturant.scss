@@ -978,6 +978,10 @@ a {
     .footer{
         background: black;
         padding: 60px 0 0 0;
+        margin-top: 2500px;
+        @include lg{
+            margin-top: 0;
+        }
         .width{
           max-width: 1300px;
           width: 100%;
