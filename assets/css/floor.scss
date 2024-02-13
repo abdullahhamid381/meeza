@@ -27,8 +27,11 @@ a {
     grid-template-columns: 1fr;
   }
 .hero-parent{
-  @include xlaptop{
+  @include xldisplay{
     height: 100vh;
+  }
+  @include lg{
+    display: none;
   }
 }
 
@@ -360,7 +363,7 @@ a {
   }
 
   /* For large devices */
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1179px) {
     .nav {
       height: calc(var(--header-height) + 2rem);
       column-gap: 3rem;

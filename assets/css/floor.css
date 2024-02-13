@@ -30,9 +30,14 @@ a {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (min-width: 1620px) {
   .dashboard-table-parent .hero-parent {
     height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent .hero-parent {
+    display: none;
   }
 }
 .dashboard-table-parent .header {
@@ -319,7 +324,7 @@ a {
     margin-inline: auto;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1179px) {
   .dashboard-table-parent .nav {
     height: calc(var(--header-height) + 2rem);
     -moz-column-gap: 3rem;
