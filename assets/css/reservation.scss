@@ -1511,6 +1511,9 @@ transition: .8s;
     border-radius: 4px;
     font-style: italic;
     width: 15%;
+    @include xlaptop{
+        width: 33%;
+    }
     @include lg{
         width: 100%;
     }

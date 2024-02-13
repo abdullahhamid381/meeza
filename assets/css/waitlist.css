@@ -20,6 +20,11 @@ a {
   /* For medium devices */
   /* For large devices */
 }
+@media only screen and (max-width: 1179px) {
+  .dashboard-waitlist-parent {
+    grid-template-columns: 1.5fr 5fr;
+  }
+}
 @media only screen and (max-width: 992px) {
   .dashboard-waitlist-parent {
     grid-template-columns: 1fr;
@@ -33,6 +38,11 @@ a {
   background: #064789;
   box-shadow: 0 2px 16px hsla(230, 75%, 32%, 0.15);
   z-index: var(--z-fixed);
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-waitlist-parent .hero-parent {
+    height: 100vh;
+  }
 }
 .dashboard-waitlist-parent .nav {
   height: var(--header-height);
@@ -1245,6 +1255,11 @@ a {
   border-radius: 4px;
   font-style: italic;
   width: 15%;
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-waitlist-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button input {
+    width: 33%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .dashboard-waitlist-parent #main-section .deafult .reserve-form .reservation-detail form .booking-button input {

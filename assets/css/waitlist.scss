@@ -20,22 +20,30 @@ a {
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: auto;
-
-    @include lg {
-        grid-template-columns: 1fr;
+    @include xlaptop{
+        grid-template-columns: 1.5fr 5fr;
     }
-
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #064789;
-        box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
-        z-index: var(--z-fixed);
-
-    }
+        @include lg {
+            grid-template-columns: 1fr;
+        }
+    
+    
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #064789;
+            box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
+            z-index: var(--z-fixed);
+          
+    
+        }
+        .hero-parent{
+            @include xlaptop{
+                height: 100vh;
+            }
+        }
 
     .nav {
         height: var(--header-height);
@@ -1524,7 +1532,9 @@ a {
                                 border-radius: 4px;
                                 font-style: italic;
                                 width: 15%;
-
+@include xlaptop{
+    width: 33%;
+}
                                 @include lg {
                                     width: 100%;
                                 }
