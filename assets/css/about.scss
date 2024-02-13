@@ -465,50 +465,16 @@ img {
 
 .hero-about-parent{
   .hero-back{
-    position: relative;
+   background: url(r);
     img{
       width: 100%;
     }
     .text{
-      position: absolute;
-      top: 210px;
-      left: 510px;
-      @include xl{
-        position: absolute;
-        top: 110px;
-        left: 510px;
-      }
-      @include lg{
-        position: absolute;
-    top: 85px;
-    left: 130px;
-      }
-      @include md{
-        position: absolute;
-        top: 82px;
-        left: 120px;
+   
     
-      }
-      @include sm6{
-        position: absolute;
-        top: 55px;
-        left: 110px;
-      }
-      @include sm{
-        position: absolute;
-    top: 41px;
-    left: 105px;
-      }
-      @include mobile{
-        position: absolute;
-        top: 41px;
-        left: 95px;
-      }
-      @include xxsmobile{
-        position: absolute;
-        top: 24px;
-        left: 45px;
-      }
+     
+     
+     
       h1{
          color: #fff;
          text-align: center;
@@ -651,10 +617,11 @@ img {
   justify-content: center;
   align-items: center;
   @include lg{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
+flex-direction: column;
+align-items: baseline;
      gap: 20px 0;
-     place-items: center
+     margin-left: -30px
+     
    };
    @include xxsmobile{
     grid-template-columns: 1fr;
@@ -665,6 +632,7 @@ img {
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
+    
     padding: 0 40px;
     line-height: 50px; /* 208.333% */
     border-left: 1px solid white;
@@ -681,10 +649,10 @@ img {
   padding-bottom: 60px;
   align-items: center;
   @include lg{
-   grid-template-columns: 1fr 1fr;
-   display: grid;
-    gap: 20px 0;
-    place-items: center
+    flex-direction: column;
+    align-items: baseline;
+         gap: 20px 0;
+        
   };
   .facebook{
     background: #064789;

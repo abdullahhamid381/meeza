@@ -482,9 +482,16 @@ a {
   align-items: center;
   padding-top: 80px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 450px) {
   .contact-parent .width-trusted .trusted .img {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    padding-top: 80px;
+    width: 23%;
+    /* margin: auto; */
+    margin: auto;
   }
 }
 .contact-parent .width-trusted .trusted .img img {
