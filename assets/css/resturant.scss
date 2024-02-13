@@ -975,98 +975,96 @@ a {
     }
 
     
-.footer{
-    background: black;
-    padding: 60px 0 0 0;
-    margin-top: 2500px;
-    @include lg{
-        margin-top: 0;
-    }
-    .width{
-      max-width: 1300px;
-      width: 100%;
-      margin: auto;
-  @include lg{
-    width: 80%;
-    margin: auto;
-  }
-  .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include lg{
-      grid-template-columns: 1fr 1fr;
-      display: grid;
-       gap: 20px 0;
-       place-items: center
-     };
-     @include xxsmobile{
-      grid-template-columns: 1fr;
-     }
-    h1{
-      color: #FFF;
-      font-family: "ABeeZee", sans-serif;
-      font-size: 24px;
-      font-style: italic;
-      font-weight: 400;
-      padding: 0 40px;
-      line-height: 50px; /* 208.333% */
-      border-left: 1px solid white;
-      @include lg{
-        border: none;
-      }
-    }
-  }
-  .icons{
-    display: flex;
-    justify-content: center;
-    gap:0 40px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    align-items: center;
-    @include lg{
-     grid-template-columns: 1fr 1fr;
-     display: grid;
-      gap: 20px 0;
-      place-items: center
-    };
-    .facebook{
-      background: #064789;
-      height: 60px;
-      padding: 10px;
-      border-radius: 50px;
-      width: 60px;
-      img{
-        width: 100%;
-      }
-    }
-  }
-  
-    }
-    .copyright{
-      background: #064789;
-      padding: 20px 0;
-     .width{
-      width: 100%;
-      max-width: 1300px;
+    .footer{
+        background: black;
+        padding: 60px 0 0 0;
+        .width{
+          max-width: 1300px;
+          width: 100%;
+          margin: auto;
       @include lg{
         width: 80%;
         margin: auto;
       }
-      h1{
-        color: #FFF;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
+      .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include lg{
+      flex-direction: column;
+      align-items: baseline;
+           gap: 20px 0;
+           margin-left: -30px
+           
+         };
+         @include xxsmobile{
+          grid-template-columns: 1fr;
+         }
+        h1{
+          color: #FFF;
+          font-family: "ABeeZee", sans-serif;
+          font-size: 24px;
+          font-style: italic;
+          font-weight: 400;
+          
+          padding: 0 40px;
+          line-height: 50px; /* 208.333% */
+          border-left: 1px solid white;
+          @include lg{
+            border: none;
+          }
+        }
       }
-     }
-     
-    }
-   
-  }
+      .icons{
+        display: flex;
+        justify-content: center;
+        gap:0 40px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        align-items: center;
+        @include lg{
+          flex-direction: column;
+          align-items: baseline;
+               gap: 20px 0;
+              
+        };
+        .facebook{
+          background: #064789;
+          height: 60px;
+          padding: 10px;
+          border-radius: 50px;
+          width: 60px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      
+        }
+        .copyright{
+          background: #064789;
+          padding: 20px 0;
+         .width{
+          width: 100%;
+          max-width: 1300px;
+          @include lg{
+            width: 80%;
+            margin: auto;
+          }
+          h1{
+            color: #FFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+          }
+         }
+         
+        }
+       
+      }
 
 
 }

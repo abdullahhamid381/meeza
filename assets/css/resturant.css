@@ -822,12 +822,6 @@ a {
 .resturant-parent .footer {
   background: black;
   padding: 60px 0 0 0;
-  margin-top: 2500px;
-}
-@media only screen and (max-width: 992px) {
-  .resturant-parent .footer {
-    margin-top: 0;
-  }
 }
 .resturant-parent .footer .width {
   max-width: 1300px;
@@ -847,10 +841,10 @@ a {
 }
 @media only screen and (max-width: 992px) {
   .resturant-parent .footer .width .title {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
+    flex-direction: column;
+    align-items: baseline;
     gap: 20px 0;
-    place-items: center;
+    margin-left: -30px;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -883,10 +877,9 @@ a {
 }
 @media only screen and (max-width: 992px) {
   .resturant-parent .footer .width .icons {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
+    flex-direction: column;
+    align-items: baseline;
     gap: 20px 0;
-    place-items: center;
   }
 }
 .resturant-parent .footer .width .icons .facebook {
