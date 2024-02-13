@@ -461,7 +461,7 @@ img {
 }
 .hero-about-parent .hero-back {
   background: url(/assets/img/Screenshot\ 2024-02-13\ 183826_cleanup.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
 }
 @media only screen and (min-width: 1620px) {
