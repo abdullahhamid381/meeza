@@ -501,6 +501,7 @@ a {
   font-weight: 400;
   font-style: italic;
   color: #064789;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-table-parent #main-section .deafult .revenue .grid-dollar {
   display: grid;
@@ -539,11 +540,14 @@ a {
   font-size: 16px;
   font-weight: 400;
   color: #807D9B;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-table-parent #main-section .deafult .revenue .grid-dollar .item-card .text .price {
   padding-top: 10px;
+  font-style: italic;
   margin: 0;
   color: #064789;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-table-parent #main-section .deafult .revenue .grid-dollar .item-card .text .goal {
   padding: 5px 0 0 0;
@@ -552,6 +556,7 @@ a {
 }
 .dashboard-table-parent #main-section .deafult .revenue .grid-dollar .item-card .text .goal p {
   margin: 0;
+  font-family: "ABeeZee", sans-serif;
 }
 .dashboard-table-parent #toggle-btn {
   display: none;
