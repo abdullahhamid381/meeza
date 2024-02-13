@@ -610,7 +610,7 @@ a {
     .footer{
         background: black;
         padding: 60px 0 0 0;
-        margin-top: 60px;
+        margin-top: 40px;
         .width{
           max-width: 1300px;
           width: 100%;
@@ -624,10 +624,11 @@ a {
         justify-content: center;
         align-items: center;
         @include lg{
-          grid-template-columns: 1fr 1fr;
-          display: grid;
+      flex-direction: column;
+      align-items: baseline;
            gap: 20px 0;
-           place-items: center
+           margin-left: -30px
+           
          };
          @include xxsmobile{
           grid-template-columns: 1fr;
@@ -638,6 +639,7 @@ a {
           font-size: 24px;
           font-style: italic;
           font-weight: 400;
+          
           padding: 0 40px;
           line-height: 50px; /* 208.333% */
           border-left: 1px solid white;
@@ -654,10 +656,10 @@ a {
         padding-bottom: 60px;
         align-items: center;
         @include lg{
-         grid-template-columns: 1fr 1fr;
-         display: grid;
-          gap: 20px 0;
-          place-items: center
+          flex-direction: column;
+          align-items: baseline;
+               gap: 20px 0;
+              
         };
         .facebook{
           background: #064789;
