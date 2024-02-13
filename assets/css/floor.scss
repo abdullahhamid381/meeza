@@ -20,11 +20,17 @@ a {
   display: grid;
   grid-template-columns: 1fr 5fr;
   height: auto;
-
+@include xlaptop{
+  grid-template-columns: 1.5fr 5fr;
+}
   @include lg {
     grid-template-columns: 1fr;
   }
-
+.hero-parent{
+  @include xlaptop{
+    height: 100vh;
+  }
+}
 
   .header {
     position: fixed;
@@ -34,6 +40,7 @@ a {
     background: #064789;
     box-shadow: 0 2px 16px hsla(230, 75%, 32%, .15);
     z-index: var(--z-fixed);
+ 
 
   }
 
@@ -1221,6 +1228,10 @@ gap: 0 10px;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 0;
             padding-left: 240px;
+            @include xlaptop{
+           
+              padding-left: 0;
+            }
             @include lg{
                 grid-template-columns: 1fr;
                gap: 50px 0 !important;

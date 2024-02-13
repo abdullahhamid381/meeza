@@ -20,9 +20,19 @@ a {
   /* For medium devices */
   /* For large devices */
 }
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent {
+    grid-template-columns: 1.5fr 5fr;
+  }
+}
 @media only screen and (max-width: 992px) {
   .dashboard-table-parent {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent .hero-parent {
+    height: 100vh;
   }
 }
 .dashboard-table-parent .header {
@@ -1012,6 +1022,11 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
   padding-left: 240px;
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel .images {
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .dashboard-table-parent #main-section .deafult .table-tabs .tab-panel .images {
