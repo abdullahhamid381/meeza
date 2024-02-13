@@ -465,14 +465,37 @@ img {
 
 .hero-about-parent{
   .hero-back{
-   background: url(r);
+   background: url(/assets/img/Screenshot\ 2024-02-13\ 183826_cleanup.png) no-repeat ;
+   background-size: contain;
+   height: 100vh;
+   @include xldisplay{
+height: 100vh;
+background-size: cover;
+   }
+   @include xlaptop{
+    height: auto;
+    background-size: cover;
+   }
     img{
       width: 100%;
     }
     .text{
    
-    
-     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding-top: 200px;
+  @include xlaptop{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
      
      
       h1{
