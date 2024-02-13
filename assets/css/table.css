@@ -20,9 +20,29 @@ a {
   /* For medium devices */
   /* For large devices */
 }
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent {
+    grid-template-columns: 1.5fr 5fr;
+  }
+}
 @media only screen and (max-width: 992px) {
   .dashboard-table-parent {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 1620px) {
+  .dashboard-table-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent .hero-parent {
+    height: auto !important;
   }
 }
 .dashboard-table-parent .header {
@@ -848,17 +868,9 @@ a {
 }
 .dashboard-table-parent #main-section .deafult .table-parent .help-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .help-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .help-table .help .item {
   background: #03284E;
@@ -873,23 +885,20 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .help-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .limit-table {
   width: 100%;
   margin-bottom: 2px;
 }
 .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help .item {
   background: #427AA1;
@@ -904,23 +913,20 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .limit-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .cover-table {
   width: 100%;
   margin-bottom: 2px;
 }
 .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help .item {
   background: #2CA062;
@@ -935,23 +941,20 @@ a {
   color: white;
   font-weight: 400;
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .cover-table .help .item h3 {
+    font-size: 9px;
+  }
+}
 .dashboard-table-parent #main-section .deafult .table-parent .occu-table {
   width: 100%;
   margin-bottom: 2px;
 }
 .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
-}
-@media only screen and (max-width: 992px) {
-  .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
-    gap: 2px;
-  }
 }
 .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help .item {
   background: #03284E;
@@ -965,6 +968,11 @@ a {
   text-align: center;
   color: white;
   font-weight: 400;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .table-parent .occu-table .help .item h3 {
+    font-size: 7px;
+  }
 }
 .dashboard-table-parent #main-section .deafult .table-tabs {
   border: 1px solid #E7E8F2;

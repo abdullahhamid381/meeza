@@ -35,6 +35,16 @@ a {
     height: 100vh;
   }
 }
+@media only screen and (max-width: 1179px) {
+  .dashboard-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-parent .hero-parent {
+    height: auto;
+  }
+}
 .dashboard-parent .header {
   position: fixed;
   top: 0;
@@ -858,7 +868,7 @@ a {
 }
 .dashboard-parent #main-section .deafult .table-parent .help-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
 }
@@ -886,7 +896,7 @@ a {
 }
 .dashboard-parent #main-section .deafult .table-parent .limit-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
 }
@@ -914,7 +924,7 @@ a {
 }
 .dashboard-parent #main-section .deafult .table-parent .cover-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
 }
@@ -942,7 +952,7 @@ a {
 }
 .dashboard-parent #main-section .deafult .table-parent .occu-table .help {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(16, 1fr);
   place-content: center;
   gap: 2px;
 }

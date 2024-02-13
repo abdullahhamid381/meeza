@@ -21,8 +21,23 @@ a {
   grid-template-columns: 1fr 5fr;
   height: auto;
 
-  @include lg {
-    grid-template-columns: 1fr;
+  @include xlaptop{
+    grid-template-columns: 1.5fr 5fr;
+  }
+    @include lg {
+      grid-template-columns: 1fr;
+    }
+  .hero-parent{
+    @include xldisplay{
+      height: 100vh;
+    }
+    @include xlaptop{
+      height: 100vh;
+    }
+    @include lg{
+      height: auto !important;
+    }
+   
   }
 
 
@@ -997,162 +1012,169 @@ gap: 0 10px;
         }
     }
 
-      .table-parent {
+    .table-parent {
 
 
 
-        // HELP========================  
-        .help-table {
-          width: 100%;
-          margin-bottom: 2px;
+      // HELP========================  
+      .help-table {
+        width: 100%;
+        margin-bottom: 2px;
 
-          .help {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            place-content: center;
+        .help {
+          display: grid;
+          grid-template-columns: 2fr repeat(16,1fr);
+          place-content: center;
 
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
+          // @include lg {
+          //   display: grid;
+          //   grid-template-columns: 2fr 1fr;
+          //   place-content: center;
+          //   gap: 2px;
+          // }
 
-            gap: 2px;
+          gap: 2px;
 
-            .item {
-              background: #03284E;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+          .item {
+            background: #03284E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-              h3 {
-                font-size: 12px;
-                font-family: 'ABeeZee', sans-serif;
-                text-align: center;
-                color: white;
-                font-weight: 400;
+            h3 {
+              font-size: 12px;
+              font-family: 'ABeeZee', sans-serif;
+              text-align: center;
+              color: white;
+              font-weight: 400;
+              @include lg{
+                font-size: 9px;
               }
             }
           }
         }
-
-
-        // LIMIT TABLE========================
-
-        .limit-table {
-          width: 100%;
-          margin-bottom: 2px;
-
-          .help {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            place-content: center;
-
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
-
-            gap: 2px;
-
-            .item {
-              background: #427AA1;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              h3 {
-                font-size: 16px;
-                font-family: 'ABeeZee', sans-serif;
-                text-align: center;
-                color: white;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-
-
-        // COVER TBALE===================
-        .cover-table {
-          width: 100%;
-          margin-bottom: 2px;
-
-          .help {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            place-content: center;
-
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
-
-            gap: 2px;
-
-            .item {
-              background: #2CA062;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              h3 {
-                font-size: 16px;
-                font-family: 'ABeeZee', sans-serif;
-                text-align: center;
-                color: white;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-
-
-        // Occupancy TBALE===================
-
-
-
-        .occu-table {
-          width: 100%;
-          margin-bottom: 2px;
-
-          .help {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            place-content: center;
-
-            @include lg {
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              place-content: center;
-              gap: 2px;
-            }
-
-            gap: 2px;
-
-            .item {
-              background: #03284E;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              h3 {
-                font-size: 16px;
-                font-family: 'ABeeZee', sans-serif;
-                text-align: center;
-                color: white;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-
       }
+
+
+      // LIMIT TABLE========================
+
+      .limit-table {
+        width: 100%;
+        margin-bottom: 2px;
+
+        .help {
+          display: grid;
+          grid-template-columns: 2fr repeat(16,1fr);
+          place-content: center;
+
+          // @include lg {
+          //   display: grid;
+          //   grid-template-columns: 2fr 1fr;
+          //   place-content: center;
+          //   gap: 2px;
+          // }
+
+          gap: 2px;
+
+          .item {
+            background: #427AA1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+              font-size: 16px;
+              font-family: 'ABeeZee', sans-serif;
+              text-align: center;
+              color: white;
+              font-weight: 400;
+              @include lg{
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+
+
+      // COVER TBALE===================
+      .cover-table {
+        width: 100%;
+        margin-bottom: 2px;
+
+        .help {
+          display: grid;
+          grid-template-columns: 2fr repeat(16,1fr);
+          place-content: center;
+
+          // @include lg {
+          //   display: grid;
+          //   grid-template-columns: 2fr 1fr;
+          //   place-content: center;
+          //   gap: 2px;
+          // }
+
+          gap: 2px;
+
+          .item {
+            background: #2CA062;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+              font-size: 16px;
+              font-family: 'ABeeZee', sans-serif;
+              text-align: center;
+              color: white;
+              font-weight: 400;
+              @include lg{
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+
+
+      // Occupancy TBALE===================
+
+
+
+      .occu-table {
+        width: 100%;
+        margin-bottom: 2px;
+
+        .help {
+          display: grid;
+          grid-template-columns: 2fr repeat(16,1fr);
+          place-content: center;
+
+        
+
+          gap: 2px;
+
+          .item {
+            background: #03284E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+              font-size: 16px;
+              font-family: 'ABeeZee', sans-serif;
+              text-align: center;
+              color: white;
+              font-weight: 400;
+              @include lg{
+                font-size: 7px;
+              }
+            }
+          }
+        }
+      }
+
+    }
 
 // MULTIPLE TABLES=======================
 

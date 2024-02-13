@@ -30,6 +30,21 @@ a {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (min-width: 1620px) {
+  .dashboard-reservation-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-reservation-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-reservation-parent .hero-parent {
+    height: auto !important;
+  }
+}
 .dashboard-reservation-parent .header {
   position: fixed;
   top: 0;

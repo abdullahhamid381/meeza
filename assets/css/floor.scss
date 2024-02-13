@@ -20,20 +20,24 @@ a {
   display: grid;
   grid-template-columns: 1fr 5fr;
   height: auto;
-@include xlaptop{
-  grid-template-columns: 1.5fr 5fr;
-}
-  @include lg {
-    grid-template-columns: 1fr;
+  @include xlaptop{
+    grid-template-columns: 1.5fr 5fr;
   }
-.hero-parent{
-  @include xldisplay{
-    height: 100vh;
+    @include lg {
+      grid-template-columns: 1fr;
+    }
+  .hero-parent{
+    @include xldisplay{
+      height: 100vh;
+    }
+    @include xlaptop{
+      height: 100vh;
+    }
+    @include lg{
+      height: auto;
+    }
+   
   }
-  @include lg{
-    display: none;
-  }
-}
 
   .header {
     position: fixed;
@@ -1018,7 +1022,7 @@ gap: 0 10px;
 
           .help {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr repeat(16,1fr);
             place-content: center;
 
             // @include lg {
@@ -1059,7 +1063,7 @@ gap: 0 10px;
 
           .help {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr repeat(16,1fr);
             place-content: center;
 
             // @include lg {
@@ -1099,7 +1103,7 @@ gap: 0 10px;
 
           .help {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr repeat(16,1fr);
             place-content: center;
 
             // @include lg {
@@ -1142,7 +1146,7 @@ gap: 0 10px;
 
           .help {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr repeat(16,1fr);
             place-content: center;
 
           

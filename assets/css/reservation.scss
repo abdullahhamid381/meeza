@@ -20,12 +20,24 @@ a {
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: auto;
-@include xlaptop{
-    grid-template-columns: 1.5fr 5fr;
-}
-    @include lg {
-        grid-template-columns: 1fr;
-    }
+    @include xlaptop{
+        grid-template-columns: 1.5fr 5fr;
+      }
+        @include lg {
+          grid-template-columns: 1fr;
+        }
+      .hero-parent{
+        @include xldisplay{
+          height: 100vh;
+        }
+        @include xlaptop{
+          height: 100vh;
+        }
+        @include lg{
+          height: auto !important;
+        }
+       
+      }
 
 
     .header {
