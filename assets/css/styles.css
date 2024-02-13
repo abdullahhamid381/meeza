@@ -542,6 +542,18 @@ img {
   align-items: center;
   padding-top: 80px;
 }
+@media only screen and (max-width: 450px) {
+  .landing-parent .trusted .img {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    padding-top: 80px;
+    width: 23%;
+    /* margin: auto; */
+    margin: auto;
+  }
+}
 .landing-parent .trusted .img img {
   width: 5%;
 }

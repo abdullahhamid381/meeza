@@ -557,8 +557,15 @@ img {
       align-items: center;
       padding-top: 80px;
 
-      @include lg {
-       
+      @include mobile{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        align-items: center;
+        padding-top: 80px;
+        width: 23%;
+        /* margin: auto; */
+        margin: auto;
       }
 
       img {
