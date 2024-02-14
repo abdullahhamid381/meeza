@@ -105,4 +105,32 @@
 }
 .signin-parent .width .fields .inputs .forgot span {
   text-align: center;
+}
+.signin-parent .width .fields .button a {
+  text-decoration: none;
+}
+.signin-parent .width .fields .button a button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #064789;
+  color: white;
+  font-style: italic;
+}
+.signin-parent .width .fields .forgot {
+  text-align: center;
+  padding-top: 20px;
+}
+.signin-parent .width .fields .forgot a {
+  text-decoration: none;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  color: #427AA1;
+}
+.signin-parent .width .fields .forgot span {
+  text-align: center;
 }/*# sourceMappingURL=signin.css.map */
