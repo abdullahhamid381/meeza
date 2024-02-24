@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employes</title>
-    <link rel="stylesheet" href="/assets/css/employes.css">
+    <title>New Resturant</title>
+    <link rel="stylesheet" href="/assets/css/new-resturant.css">
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
@@ -191,11 +191,11 @@
                                     <div class="title">Shifts</div>
 
                                     <div class="tab" data-index="0">
-                                        <h1>View All Employees</h1>
+                                        <h1>View All Resturants</h1>
                                     </div>
 
                                     <div class="tab" data-index="1">
-                                        <h1>Add New Employee</h1>
+                                        <h1>Add New Resturant</h1>
                                     </div>
 
 
@@ -285,22 +285,22 @@
 
                                     <div class="tab-panel show" data-index="1">
 
-                                        <form onsubmit="return validateForm()">
+                                        <form id="restaurantForm">
                                             <div class="name">
                                                 <div class="input">
-                                                    <input type="text" id="firstName" placeholder="First Name" required>
+                                                    <input type="text" id="firstName" placeholder="Language" required>
                                                 </div>
                                                 <div class="input">
-                                                    <input type="text" id="lastName" placeholder="Last Name" required>
+                                                    <input type="text" id="lastName" placeholder="Country" required>
                                                 </div>
                                             </div>
                                             <div class="name">
                                                 <div class="input">
-                                                    <input type="tel" id="contactNumber" placeholder="Contact Number"
+                                                    <input type="text" id="contactNumber" placeholder="Select Time Zone"
                                                         required>
                                                 </div>
                                                 <div class="input">
-                                                    <input type="email" id="email" placeholder="Email" required>
+                                                    <input type="text" id="email" placeholder="Email" required>
                                                 </div>
                                             </div>
                                             <div class="name">
@@ -309,10 +309,39 @@
                                                 </div>
                                                 <div class="input">
                                                     <input type="text" id="shifts"
-                                                        placeholder="Shifts Available to Work" required>
+                                                        placeholder="Business Name" required>
+                                                </div>
+                                             
+                                              
+                                              
+                                            </div>
+                                            <div class="name">
+                                                <div class="input">
+                                                    <input type="text" id="shifts"
+                                                        placeholder="Address" required>
+                                                </div>
+                                                <div class="input">
+                                                    <input type="text" id="shifts"
+                                                        placeholder="City" required>
                                                 </div>
                                             </div>
-                                            <input type="submit" value="Add Employee" class="submit">
+                                            <div class="name">
+                                                <div class="input">
+                                                    <input type="text" id="shifts"
+                                                        placeholder="Zip Code / Post Code" required>
+                                                </div>
+                                                <div class="input">
+                                                    <input type="text" id="shifts"
+                                                        placeholder="Phone" required>
+                                                </div>
+                                            </div>
+                                            <div class="name">
+                                                <div class="input">
+                                                    <input type="text" id="shifts"
+                                                        placeholder="Website (Optional)" required>
+                                                </div>
+                                            </div>
+                                            <input type="submit" value="Add Resturant" class="submit">
                                         </form>
 
 
@@ -367,26 +396,35 @@
     <!-- FORM VALIDATION -->
 
     <script>
-        function validateForm() {
-            // Get form values
-            var firstName = document.getElementById('firstName').value;
-            var lastName = document.getElementById('lastName').value;
-            var contactNumber = document.getElementById('contactNumber').value;
-            var email = document.getElementById('email').value;
-            var role = document.getElementById('role').value;
-            var shifts = document.getElementById('shifts').value;
+        document.getElementById('restaurantForm').addEventListener('submit', function(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
 
-            // Perform validation
-            if (firstName === '' || lastName === '' || contactNumber === '' || email === '' || role === '' || shifts === '') {
-                alert('All fields are required. Please fill them out.');
-                return false;
+            // Validate each input field except for 'Website'
+            var fields = ['firstName', 'lastName', 'contactNumber', 'email', 'role', 'shifts', 'shifts', 'shifts', 'shifts', 'shifts'];
+            var isValid = true;
+
+            for (var i = 0; i < fields.length; i++) {
+                var fieldId = fields[i];
+                var inputValue = document.getElementById(fieldId).value.trim();
+
+                if (inputValue === '' && document.getElementById(fieldId).hasAttribute('required')) {
+                    var placeholderText = document.getElementById(fieldId).getAttribute('placeholder');
+                    alert(placeholderText + ' is required');
+                    isValid = false;
+                    break;
+                }
             }
 
-            // Additional validation logic can be added if needed
-
-            return true; // Form is valid
-        }
+            if (isValid) {
+                // Form is valid, you can submit it or perform other actions
+                alert('Form is valid. Submitting...');
+                // Uncomment the line below to submit the form
+                // document.getElementById('restaurantForm').submit();
+            }
+        });
     </script>
+
 
 
     <!-- FOR DYNAMICALLY DATE=============== -->

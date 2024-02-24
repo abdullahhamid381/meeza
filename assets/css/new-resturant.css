@@ -1,0 +1,1006 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dashboard-table-parent {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: auto;
+  /* Navigation for mobile devices */
+  /* Show menu */
+  /*=============== SEARCH ===============*/
+  /* Show search */
+  /*=============== LOGIN ===============*/
+  /*=============== BREAKPOINTS ===============*/
+  /* For medium devices */
+  /* For large devices */
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent {
+    grid-template-columns: 1.5fr 5fr;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 1620px) {
+  .dashboard-table-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1179px) {
+  .dashboard-table-parent .hero-parent {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent .hero-parent {
+    height: auto !important;
+  }
+}
+.dashboard-table-parent .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #064789;
+  box-shadow: 0 2px 16px hsla(230, 75%, 32%, 0.15);
+  z-index: var(--z-fixed);
+}
+.dashboard-table-parent .nav {
+  height: var(--header-height);
+  padding: 20px 0 0 0;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent .nav {
+    height: var(--header-height);
+    padding: 20px 0 0 0;
+    align-items: center;
+    margin-top: -144px;
+  }
+}
+.dashboard-table-parent .logo-div {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7999BE;
+}
+.dashboard-table-parent .logo-div .nav__logo {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+  font-family: "ABeeZee", sans-serif;
+  padding-left: 30px;
+}
+.dashboard-table-parent .logo-div .nav__logo img {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent .logo-div .nav__logo img {
+    width: 80%;
+  }
+}
+.dashboard-table-parent .nav__actions {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  flex-direction: column;
+}
+@media only screen and (max-width: 330px) {
+  .dashboard-table-parent .nav__actions {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1rem;
+    column-gap: 10px;
+  }
+}
+.dashboard-table-parent .nav__actions button {
+  border: none;
+  outline: none;
+  padding: 13px 35px;
+  border-radius: 8px;
+  color: #000;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 450px) {
+  .dashboard-table-parent .nav__actions button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #000;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .dashboard-table-parent .nav__actions button {
+    border: none;
+    outline: none;
+    padding: 8px 9px;
+    border-radius: 8px;
+    color: #000;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.dashboard-table-parent .nav__search,
+.dashboard-table-parent .nav__login,
+.dashboard-table-parent .nav__toggle,
+.dashboard-table-parent .nav__close {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.4s;
+}
+@media screen and (max-width: 1023px) {
+  .dashboard-table-parent .nav__menu {
+    position: fixed;
+    top: -150%;
+    left: 0;
+    background-color: var(--body-color);
+    box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+    width: 60%;
+    padding-block: 4.5rem 4rem;
+    transition: top 0.4s;
+    z-index: 111111;
+    background: #064789;
+    padding-left: 30px;
+    height: 100vh;
+  }
+}
+.dashboard-table-parent .nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  /* text-align: center; */
+  padding: 0;
+}
+.dashboard-table-parent .nav__list #list {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.dashboard-table-parent .nav__list #list img {
+  width: 100%;
+}
+.dashboard-table-parent .nav__list .nav__link {
+  color: rgb(255, 255, 255);
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.dashboard-table-parent .nav__close {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+}
+@media only screen and (max-width: 330px) {
+  .dashboard-table-parent .nav__close {
+    position: absolute;
+    top: 1.15rem;
+    right: 3.5rem;
+  }
+}
+.dashboard-table-parent .show-menu {
+  top: 0;
+}
+.dashboard-table-parent .search__form {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.dashboard-table-parent .search__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+.dashboard-table-parent .search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+.dashboard-table-parent .search__input::-moz-placeholder {
+  color: var(--text-color);
+}
+.dashboard-table-parent .search__input::placeholder {
+  color: var(--text-color);
+}
+.dashboard-table-parent .show-search {
+  opacity: 1;
+  pointer-events: initial;
+}
+.dashboard-table-parent .show-search .search__form {
+  transform: translateY(0);
+}
+.dashboard-table-parent .login__form,
+.dashboard-table-parent .login__group {
+  display: grid;
+}
+.dashboard-table-parent .login__form {
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 8px 32px hsla(230, 75%, 15%, 0.2);
+  border-radius: 1rem;
+  row-gap: 1.25rem;
+  text-align: center;
+  transform: translateY(-1rem);
+  transition: transform 0.4s;
+}
+.dashboard-table-parent .login__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+.dashboard-table-parent .login__group {
+  row-gap: 1rem;
+}
+.dashboard-table-parent .login__label {
+  display: block;
+  text-align: initial;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+.dashboard-table-parent .login__input {
+  width: 100%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+}
+.dashboard-table-parent .login__input::-moz-placeholder {
+  color: var(--text-color);
+}
+.dashboard-table-parent .login__input::placeholder {
+  color: var(--text-color);
+}
+.dashboard-table-parent .login__signup {
+  margin-bottom: 0.5rem;
+}
+.dashboard-table-parent .login__signup a {
+  color: var(--first-color);
+}
+.dashboard-table-parent .login__forgot {
+  display: inline-block;
+  color: var(--first-color);
+  margin-bottom: 1.25rem;
+}
+.dashboard-table-parent .login__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  width: 100%;
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+@media screen and (min-width: 576px) {
+  .dashboard-table-parent .search,
+  .dashboard-table-parent .login {
+    padding-top: 10rem;
+  }
+  .dashboard-table-parent .search__form {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+  .dashboard-table-parent .search__close,
+  .dashboard-table-parent .login__close {
+    width: -moz-max-content;
+    width: max-content;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    font-size: 2rem;
+  }
+  .dashboard-table-parent .login__form {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .dashboard-table-parent .nav {
+    height: calc(var(--header-height) + 2rem);
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .dashboard-table-parent .nav__close,
+  .dashboard-table-parent .nav__toggle {
+    display: none;
+  }
+  .dashboard-table-parent .nav__list {
+    gap: 35px 0;
+    flex-direction: column;
+  }
+  .dashboard-table-parent .login__form {
+    padding: 3rem 2rem 3.5rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .dashboard-table-parent .container {
+    margin-inline: auto;
+  }
+}
+.dashboard-table-parent #main-section {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.dashboard-table-parent #main-section .deafult {
+  /* Add your styles here */
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .intro-title .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .title h2 {
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .title p {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user {
+  display: flex;
+  gap: 20px;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div {
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div {
+    align-items: baseline;
+  }
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div img {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar {
+  display: none;
+  /* Initially hide the search bar */
+  transition: display 0.5s ease;
+  /* Add smooth transition effect */
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar input {
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar button {
+  padding: 11px 10px;
+  background: #064789;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div #search-bar button {
+    margin-top: 5px;
+  }
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img .search-div #toggle-button {
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .intro-title .flex .user .img img {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift {
+  padding: 20px 0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift {
+    width: 95%;
+    margin: auto;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .title h1 {
+  font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  color: #064789;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid {
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid .cards {
+  padding: 20px;
+  border: 1px solid #E7E8F2;
+  border-radius: 12px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid .cards .title {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid .cards .time {
+  font-size: 28px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  margin: 0;
+  color: #064789;
+  padding: 5px 0;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-shift .grid .cards span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #807D9B;
+  padding: 5px 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs {
+  border: 1px solid #E7E8F2;
+  padding: 30px 50px;
+  border-radius: 4px;
+  margin: 30px 0;
+  /* Pagination links */
+  /* Style the active/current link */
+  /* Add a grey background color on mouse-over */
+}
+@media only screen and (max-width: 450px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs {
+    border: 1px solid #E7E8F2;
+    padding: 30px 50px 78px 50px;
+    border-radius: 4px;
+    margin: 30px 0;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tabs-container {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  gap: 0 80px;
+  padding: 0 0 20px 0;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .title {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  color: #064789;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab {
+  padding: 0 10px;
+  width: 15%;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  background: #03284E;
+  transition: 0.8s;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab {
+    width: 100%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab i {
+  font-size: 16px;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab h1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-header .tab:hover {
+  background-color: #064789;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel {
+  display: none;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .title-shift {
+  padding: 20px 0;
+  border-bottom: 1px solid #E7E8F2;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .title-shift h1 {
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  align-items: center;
+  gap: 0 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #E7E8F2;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button {
+  width: 100%;
+  /* Styles for the modal */
+  /* Styles for the modal */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button #openModalBtn {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  width: 20%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button #openModalBtn {
+    background: none;
+    border: none;
+    background: #064789;
+    color: white;
+    padding: 10px 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    width: 80%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  /* Could be more or less, depending on screen size */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title {
+  background: #F4F4F4;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "ABeeZee", sans-serif;
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close:hover, .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .title-fields {
+  padding: 10px 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .title-fields h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: #03284E;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item {
+  background: #2CA062;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox {
+  display: flex;
+  gap: 0 15px;
+  justify-content: center;
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox .check-field {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .options-fields .item .checkbox span {
+  color: white;
+  font-size: 18px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select {
+  position: relative;
+  width: 208px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select {
+    width: 100%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box .icon img {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .select-box i {
+  font-size: 14px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background: white;
+  z-index: 8888;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content .fields .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .reserve-content {
+    width: 80%;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content {
+  background-color: #E4E4E4;
+  margin: 5% auto;
+  /* padding: 20px; */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F4F4F4;
+  padding: 10PX 50PX;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close:hover, .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .title .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time {
+  padding: 35px 30px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date {
+  padding: 0px 0;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date span {
+  font-size: 14px;
+  color: #064789;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender {
+  display: flex;
+  gap: 0 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender {
+    width: 100%;
+    justify-content: center;
+    background: #064789;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field {
+    border: none;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field .title h1 {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons {
+  display: flex;
+  gap: 0 5px;
+  align-items: center;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #current-date {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons i {
+  color: black;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #next-btn,
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons #back-btn {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons input {
+  border: none;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons::-moz-placeholder {
+  color: black !important;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content .date-time .date .date-calender .date-field #calendar .buttons::placeholder {
+  color: black !important;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button .walkin-content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button {
+    width: 100%;
+    margin: auto;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button a {
+  text-decoration: none;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel .assign .reserve-button a button {
+  background: none;
+  border: none;
+  background: #064789;
+  color: white;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form {
+  padding-top: 40px;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 60px;
+  padding: 15px 0;
+  width: 70%;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name .input {
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name .input input {
+  border: 1px solid #E7E8F2;
+  outline: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #807D9B;
+  font-family: "ABeeZee", sans-serif;
+  width: 100%;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name .input input::-moz-placeholder {
+  font-size: 20px;
+  color: #807D9B;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .name .input input::placeholder {
+  font-size: 20px;
+  color: #807D9B;
+  font-family: "ABeeZee", sans-serif;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel form .submit {
+  background: #064789;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-family: "ABeeZee", sans-serif;
+  border: none;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .tab-panel.show {
+  display: block;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 450px) {
+  .dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination {
+    display: block;
+  }
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.dashboard-table-parent #main-section .deafult .employes-shift-parent .employes-tabs .table-tabs .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.dashboard-table-parent #toggle-btn {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.dashboard-table-parent .main-content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard-table-parent .main-content h3 {
+  color: #333;
+}
+.dashboard-table-parent .main-content p {
+  color: #555;
+}
+.dashboard-table-parent #toogle {
+  color: red;
+}/*# sourceMappingURL=new-resturant.css.map */
