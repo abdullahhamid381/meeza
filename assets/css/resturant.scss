@@ -976,6 +976,12 @@ a {
              display: grid;   
              grid-template-columns: 1fr 1fr 1fr;
              padding-top: 40px;
+             @include lg{
+                grid-template-columns: 1fr 1fr;
+             }
+             @include mobile{
+                grid-template-columns: 1fr;
+             }
              gap: 30px;
              .card{
                 box-sizing: border-box;
