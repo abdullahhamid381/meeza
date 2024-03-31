@@ -819,68 +819,6 @@ a {
 .resturant-parent .width-resturant .hero-parent .grid .cardstwo .map-div .map iframe {
   width: 100%;
 }
-.resturant-parent .width-resturant .hero-parent .cards-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 40px;
-  gap: 30px;
-}
-@media only screen and (max-width: 992px) {
-  .resturant-parent .width-resturant .hero-parent .cards-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .resturant-parent .width-resturant .hero-parent .cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card {
-  box-sizing: border-box;
-  border: 1px solid rgba(137, 133, 133, 0.404);
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .title {
-  background: #064789;
-  padding: 20px;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .title h1 {
-  font-family: "ABeeZee", sans-serif;
-  font-size: 24px;
-  color: white;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .img img {
-  width: 100%;
-  overflow: hidden;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .name {
-  padding: 10px 20px;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .name h1 {
-  font-family: "ABeeZee", sans-serif;
-  font-size: 24px;
-  color: rgb(131, 131, 131);
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .para {
-  padding: 0 20px 20px 20px;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .para p {
-  font-family: "ABeeZee", sans-serif;
-  color: black;
-  font-size: 18px;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .link {
-  background: #064789;
-  padding: 20px;
-  display: flex;
-  justify-content: end;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .link h1 {
-  font-family: "ABeeZee", sans-serif;
-  font-size: 24px;
-}
-.resturant-parent .width-resturant .hero-parent .cards-grid .card .link h1 a {
-  color: white;
-}
 .resturant-parent .footer {
   background: black;
   padding: 60px 0 0 0;

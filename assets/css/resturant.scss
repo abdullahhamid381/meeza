@@ -972,67 +972,67 @@ a {
                 }
             }
 
-            .cards-grid{
-             display: grid;   
-             grid-template-columns: 1fr 1fr 1fr;
-             padding-top: 40px;
-             @include lg{
-                grid-template-columns: 1fr 1fr;
-             }
-             @include mobile{
-                grid-template-columns: 1fr;
-             }
-             gap: 30px;
-             .card{
-                box-sizing: border-box;
-                border: 1px solid rgba(137, 133, 133, 0.404);
-                .title{
-                    background: #064789;
-                    padding: 20px ;
+            // .cards-grid{
+            //  display: grid;   
+            //  grid-template-columns: 1fr 1fr 1fr;
+            //  padding-top: 40px;
+            //  @include lg{
+            //     grid-template-columns: 1fr 1fr;
+            //  }
+            //  @include mobile{
+            //     grid-template-columns: 1fr;
+            //  }
+            //  gap: 30px;
+            //  .card{
+            //     box-sizing: border-box;
+            //     border: 1px solid rgba(137, 133, 133, 0.404);
+            //     .title{
+            //         background: #064789;
+            //         padding: 20px ;
                     
-                    h1{
-                        font-family: 'ABeeZee', sans-serif;
-                        font-size: 24px;
-                        color: white;
-                    }
-                }
-                .img{
-                    img{
-                        width: 100%;
-                        overflow: hidden;
-                    }
-                }
-                .name{
-                    padding: 10px 20px;
-                    h1{
-                        font-family: 'ABeeZee', sans-serif;
-                        font-size: 24px;
-                        color: rgb(131, 131, 131);
-                    }
-                }
-                .para{
-                    padding: 0 20px 20px 20px;
-                    p{
-                        font-family: 'ABeeZee', sans-serif;
-                        color: black;
-                        font-size: 18px;
-                    }
-                }
-                .link{
-                    background: #064789;
-                    padding: 20px ;
-                    display: flex;
-                    justify-content: end;
-                    h1{
-                        font-family: 'ABeeZee', sans-serif;
-                        font-size: 24px;
-                     a{
-                        color: white
-                     }
-                    }
-                }
-             }
-            }
+            //         h1{
+            //             font-family: 'ABeeZee', sans-serif;
+            //             font-size: 24px;
+            //             color: white;
+            //         }
+            //     }
+            //     .img{
+            //         img{
+            //             width: 100%;
+            //             overflow: hidden;
+            //         }
+            //     }
+            //     .name{
+            //         padding: 10px 20px;
+            //         h1{
+            //             font-family: 'ABeeZee', sans-serif;
+            //             font-size: 24px;
+            //             color: rgb(131, 131, 131);
+            //         }
+            //     }
+            //     .para{
+            //         padding: 0 20px 20px 20px;
+            //         p{
+            //             font-family: 'ABeeZee', sans-serif;
+            //             color: black;
+            //             font-size: 18px;
+            //         }
+            //     }
+            //     .link{
+            //         background: #064789;
+            //         padding: 20px ;
+            //         display: flex;
+            //         justify-content: end;
+            //         h1{
+            //             font-family: 'ABeeZee', sans-serif;
+            //             font-size: 24px;
+            //          a{
+            //             color: white
+            //          }
+            //         }
+            //     }
+            //  }
+            // }
         }
     }
 
